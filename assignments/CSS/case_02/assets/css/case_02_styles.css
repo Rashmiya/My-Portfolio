@@ -21,8 +21,21 @@ header>nav {
 header>nav>ul>li {
     display: inline-block;   /*to display as a row*/
     padding: 10px;
-    color: #373434;
+    color: #535151;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: normal;
+}
+aside{
+    background-color: #4C0082;
+    height:300px;
+    width: 120px;
+}
+aside>ul{
+    display:contents;
+    font-size: 16px;
+    color: #f3efef;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    top: 5px;
 }
