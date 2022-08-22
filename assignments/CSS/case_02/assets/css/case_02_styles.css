@@ -26,9 +26,16 @@ header>nav>ul>li {
     font-size: 16px;
     font-weight: normal;
 }
+header>nav>ul>li:hover{
+    cursor: pointer;
+    color: #4C0082;
+}
+body{
+    position:relative;
+}
 aside{
     background-color: #4C0082;
-    height:100%;
+    height:98%;
     width: 19%;
     position: absolute;
 }
@@ -44,4 +51,35 @@ aside>ul>li{
     font-weight: bold;
     font-family: 'Lato', sans-serif;
     padding-bottom: 19px;
+}
+aside>ul>li:hover{
+    cursor: pointer;
+}
+main{
+    top: 4px;
+    position: relative;
+}
+
+/*
+main>section>section{
+    width: 20%;
+    height: 20%;
+    position: relative;
+    left: 256px;
+}
+main>section>section:first-child{
+
+}*/
+footer{
+    background-color: #808080;
+    height: 45px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%
+}
+h4{
+    position: relative;
+    top: -5px;
+    color: white;
+    text-align: center
 }
