@@ -70,6 +70,25 @@ main>section>section{
 main>section>section:first-child{
 
 }*/
+main>section>section>img{
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    left: 10px;
+    /*height: 200px;*/
+    width: 350px;
+    border: 1px solid black;
+}
+main>section>section{
+    position: relative;
+    border: 1px solid greenyellow;
+}
+main>section>article>p{
+    position: relative;
+    width: 80vw;
+    left: 20vw;
+    bottom: 20px;
+}
 footer{
     background-color: #808080;
     height: 45px;
