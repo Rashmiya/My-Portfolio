@@ -72,45 +72,15 @@ aside>ul>li:hover{
     cursor: pointer;
 }
 
-/*main>section{
-    margin-left: 270px;
+main>section{
+    margin-left: 257px;
     padding: 10px;
 }
+
 main:nth-child(2) p{
     color: #433636f5;
 }
-main > section > section:first-child {
-    height: 300px;
-    position: relative;
-}
-main > section > section:first-child > div {
-    height: 100%;
-    width: calc(100% / 3);
-    position: absolute;
-    border: 1px solid rgba(0, 0, 0, 0.33);
-}
-main > section > section:first-child > div:nth-child(1) {
-    left: 0;
-}
 
-main > section > section:first-child > div:nth-child(2) {
-    left: calc(100%/3);
-}
-
-main > section > section:first-child > div:nth-child(3) {
-    right: 0;
-}
-main>section>section{
-    position: relative;
-    border: 1px solid greenyellow;
-    top:10px;
-}
-main>section>article>p{
-    position: relative;
-    width: 80vw;
-    left: 20vw;
-    bottom: 20px;
-}*/
 /*Footer area*/
 footer{
     background-color: #808080;
