@@ -48,15 +48,16 @@ main{
 /*side panel*/
 aside{
     background-color: #4C0082;
-    height:98%;
+    top: 0;
+    bottom: 0;
     width: 20%;
     position: absolute;
 }
 /*side panel links*/
 aside>ul{
     position: absolute;
-    left: -12px;
-    top: 15px;
+    left: 20px;
+    top: 85px;
 }
 /*side panel links styles*/
 aside>ul>li{
@@ -65,7 +66,7 @@ aside>ul>li{
     color: #f3efef;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
-    padding-bottom: 19px;
+    padding-bottom: 49px;
 }
 /*change cursor when hover links in side panel*/
 aside>ul>li:hover{
