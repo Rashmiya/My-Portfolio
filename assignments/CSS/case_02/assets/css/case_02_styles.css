@@ -49,7 +49,7 @@ main{
 aside{
     background-color: #4C0082;
     height:98%;
-    width: 19%;
+    width: 20%;
     position: absolute;
 }
 /*side panel links*/
@@ -73,7 +73,7 @@ aside>ul>li:hover{
 }
 /*main part*/
 main>section{
-    margin-left: 257px;
+    margin-left: 268px;
     padding: 10px;
 }
 /*paragraphs in main part*/
@@ -108,6 +108,16 @@ main > section > section:first-child > div:nth-child(2)>img{
     height: 100%;
     width: 100%;
     left: calc(100%/3);
+}
+/*third gif box area*/
+main > section > section:first-child > div:nth-child(3) {
+    right: 0;
+}
+/*third gif area*/
+main > section > section:first-child > div:nth-child(3)>img {
+    right: 0;
+    height: 100%;
+    width: 100%;
 }
 /*Footer area*/
 footer{
