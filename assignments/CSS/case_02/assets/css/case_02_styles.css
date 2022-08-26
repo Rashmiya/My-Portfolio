@@ -71,16 +71,27 @@ aside>ul>li{
 aside>ul>li:hover{
     cursor: pointer;
 }
-
+/*main part*/
 main>section{
     margin-left: 257px;
     padding: 10px;
 }
-
+/*paragraphs in main part*/
 main:nth-child(2) p{
     color: #433636f5;
 }
-
+/*gif image boxes*/
+main > section > section:first-child {
+    height: 300px;
+    position: relative;
+}
+/*Setup boxes for put git image*/
+main > section > section:first-child > div {
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.33);
+}
 /*Footer area*/
 footer{
     background-color: #808080;
