@@ -1,6 +1,8 @@
+/*for all*/
 * {
     font-family: 'Poppins', sans-serif;
 }
+/*for header*/
 header{
     position:fixed;
     background-color: #ffffff;
@@ -10,6 +12,7 @@ header{
     box-shadow: 0px 2px 0px 2px rgba(57, 51, 51, 0.91);
     z-index: 2;
 }
+/*ijse logo in header*/
 header>img{
     position: relative;
     height: 30px;
@@ -17,12 +20,13 @@ header>img{
     top: 10px;
     left: 12px;
 }
+/*navigations in header*/
 header>nav {
     position: absolute;
     bottom: -13px;
     right: 20px;
 }
-
+/*nav links in header to display as a row*/
 header>nav>ul>li {
     display: inline-block;   /*to display as a row*/
     padding: 10px;
@@ -31,25 +35,30 @@ header>nav>ul>li {
     font-size: 16px;
     font-weight: normal;
 }
+/*change color and cursor when hover links in header*/
 header>nav>ul>li:hover{
     cursor: pointer;
     color: #4C0082;
 }
+/*Awoid header rest area*/
 main{
     position:relative;
     top: 4px;
 }
+/*side panel*/
 aside{
     background-color: #4C0082;
     height:98%;
     width: 19%;
     position: absolute;
 }
+/*side panel links*/
 aside>ul{
     position: absolute;
     left: -12px;
     top: 15px;
 }
+/*side panel links styles*/
 aside>ul>li{
     display:block;
     font-size: 16px;
@@ -58,42 +67,56 @@ aside>ul>li{
     font-family: 'Lato', sans-serif;
     padding-bottom: 19px;
 }
+/*change cursor when hover links in side panel*/
 aside>ul>li:hover{
     cursor: pointer;
 }
-/*
-main>section>section{
-    width: 20%;
-    height: 20%;
-    position: relative;
-    left: 256px;
-}
-main>section>section:first-child{
 
-}*/
-main>section>section>img{
+/*main>section{
+    margin-left: 270px;
+    padding: 10px;
+}
+main:nth-child(2) p{
+    color: #433636f5;
+}
+main > section > section:first-child {
+    height: 300px;
     position: relative;
-    display: inline-block;
-    top: 5px;
-    left: 10px;
-    /*height: 200px;*/
-    width: 350px;
-    border: 1px solid black;
+}
+main > section > section:first-child > div {
+    height: 100%;
+    width: calc(100% / 3);
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.33);
+}
+main > section > section:first-child > div:nth-child(1) {
+    left: 0;
+}
+
+main > section > section:first-child > div:nth-child(2) {
+    left: calc(100%/3);
+}
+
+main > section > section:first-child > div:nth-child(3) {
+    right: 0;
 }
 main>section>section{
     position: relative;
     border: 1px solid greenyellow;
+    top:10px;
 }
 main>section>article>p{
     position: relative;
     width: 80vw;
     left: 20vw;
     bottom: 20px;
-}
+}*/
+/*Footer area*/
 footer{
     background-color: #808080;
     height: 45px;
 }
+/*text in footer area*/
 h4{
     position: relative;
     top: -5px;
