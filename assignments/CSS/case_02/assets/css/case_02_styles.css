@@ -82,6 +82,7 @@ main:nth-child(2) p{
 }
 /*gif image boxes*/
 main > section > section:first-child {
+    margin-top: 50px;
     height: 300px;
     position: relative;
 }
@@ -92,6 +93,13 @@ main > section > section:first-child > div {
     position: absolute;
     border: 1px solid rgba(0, 0, 0, 0.33);
 }
+/*first git area*/
+main > section > section:first-child > div:nth-child(1)>img {
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
 /*Footer area*/
 footer{
     background-color: #808080;
