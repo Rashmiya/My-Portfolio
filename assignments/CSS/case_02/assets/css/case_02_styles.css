@@ -99,7 +99,16 @@ main > section > section:first-child > div:nth-child(1)>img {
     height: 100%;
     width: 100%;
 }
-
+/*second gif box area*/
+main > section > section:first-child > div:nth-child(2) {
+    left: calc(100%/3);
+}
+/*second gif area*/
+main > section > section:first-child > div:nth-child(2)>img{
+    height: 100%;
+    width: 100%;
+    left: calc(100%/3);
+}
 /*Footer area*/
 footer{
     background-color: #808080;
