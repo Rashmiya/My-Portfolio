@@ -13,11 +13,29 @@
   <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=8 minimum-scale=2">
   <meta name="theme-color" content="#1F2234">
   <style>
+    body{
+      height: 100vh;
+      width: 99.53vw;
+    }
+    body>section{
+      height: 600px;
+      width : 100%;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      column-gap: 3px;
+      row-gap: 3px;
+      border: 2px solid black;
+    }
+    body>section>div{
+      background-size: cover;
+      background-position: center;
+      border: 2px solid black;
+    }
 
   </style>
 </head>
 <body>
-  <mian>
     <section>
       <div></div>
       <div></div>
@@ -31,6 +49,5 @@
       <div></div>
       <div></div>
     </section>
-  </mian>
 </body>
 </html>
