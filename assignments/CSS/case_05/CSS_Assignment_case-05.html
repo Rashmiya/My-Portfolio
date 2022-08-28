@@ -13,7 +13,23 @@
   <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=8 minimum-scale=2">
   <meta name="theme-color" content="#1F2234">
   <style>
-
+    main>section{
+      height: 600px;
+      width : 100%;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      column-gap: 3px;
+      row-gap: 3px;
+      border: 1px solid black;
+    }
+    main>section>div{
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      border: 1px solid red;
+    }
   </style>
 </head>
 <body>
