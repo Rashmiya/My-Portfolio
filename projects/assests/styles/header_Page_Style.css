@@ -1,3 +1,7 @@
+::-webkit-scrollbar{
+    width: 0;
+}
+
 /*All header area*/
 body>header{
     position: fixed;
@@ -32,7 +36,8 @@ header>nav>ul>li:hover{
     cursor: pointer;
     color: #FF9F43;
     font-size: 24px;
-    transition-property: font-size;
+    border-bottom: 2px solid #FF9F43;
+    transition-property: font-size,border-bottom-color;
     transition-duration: 0s;
 }
 
