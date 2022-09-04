@@ -13,7 +13,7 @@ main>section:first-child>section{
     width: 50%;
     height: 90%;
     top: 63px;
-    border: 1px solid red;
+   /* border: 1px solid red;*/
     left: 0;
 }
 /*article area */
@@ -25,13 +25,93 @@ main>section:first-child>section>article{
     left: 10%;
     border: 1px solid red;
 }
+/*Welcome*/
+main>section:first-child>section>article>pre:nth-child(1){
+    position: absolute;
+    color: white;
+    font-size: 1.6rem;
+    left: 27%;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    /*font-family: sans-serif;*/
+  /*  border: 1px solid greenyellow;*/
+}
+/*i am rashmiya Rafeek*/
+main>section:first-child>section>article>pre:nth-child(2){
+    position: absolute;
+    color: #F04A1E;
+    font-size: 3.7rem;
+    font-family: 'Kaushan Script', cursive;
+    left: 0%;
+    top: 6%;
+   /* stroke: black;
+    stroke-opacity: 1;
+    stroke-width: 1;
+    text-shadow: #F5B537;*/
+   /* font-family: 'Courgette', cursive;*/
+  /*  border: 1px solid greenyellow;*/
+}
+/*Frontend*/
+main>section:first-child>section>article>pre:nth-child(3){
+    position: absolute;
+    color: white;
+    font-size:2.3rem;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    left: 14%;
+    top: 31%;
+    /* font-family: 'Frank Ruhl Libre', serif;*/
+   /* border: 1px solid greenyellow;*/
+
+}
+/*developer*/
+main>section:first-child>section>article>pre:nth-child(4){
+    position: absolute;
+    color: white;
+    font-size: 2.3rem;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    left: 37%;
+    top: 44%;
+    /* font-family: 'Frank Ruhl Libre', serif;*/
+  /*  border: 1px solid greenyellow;*/
+
+}
+/*Italic style*/
+main>section:first-child>section>article>h5{
+    position: absolute;
+    color: #c8c3c3;
+    font-size: 1.92rem;
+    font-family: 'Italianno', cursive;
+    font-weight: lighter;
+    left: 5%;
+    top: 55%;
+    /*  font-family: 'Great Vibes', cursive;*/
+   /* border: 1px solid greenyellow;*/
+}
+/*"Hire me" Button*/
+main>section:first-child>section>article>button{
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    left: 40%;
+    top: 100%;
+    color: white;
+    background-color:#1F2234 ;
+    border: 3px solid #FF9F43;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
 /*social media link area*/
 main>section:first-child>section>nav{
     position: absolute;
-    border: 1px solid red;
     width: 86%;
     bottom: 0;
     left: 10%;
+     border: 1px solid red;
 }
 /*right side content area*/
 main>section:first-child>aside{
