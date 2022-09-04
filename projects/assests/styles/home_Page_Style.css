@@ -1,8 +1,54 @@
 main{
 
 }
+/*full home page area*/
 main>section:first-child{
     background-color: #1F2234;
     width: 100vw;
     height: 100vh;
 }
+/*left side content area*/
+main>section:first-child>section{
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    top: 63px;
+    border: 1px solid red;
+    left: 0;
+}
+/*article area */
+main>section:first-child>section>article{
+    position: absolute;
+    width: 86%;
+    height: 75%;
+    top: 10%;
+    left: 10%;
+    border: 1px solid red;
+}
+/*social media link area*/
+main>section:first-child>section>nav{
+    position: absolute;
+    border: 1px solid red;
+    width: 86%;
+    bottom: 0;
+    left: 10%;
+}
+/*right side content area*/
+main>section:first-child>aside{
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    right: 0;
+    top: 63px;
+    border: 1px solid greenyellow;
+}
+
+/*
+main>section:first-child>section>article{
+    position: absolute;
+    top: 140px;
+}
+main>section:first-child>section>article>pre:nth-child(1){
+    color: white;
+    font-size: 50rem;
+}*/
