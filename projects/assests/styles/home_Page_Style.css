@@ -1,5 +1,6 @@
 main{
-
+   /* overflow: hidden;
+    position: sticky;*/
 }
 /*full home page area*/
 main>section:first-child{
@@ -22,7 +23,7 @@ main>section:first-child>section>article{
     height: 75%;
     top: 10%;
     left: 10%;
-   /* border: 1px solid red;*/
+    /*border: 1px solid red;*/
 }
 /*Welcome*/
 main>section:first-child>section>article>pre:nth-child(1){
@@ -90,9 +91,14 @@ main>section:first-child>section>article>button{
 main>section:first-child>section>nav{
     position: absolute;
     width: 86%;
-    bottom: 0;
+    bottom: 2%;
     left: 10%;
-     border: 1px solid red;
+}
+/*each link by separately*/
+main>section:first-child>section>nav>img:nth-child(1), main>section:first-child>section>nav>img:nth-child(2), main>section:first-child>section>nav>img:nth-child(3), main>section:first-child>section>nav>img:nth-child(4), main>section:first-child>section>nav>img:nth-child(5), main>section:first-child>section>nav>img:nth-child(6){
+    height: 38px;
+    width: 38px;
+    padding-right: 30px;
 }
 /*right side content area*/
 main>section:first-child>aside{
@@ -100,6 +106,6 @@ main>section:first-child>aside{
     width: 50%;
     height: 90%;
     right: 0;
-    top: 63px;
+    top: 60px;
     border: 1px solid greenyellow;
 }
