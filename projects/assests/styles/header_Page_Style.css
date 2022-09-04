@@ -27,9 +27,11 @@ body>header>nav{
 /*each nav links in navigation panel*/
 body>header>nav>ul>li{
     display: inline-block;
-    color: white;
-    font-size: 20px;
-    padding-left: 15px;
+    color: #d2cdcd;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    padding-left: 17px;
 }
 /*add effects and transitions when hover the links*/
 header>nav>ul>li:hover{
