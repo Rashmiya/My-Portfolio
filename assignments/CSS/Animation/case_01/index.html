@@ -5,7 +5,27 @@
     <title>CSS Animations - Case 01</title>
     <link rel="stylesheet" href="../case_01/assets/css/normalize.css">
     <style>
+        div {
+            width: 180px;
+            height: 70px;
+            border-radius: 18px;
 
+            animation-name: my-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes my-animation {
+            0% {
+                background-color: blue;
+                margin: 0 0 0 1vw;
+            }
+            100% {
+                transform: rotate(360deg);
+                background-color: orange;
+                margin: 0 0 0 0;
+            }
+        }
     </style>
 </head>
 <body>
