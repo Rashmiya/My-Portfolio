@@ -1,6 +1,9 @@
 main{
-   /* overflow: hidden;
-    position: sticky;*/
+   /* position: relative;*/
+   /* overflow: hidden;*/
+}
+body{
+
 }
 /*full home page area*/
 main>section:first-child{
@@ -91,6 +94,7 @@ main>section:first-child>section>article>button:hover{
     border: 3.75px solid #F04A1E;
     border-radius: 21px;
     font-weight: bold;
+    cursor: pointer;
     /*apply transitions after*/
 }
 /*social media link area*/
