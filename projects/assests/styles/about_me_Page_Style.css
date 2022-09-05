@@ -1,7 +1,7 @@
 /*full "About me" area page*/
 body>main>section:nth-child(2){
     position: relative;
-    border: 2px solid red;
+   /* border: 2px solid red;*/
     background-color: white;
     height: 100vh;
     width: 100vw;
@@ -11,14 +11,14 @@ body>main>section:nth-child(2)>section:first-child{
     position: absolute;
     width: 100vw;
     height: 15vh;
-    top: 4%;
+    top: 3%;
 
-    border: 2px solid green;
+   /* border: 2px solid green;*/
 }
 /*blue color two side borders*/
 body>main>section:nth-child(2)>section:first-child>div{
     position: absolute;
-    width: 40%;
+    width: 41%;
     height: 15%;
     background-color: #1F2234;
 }
@@ -30,13 +30,41 @@ body>main>section:nth-child(2)>section:first-child>div:nth-child(2){
     top: 0;
     right: 0;
 }
+/*""About me*/
 body>main>section:nth-child(2)>section:first-child>h3{
     position: absolute;
-    left: 45%;
+    left: 45.6%;
     top: -40px;
-    font-size: 1.75rem;
-    font-weight: bold;
-    font-family: 'Oxygen', sans-serif;
+    font-size: 1.85rem;
+    font-family: 'Lato', sans-serif;
+    color:black;
+}
+/*"Why choose me?"*/
+body>main>section:nth-child(2)>section:first-child>h6{
+    position: absolute;
+    left: 45.6%;
+    top: -5px;
+    font-size: 0.92rem;
+    font-family: 'Merriweather', serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+/*horizontal line*/
+body>main>section:nth-child(2)>section:first-child>div:nth-child(5){
+    position: absolute;
+    height: 3%;
+    width: 14%;
+    background-color: #c4c4c4;
+    top: 60%;
+    left: 43%;
+}
+/*orange color box*/
+body>main>section:nth-child(2)>section:first-child>div:nth-child(6){
+    position: absolute;
+    height: 8.5%;
+    width: 7%;
+    background-color: #fd9d3c;
+    top: 58%;
+    left: 46.5%;
 }
 /*self introduction content Area*/
 body>main>section:nth-child(2)>section:nth-child(2){
