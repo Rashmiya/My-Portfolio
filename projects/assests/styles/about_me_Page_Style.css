@@ -15,6 +15,29 @@ body>main>section:nth-child(2)>section:first-child{
 
     border: 2px solid green;
 }
+/*blue color two side borders*/
+body>main>section:nth-child(2)>section:first-child>div{
+    position: absolute;
+    width: 40%;
+    height: 15%;
+    background-color: #1F2234;
+}
+body>main>section:nth-child(2)>section:first-child>div:first-child{
+    top: 0;
+    left: 0;
+}
+body>main>section:nth-child(2)>section:first-child>div:nth-child(2){
+    top: 0;
+    right: 0;
+}
+body>main>section:nth-child(2)>section:first-child>h3{
+    position: absolute;
+    left: 45%;
+    top: -40px;
+    font-size: 1.75rem;
+    font-weight: bold;
+    font-family: 'Oxygen', sans-serif;
+}
 /*self introduction content Area*/
 body>main>section:nth-child(2)>section:nth-child(2){
     position: absolute;
