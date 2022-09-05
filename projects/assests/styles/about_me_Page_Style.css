@@ -1,0 +1,44 @@
+/*full "About me" area page*/
+body>main>section:nth-child(2){
+    position: relative;
+    border: 2px solid red;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+/*Topic area for "About me"*/
+body>main>section:nth-child(2)>section:first-child{
+    position: absolute;
+    width: 100vw;
+    height: 15vh;
+    top: 4%;
+
+    border: 2px solid green;
+}
+/*self introduction content Area*/
+body>main>section:nth-child(2)>section:nth-child(2){
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    top: 20%;
+    border: 2px solid yellow;
+
+}
+/*left side point details*/
+body>main>section:nth-child(2)>section:nth-child(2)>aside{
+    border: 2px solid blue;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/*right side short description*/
+body>main>section:nth-child(2)>section:nth-child(2)>article{
+    border: 2px solid blue;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
