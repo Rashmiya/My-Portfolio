@@ -26,6 +26,24 @@
             top: 0;
             bottom: 0;
             margin: auto;
+
+            animation-name: my-animation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes my-animation {
+            0%{
+                width: 0px;
+                height:0px ;
+                opacity: 1;
+            }
+            100%{
+                width: 150px;
+                height:150px ;
+                opacity: 0;
+            }
         }
     </style>
 </head>
