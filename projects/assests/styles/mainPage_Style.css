@@ -1,0 +1,45 @@
+main{
+    position: relative;
+    margin-top: 62px;
+    /* border: 1px solid green;*/
+}
+/*full home page area*/
+main>section:first-child{
+    border: 1px solid red;
+}
+/*full About me area*/
+main>section:nth-child(2){
+    border: 1px solid blue;
+}
+/*full Education area*/
+main>section:nth-child(3){
+    border: 1px solid green;
+}
+/*full Skills area*/
+main>section:nth-child(4){
+    border: 1px solid yellow;
+}
+/*full projects area*/
+main>section:nth-child(5){
+    border: 1px solid hotpink;
+}
+/*full services area*/
+main>section:nth-child(6){
+    border: 1px solid indigo;
+}
+/*full Assignments area*/
+main>section:nth-child(7){
+    border: 1px solid red;
+}
+/*full Activities area*/
+main>section:nth-child(8){
+    border: 1px solid black;
+}
+/*full contact area*/
+main>section:nth-child(9){
+    border: 1px solid blue;
+}
+/*footer Area*/
+footer{
+    border: 2px solid red
+}

@@ -5,6 +5,7 @@
 /*All header area*/
 body>header{
     position: fixed;
+    z-index: 2;
     background-color: #1F2234;
     width: 100vw;
     height: 62px;
@@ -13,7 +14,7 @@ body>header{
 }
 /*"RR" logo in left side of header area*/
 header>img{
-    position: absolute;
+    position: relative;
     height: 45px;
     padding-top: 9px;
     padding-left: 24px;
