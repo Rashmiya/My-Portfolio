@@ -1,9 +1,9 @@
 /*full "About me" area page*/
 body>main>section:nth-child(2){
     position: relative;
-   /* border: 2px solid red;*/
+    border: 2px solid red;
     background-color: white;
-    height: 100vh;
+    height: 96vh;
     width: 100vw;
 }
 /*Topic area for "About me"*/
@@ -13,7 +13,7 @@ body>main>section:nth-child(2)>section:first-child{
     height: 15vh;
     top: 3%;
 
-   /* border: 2px solid green;*/
+    /*border: 2px solid green;*/
 }
 /*blue color two side borders*/
 body>main>section:nth-child(2)>section:first-child>div{
@@ -30,7 +30,7 @@ body>main>section:nth-child(2)>section:first-child>div:nth-child(2){
     top: 0;
     right: 0;
 }
-/*""About me*/
+/*"About me"*/
 body>main>section:nth-child(2)>section:first-child>h3{
     position: absolute;
     left: 45.6%;
@@ -69,26 +69,29 @@ body>main>section:nth-child(2)>section:first-child>div:nth-child(6){
 /*self introduction content Area*/
 body>main>section:nth-child(2)>section:nth-child(2){
     position: absolute;
-    width: 100vw;
-    height: 70vh;
-    top: 20%;
-    border: 2px solid yellow;
-
+    width: 70vw;
+    height: 72vh;
+    top: 18%;
+    left: 15%;
+    border: 2px solid red;
+    border-radius: 40px;
+    stroke-width: 1;
+    stroke: black;
 }
 /*left side point details*/
 body>main>section:nth-child(2)>section:nth-child(2)>aside{
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
     position: absolute;
-    width: 50%;
+    width: 40%;
     height: 100%;
     top: 0;
     left: 0;
 }
 /*right side short description*/
 body>main>section:nth-child(2)>section:nth-child(2)>article{
-    border: 2px solid blue;
+/*    border: 2px solid blue;*/
     position: absolute;
-    width: 50%;
+    width: 40%;
     height: 100%;
     top: 0;
     right: 0;
