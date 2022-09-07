@@ -2,7 +2,7 @@ main{
     position: relative;
     width: 98.7vw;;
     margin-top: 62px;
-    /* border: 1px solid green;*/
+    /*border: 1px solid green;*/
 }
 /*full home page area*/
 main>section:first-child{
@@ -10,7 +10,7 @@ main>section:first-child{
     width: 100%;
     height: 90vh;
     background-color: #1F2234;
-   /* border: 1px solid red;*/
+    /*border: 1px solid red;*/
 }
 /*own profile*/
 main>section:first-child>aside{
@@ -19,7 +19,7 @@ main>section:first-child>aside{
     height: 85%;
     top: 30px;
     right: 50px;
-  /*  border: 2px solid red;*/
+    /*border: 2px solid red;*/
 }
 /*left side content Area*/
 main>section:first-child>section{
@@ -27,8 +27,8 @@ main>section:first-child>section{
     top: 30px;
     left: 75px;
     width: 50%;
-    height: 85%;
-   /* border: 2px solid green;*/
+    height: 90%;
+    /*border: 2px solid green;*/
 }
 /*Article area*/
 main>section:first-child>section>article{
@@ -93,11 +93,25 @@ main>section:first-child>section>article>button{
     border-radius: 21px;
     margin-left: 185px;
 }
-/*social media links area*/
+/*social media link area*/
 main>section:first-child>section>nav{
     position: absolute;
-    border: 1px solid red;
+    width: 86%;
+    bottom: 2%;
+    left: 10%;
 }
+/*each link by separately*/
+main>section:first-child>section>nav>img:nth-child(1), main>section:first-child>section>nav>img:nth-child(2), main>section:first-child>section>nav>img:nth-child(3), main>section:first-child>section>nav>img:nth-child(4), main>section:first-child>section>nav>img:nth-child(5), main>section:first-child>section>nav>img:nth-child(6){
+    height: 38px;
+    width: 38px;
+    margin-right: 30px;
+}
+main>section:first-child>section>nav>img:nth-child(1):hover, main>section:first-child>section>nav>img:nth-child(2):hover, main>section:first-child>section>nav>img:nth-child(3):hover, main>section:first-child>section>nav>img:nth-child(4):hover, main>section:first-child>section>nav>img:nth-child(5):hover, main>section:first-child>section>nav>img:nth-child(6):hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
+
 /*full About me area*/
 main>section:nth-child(2){
     border: 1px solid blue;
