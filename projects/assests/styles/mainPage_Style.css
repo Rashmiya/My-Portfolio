@@ -1,10 +1,101 @@
 main{
     position: relative;
+    width: 98.7vw;;
     margin-top: 62px;
     /* border: 1px solid green;*/
 }
 /*full home page area*/
 main>section:first-child{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: #1F2234;
+   /* border: 1px solid red;*/
+}
+/*own profile*/
+main>section:first-child>aside{
+    position: absolute;
+    width: 40%;
+    height: 85%;
+    top: 30px;
+    right: 50px;
+  /*  border: 2px solid red;*/
+}
+/*left side content Area*/
+main>section:first-child>section{
+    position: absolute;
+    top: 30px;
+    left: 75px;
+    width: 50%;
+    height: 85%;
+   /* border: 2px solid green;*/
+}
+/*Article area*/
+main>section:first-child>section>article{
+    height: 408px;
+    /*border: 2px solid white;*/
+}
+/*Welcome*/
+main>section:first-child>section>article>pre:nth-child(1){
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    padding-left: 28%;
+}
+/*i am Rashmiya Rafeek*/
+main>section:first-child>section>article>pre:nth-child(2){
+    color: #F04A1E;
+    font-size: 3.7rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+/*FrontEnd*/
+main>section:first-child>section>article>pre:nth-child(3){
+    color: white;
+    font-size: 2.3rem;
+    font-family: 'PT Serif', Serif;
+    font-weight: bold;
+    padding-left: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*Developer*/
+main>section:first-child>section>article>pre:nth-child(4){
+    color: white;
+    font-size: 2.3rem;
+    font-family: 'PT Serif', Serif;
+    font-weight: bold;
+    padding-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*Italic style*/
+main>section:first-child>section>article>h5{
+    color: #c8c3c3;
+    font-size: 1.92rem;
+    font-family: 'Italianno', cursive;
+    font-weight: lighter;
+    padding-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+/*"hire me" button*/
+main>section:first-child>section>article>button{
+    width: 20%;
+    height: 10%;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: lighter;
+    color: #d9d5d5;
+    background-color:#1F2234 ;
+    border: 3.5px solid #FF9F43;
+    border-radius: 21px;
+    margin-left: 185px;
+}
+/*social media links area*/
+main>section:first-child>section>nav{
+    position: absolute;
     border: 1px solid red;
 }
 /*full About me area*/
@@ -13,31 +104,31 @@ main>section:nth-child(2){
 }
 /*full Education area*/
 main>section:nth-child(3){
-    border: 1px solid green;
+   /* border: 1px solid green;*/
 }
 /*full Skills area*/
 main>section:nth-child(4){
-    border: 1px solid yellow;
+  /*  border: 1px solid yellow;*/
 }
 /*full projects area*/
 main>section:nth-child(5){
-    border: 1px solid hotpink;
+   /* border: 1px solid hotpink;*/
 }
 /*full services area*/
 main>section:nth-child(6){
-    border: 1px solid indigo;
+  /*  border: 1px solid indigo;*/
 }
 /*full Assignments area*/
 main>section:nth-child(7){
-    border: 1px solid red;
+  /*  border: 1px solid red;*/
 }
 /*full Activities area*/
 main>section:nth-child(8){
-    border: 1px solid black;
+   /* border: 1px solid black;*/
 }
 /*full contact area*/
 main>section:nth-child(9){
-    border: 1px solid blue;
+   /* border: 1px solid blue;*/
 }
 /*footer Area*/
 footer{
