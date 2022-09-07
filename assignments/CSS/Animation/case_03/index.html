@@ -35,8 +35,24 @@
       animation-timing-function: linear;
       animation-direction: alternate;
     }
+    main > section > div {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
     @keyframes my-animation {
-
+      0%,20%{
+        transform: translateX(0);
+      }
+      30%,50% {
+        transform: translateX(-25%);
+      }
+      60%,80% {
+        transform: translateX(-50%);
+      }
+      90%,100% {
+        transform: translateX(-75%);
+      }
     }
   </style>
 </head>
@@ -44,10 +60,10 @@
   <main>
     <section>
       <div>
-        <h1>Hello</h1></div>
-      <div> <h1>Hello</h1></div>
-      <div><h1>Hello</h1></div>
-      <div> <h1>Hello</h1></div>
+        <h1>Hello 1</h1></div>
+      <div> <h1>Hello 2</h1></div>
+      <div><h1>Hello 3</h1></div>
+      <div> <h1>Hello 4</h1></div>
     </section>
   </main>
 </body>
