@@ -274,8 +274,148 @@ main>section:nth-child(3){
     position: relative;
     width: 100%;
     height: 90vh;
-   /* border: 1px solid green;*/
+    border: 1px solid red;
 }
+/*topic area for Education*/
+main>section:nth-child(3)>section:first-child{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    border: 2px solid blue;
+}
+/*"Education"*/
+main>section:nth-child(3)>section:first-child>h3{
+    position: absolute;
+    left: 45%;
+    font-size: 1.85rem;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    margin-bottom: 0;
+}
+/*blue color two side borders*/
+body>main>section:nth-child(3)>section:first-child>div:first-child,body>main>section:nth-child(3)>section:first-child>div:nth-child(2){
+    top: 40px;
+    position: absolute;
+    width: 41%;
+    height: 17%;
+    background-color: #1F2234;
+}
+body>main>section:nth-child(3)>section:first-child>div:first-child{
+    left: 0;
+}
+body>main>section:nth-child(3)>section:first-child>div:nth-child(2){
+    right: 0;
+}
+/*horizontal line*/
+body>main>section:nth-child(3)>section:first-child>div:nth-child(4){
+    position: absolute;
+    height: 3%;
+    width: 14%;
+    background-color: #c4c4c4;
+    top: 88%;
+    left: 43%;
+}
+/*orange color box*/
+body>main>section:nth-child(3)>section:first-child>div:nth-child(5){
+    position: absolute;
+    height: 8.5%;
+    width: 7%;
+    background-color: #fd9d3c;
+    top: 85%;
+    left: 46.5%;
+}
+
+/*Education Details area*/
+body>main>section:nth-child(3)>section:nth-child(2){
+    border: 2px solid purple;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    background-color: #1F2234;
+}
+/*Higher Education*/
+body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
+    border: 6px solid #FF9F43;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    width: 27%;
+    color: white;
+}
+/*External Education*/
+body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(2){
+    border: 6px solid #FF9F43;
+    position: absolute;
+    top: 34%;
+    width: 27%;
+    left: 10%;
+    color: white;
+}
+/*Secondary Education*/
+body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(3){
+    border: 6px solid #FF9F43;
+    position: absolute;
+    width: 27%;
+    top: 58%;
+    left: 60%;
+    color: white;
+}
+/*primary Education*/
+body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(4){
+    border: 6px solid #FF9F43;
+    position: absolute;
+    top: 80%;
+    width: 27%;
+    left: 10%;
+    color: white;
+}
+/*small circles near in the content */
+body>main>section:nth-child(3)>section:nth-child(2)>section{
+    left: 38%;
+    top: 19%;
+    border: 1px solid yellow;
+    position: absolute;
+    width: 22%;
+    height: 70%;
+}
+/**/
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:first-child{
+    position: relative;
+    width: 5%;
+    background: white;
+    height: 3%;
+    border-radius: 100%;
+    left: 95%;
+}
+/**/
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(2){
+    position: relative;
+    width: 5%;
+    background: white;
+    height: 3%;
+    border-radius: 100%;
+    top: 32%;
+}
+/**/
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(3){
+    position: relative;
+    width: 5%;
+    background: white;
+    height: 3%;
+    border-radius: 100%;
+    top: 60%;
+    left: 95%;
+}
+/**/
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(4){
+    position: relative;
+    width: 5%;
+    background: white;
+    height: 3%;
+    border-radius: 100%;
+    top: 88%;
+}
+/*=======================Education END ===========================*/
 /*full Skills area*/
 main>section:nth-child(4){
     position: relative;
