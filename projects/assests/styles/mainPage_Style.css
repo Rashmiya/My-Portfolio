@@ -200,7 +200,12 @@ main>section:nth-child(2)>section:nth-child(2)>aside{
     left: 4%;
     width: 40%;
     height: 80%;
-    /*font-family: 'Lato', sans-serif;*/
+}
+/*point wise details*/
+main>section:nth-child(2)>section:nth-child(2)>aside>pre{
+    margin-top: 25px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 20px;
 }
 /*gray color box areas*/
 main>section:nth-child(2)>section:nth-child(2)>aside>div:first-child,main>section:nth-child(2)>section:nth-child(2)>aside>div:nth-child(3){
@@ -260,6 +265,7 @@ main>section:nth-child(2)>section:nth-child(2)>article>button{
     color: white;
     font-family: 'Lato';
     font-size: 1.1rem;
+    box-shadow: 4px 3px 3px 3px lightgrey;
 }
 /*=======================About Me END ===========================*/
 
