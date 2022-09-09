@@ -107,7 +107,7 @@
          background-size: cover;
          background-position: center;
 
-         animation-name: wheeltwo-animation;
+         animation-name: wheelTwo-animation;
          animation-duration: 8s;
          animation-iteration-count: infinite;
          animation-timing-function: linear;
@@ -126,13 +126,56 @@
               }
 
               75% {
-                  transform: translateX(-45%);
+                  transform: translateX(-48%);
               }
 
               100% {
-                  transform: translateX(-50%);
+                  transform: translateX(-53%);
               }
           }
+      @keyframes wheelOne-animation {
+          0% {
+              transform: rotate(0deg);
+          }
+
+          25% {
+              transform: rotate(-150deg);
+          }
+
+          50% {
+              transform: rotate(-200deg);
+          }
+
+          75% {
+              transform: rotate(350deg);
+          }
+
+          100% {
+              transform: rotate(550deg);
+          }
+      }
+
+      @keyframes wheelTwo-animation {
+          0% {
+              transform: rotate(0deg);
+          }
+
+          25% {
+              transform: rotate(-150deg);
+          }
+
+          50% {
+              transform: rotate(-200deg);
+          }
+
+          75% {
+              transform: rotate(350deg);
+          }
+
+          100% {
+              transform: rotate(550deg);
+          }
+      }
   </style>
 </head>
 <body>
