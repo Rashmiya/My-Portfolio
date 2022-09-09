@@ -14,24 +14,70 @@
   <meta name="theme-color" content="#1F2234">
 
   <style>
+    body>main{
+        position: absolute;
+        left: 0;
+        top: 30vh;
+        width: 100%;
+        height: 520px;
+        margin:auto;
+        overflow-x:hidden;
+    }
+
+   /*sky area*/
+    body>div:nth-child(1){
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url("../case_04/assets/images/sky.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    body>main>section{
+        height: 100%;
+        width: 300%;
+        animation-name: r-s-animation;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-timing-function: linear;
+    }
+    /*road area*/
+    body > main > section > div:last-child {
+        position: relative;
+        top: 0;
+        height: 300px;
+        background-image: url("../case_04/assets/images/road.jpg");
+        background-position: center;
+    }
+    /*city area*/
+    body > main > section > div:first-child {
+        position: relative;
+        top: 0;
+        height: 31vh;
+        background-image: url("../case_04/assets/images/city.png");
+        background-position: center;
+    }
 
   </style>
 </head>
 <body>
 <!--sky area-->
-<div></div>
+    <div></div>
 <!--car area-->
-<div></div>
+    <div></div>
 <!--car wheels-->
-<div></div>
-<div></div>
+    <div></div>
+    <div></div>
 <!--container= city+road-->
-<main>
-  <section>
-    <div></div>  <!--for city-->
-    <div></div>  <!--for road-->
-  </section>
-</main>
+  <main>
+    <section>
+        <div></div>  <!--for city-->
+        <div></div>  <!--for road-->
+    </section>
+  </main>
 
 </body>
 </html>
