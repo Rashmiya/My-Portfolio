@@ -61,15 +61,62 @@
         background-position: center;
     }
 
+    /*car area*/
+     body > div:nth-child(3) {
+         position: fixed;
+         top: 50vh;
+         left: 0;
+         right: 0;
+         margin: auto;
+         height: 136px;
+         width: 398px;
+         background-image: url("../case_04/assets/images/car.png");
+         background-size: cover;
+         background-position: center;
+     }
+     /*car wheel-01*/
+     body > div:nth-child(4) {
+         position: absolute;
+         left: 230px;
+         right: 0;
+         top: 380px;
+         margin: auto;
+         width: 77px;
+         height: 76px;
+         border-radius: 100%;
+         background-image: url("../case_04/assets/images/wheel.png");
+         background-size: cover;
+         background-position: center;
+
+         animation-name: wheelOne-animation;
+         animation-duration: 8s;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+     }
+     /*car wheel-02*/
+     body > div:nth-child(5) {
+         position: absolute;
+         left: -259px;
+         right: 0;
+         top: 380px;
+         margin: auto;
+         width: 77px;
+         height: 76px;
+         border-radius: 100%;
+         background-image: url("../case_04/assets/images/wheel.png");
+         background-size: cover;
+         background-position: center;
+
+         animation-name: wheeltwo-animation;
+         animation-duration: 8s;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+     }
+
   </style>
 </head>
 <body>
 <!--sky area-->
-    <div></div>
-<!--car area-->
-    <div></div>
-<!--car wheels-->
-    <div></div>
     <div></div>
 <!--container= city+road-->
   <main>
@@ -78,6 +125,10 @@
         <div></div>  <!--for road-->
     </section>
   </main>
-
+<!--car area-->
+<div></div>
+<!--car wheels-->
+<div></div>
+<div></div>
 </body>
 </html>
