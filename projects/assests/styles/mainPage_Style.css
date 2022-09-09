@@ -274,14 +274,15 @@ main>section:nth-child(3){
     position: relative;
     width: 100%;
     height: 90vh;
-    border: 1px solid red;
+   /* border: 1px solid red;*/
 }
 /*topic area for Education*/
 main>section:nth-child(3)>section:first-child{
     position: absolute;
     width: 100%;
     height: 15%;
-    border: 2px solid blue;
+    margin-top: 10px;
+   /* border: 2px solid blue;*/
 }
 /*"Education"*/
 main>section:nth-child(3)>section:first-child>h3{
@@ -327,11 +328,13 @@ body>main>section:nth-child(3)>section:first-child>div:nth-child(5){
 
 /*Education Details area*/
 body>main>section:nth-child(3)>section:nth-child(2){
-    border: 2px solid purple;
+   /* border: 2px solid purple;*/
     position: absolute;
     top: 15%;
     width: 100%;
+    height: 150%;
     background-color: #1F2234;
+    margin-top: 30px;
 }
 /*Higher Education*/
 body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
@@ -369,16 +372,19 @@ body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(4){
     left: 10%;
     color: white;
 }
+
+main>section:nth-child(3)>section:nth-child(2)>div h3{
+    padding-left: 30%;
+}
 /*small circles near in the content */
 body>main>section:nth-child(3)>section:nth-child(2)>section{
     left: 38%;
     top: 19%;
-    border: 1px solid yellow;
+  /*  border: 1px solid yellow;*/
     position: absolute;
     width: 22%;
     height: 70%;
 }
-/**/
 body>main>section:nth-child(3)>section:nth-child(2)>section>div:first-child{
     position: relative;
     width: 5%;
@@ -387,7 +393,6 @@ body>main>section:nth-child(3)>section:nth-child(2)>section>div:first-child{
     border-radius: 100%;
     left: 95%;
 }
-/**/
 body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(2){
     position: relative;
     width: 5%;
@@ -396,7 +401,6 @@ body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(2){
     border-radius: 100%;
     top: 32%;
 }
-/**/
 body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(3){
     position: relative;
     width: 5%;
@@ -406,7 +410,6 @@ body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(3){
     top: 60%;
     left: 95%;
 }
-/**/
 body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(4){
     position: relative;
     width: 5%;
@@ -415,7 +418,97 @@ body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(4){
     border-radius: 100%;
     top: 88%;
 }
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(5){
+    position: relative;
+    width: 5%;
+    background: white;
+    height: 3%;
+    border-radius: 100%;
+    top: -12%;
+    left: 50%;
+}
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(6){
+    position: relative;
+    width: 5%;
+    background: white;
+    height: 3%;
+    border-radius: 100%;
+    left: 50%;
+    top: 20%;
+}
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(7){
+    position: relative;
+    width: 5%;
+    background: white;
+    height: 3%;
+    border-radius: 100%;
+    left: 50%;
+    top: 48%;
+}
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(8){
+    position: relative;
+    width: 5%;
+    background: white;
+    height: 3%;
+    border-radius: 100%;
+    left: 50%;
+    top: 76%;
+}
+/*horizontal line*/
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(9){
+    position: relative;
+    width: 45%;
+    height: 1.4%;
+    background: white;
+    left: 52%;
+    top: -23.5%;
+}
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(10){
+    position: relative;
+    width: 47%;
+    height: 1.4%;
+    background: white;
+    left: 4%;
+    top: 10.5%;
+}
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(11){
+    position: relative;
+    width: 45%;
+    height: 1.4%;
+    background: white;
+    left: 52%;
+    top: 40%;
+}
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(12){
+    position: relative;
+    width: 48%;
+    height: 1.4%;
+    background: white;
+    left: 4%;
+    top: 69.8%;
+}
+/*main vertical line*/
+body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(13){
+    position: relative;
+    height: 130%;
+    background: white;
+    top: -47%;
+    bottom: 0;
+    width: 2.6%;
+    left: 50%;
+}
+/*main circle*/
+body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(6){
+    background: white;
+    width: 1.5%;
+    height: 2.5%;
+    border-radius: 100%;
+    margin-left: 48.65%;
+    margin-top: 3%;
+}
 /*=======================Education END ===========================*/
+
+
 /*full Skills area*/
 main>section:nth-child(4){
     position: relative;
