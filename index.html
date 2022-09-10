@@ -10,6 +10,7 @@
 <!--css styles link-->
     <link rel="stylesheet" href="projects/assests/styles/header_Page_Style.css">
      <link rel="stylesheet" href="projects/assests/styles/mainPage_Style.css">
+    <link rel="stylesheet" href="projects/assests/styles/contact_page.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +38,8 @@
     <meta name="author" content="Rashmiya Rafeek">
     <meta name="owner" content="Rashmiya Rafeek">
 
-    <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=8 minimum-scale=2">
+    <!--<meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=8 minimum-scale=2">-->
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1F2234">
 </head>
 <body>
@@ -311,7 +313,7 @@
         </section>
 
         <!--contact-->
-        <section>
+        <section id="contact-Page">
             <!--topic area for "contact"-->
             <section>
                 <div></div>
@@ -324,27 +326,88 @@
                 <div></div>
             </section>
             <!--Address area-->
-            <section>
-                <!--icon lists-->
-                <aside>
-                    <nav></nav>
-                </aside>
-                <!--location details-->
-                <address>
-                    <div>
-                        <pre>
-                            NAME
-                            Rashmiya Rafeek
-                        </pre>
+            <section id="address-area">
+                <!--for links-->
+                <div>
+                    <img src="projects/assests/images/github.png" alt="Github profile">
+                    <img src="projects/assests/images/linkedin%20(1).png" alt="linkedin profile">
+                    <img src="projects/assests/images/twitter-sign.png" alt="twitter profile">
+                    <img src="projects/assests/images/facebook.png" alt="facebook pofile">
+                    <img src="projects/assests/images/icons8-slack-new-100.png" alt="slack profile">
+                </div>
+                <!--point wise address area-->
+                <div class="contact-info">
+                    <!--first box-->
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="text">
+                            <h3>NAME</h3>
+                            <p>Rashmiya Rafeek</p>
+                        </div>
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </address>
-                <!--get message from users -->
-                <address></address>
-                <!--on the bog links-->
-                <div></div>
+
+                    <!--second box-->
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="text">
+                            <h3>ADDRESS</h3>
+                            <p>150,A,2,Meepe Junction, Padukka.</p>
+                        </div>
+                    </div>
+
+                    <!--third box-->
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-circle-envelope"></i></div>
+                        <div class="text">
+                            <h3>EMAIL</h3>
+                            <p>rashmiyarafeek1200@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!--fourth box-->
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-circle-phone"></i></div>
+                        <div class="text">
+                            <h3>MOBILE</h3>
+                            <p>072-6180512</p>
+                        </div>
+                    </div>
+                </div>
+                <!--input box area / contactForm-->
+                <section>
+                    <form>
+                        <div class="input-group"> <!--inputBox-->
+                            <input type="text" id="name" required>
+                            <label for="name">Name</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea id="message"  rows="8" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </section>
+                <!--on the blog area-->
+                <div>
+                    <h4>On the blog</h4>
+                    <nav>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Education</li>
+                        <li>Skills</li>
+                        <li>Projects</li>
+                        <li>Services</li>
+                        <li>Assignments</li>
+                        <li>Activities</li>
+                    </nav>
+                </div>
             </section>
         </section>
 

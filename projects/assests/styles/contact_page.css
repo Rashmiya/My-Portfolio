@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*full contact page*/
+#contact-Page{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+}
+/*Address area*/
+#address-area {
+    /* border: 1px solid green; */
+    width: 90.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+    border-radius: 30px;
+    box-shadow: 4px 6px 4px 1px #1f2234;
+    margin-top: 62px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(244,245,247,1) 11%, rgba(231,231,236,1) 21%, rgba(217,217,221,1) 32%, rgba(180,180,185,1) 49%, rgba(31,34,52,1) 100%);
+}
+/*==================================*/
+
+/*social links area*/
+#contact-Page #address-area>div:first-child{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 15%;
+    height: 75%;
+}
+/*each social link images*/
+#contact-Page #address-area>div:first-child>img{
+    width: 50px;
+    height: 50px;
+}
+
+
+/*==================================*/
+
+/*point wise address area - contact-info*/
+#contact-Page #address-area .contact-info{
+    border: 1px solid blue;
+    width: 25%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*==================================*/
+
+/*contact Form area*/
+#contact-Page #address-area section{
+    border: 1px solid yellow;
+    height: 80%;
+    width: 43%;
+}
+
+/*==================================*/
+
+/*on the blog area*/
+#contact-Page #address-area>div:nth-child(4){
+    border: 1px solid red;
+    height: 75%;
+    width: 12%;
+}
