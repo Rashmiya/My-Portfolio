@@ -31,31 +31,91 @@
 /*==================================*/
 
 /*social links area*/
-#contact-Page #address-area>div:first-child{
-    border: 1px solid red;
+#contact-Page #address-area> .link-area{
+    position: relative;
+    width: 10%;
+    height: 75%;
+}
+#contact-Page #address-area>.link-area>#large\ circle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 3px solid #F76F2E;
+    background-color: #1F2234;
+}
+#contact-Page #address-area> .link-area #small-circle{
+    position: absolute;
+    left: 23px;
+    width: 60%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #E7AD75;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 15%;
-    height: 75%;
+}
+#contact-Page #address-area .social-links>img{
+    width: 30px;
+    margin-bottom: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
 }
 /*each social link images*/
-#contact-Page #address-area>div:first-child>img{
-    width: 50px;
-    height: 50px;
-}
+/*#contact-Page #address-area>div:first-child>img{
+    width: 30px;
+    height: 30px;
+}*/
 
 
 /*==================================*/
 
 /*point wise address area - contact-info*/
 #contact-Page #address-area .contact-info{
-    border: 1px solid blue;
-    width: 25%;
+   /* border: 1px solid yellow;*/
+    /*width: 25%;*/
+    width: 28%;
     height: 75%;
     display: flex;
     flex-direction: column;
+}
+.contact-info .box{
+    position: relative;
+    /*padding: 14px 0;*/
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 37px;
+    display: flex;
+}
+.contact-info .box .icon{
+    padding-left: 10px;
+    min-width: 60px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info .box .icon> img{
+    position: relative;
+    bottom: 13px;
+    width: 38px;
+    height: 38px;
+}
+.contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    color: black;
+    flex-direction: column;
+}
+.contact-info .box .text h3{
+    font-size: 1.094em;
+}
+.contact-info .box .text p{
+    font-family: 'Merriweather', serif;
+    font-size: 0.72em;
+    padding-top: 8px;
 }
 
 /*==================================*/
@@ -71,7 +131,8 @@
     margin-top: 60px;
 }
 .input-group{
-    padding: 0px 27px;
+   /* padding: 0px 27px;*/
+    padding-left: 30px;
     margin-bottom: 25px;
     position: relative;
 }
@@ -99,7 +160,7 @@ label{
     font-size: 14px;
     opacity: 0.6;
 }
-button{
+#contact-Page #address-area>section:nth-child(3)>form>button{
     position: relative;
     left: 170px;
     width: 31%;
@@ -123,30 +184,42 @@ textarea:focus~label,textarea:valid~label{
 /*==================================*/
 
 /*on the blog area*/
+/*meke font sixes em wlin denna*/
 #contact-Page #address-area>div:nth-child(4){
     height: 75%;
     width: 12%;
     font-family:'Merriweather', serif;
     display: flex;
     flex-direction: column;
+   /* border: 1px solid red;*/
 }
 #contact-Page #address-area>div .blog-links{
     position: relative;
     list-style: none;
     text-align: left;
-    padding-left: 40px;
+    padding-left: 65px;
     padding-top: 34px;
-    font-size: 13.5px;
+    font-size: 0.8em;
 }
 #contact-Page #address-area>div .blog-links>li {
     padding-bottom: 20px;
 }
 #contact-Page #address-area>div:nth-child(4)>h4{
     text-align: center;
+    padding-left: 27px;
+    font-size: 0.91em;
 }
 #contact-Page #address-area>div .blog-links>li:hover{
     cursor: pointer;
     color: #FF9F43;
     opacity: 1;
     font-weight: bold;
+}
+/*phone call icon*/
+#contact-Page #address-area>div:nth-child(5)>img{
+    position: fixed;
+    bottom: 45px;
+    left: 1140px;
+    width: 85px;
+    height: 85px;
 }
