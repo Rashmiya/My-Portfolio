@@ -113,6 +113,10 @@
     justify-content: center;
     flex-direction: column;
 }
+#contact-Page #address-area .social-links{
+    margin-top: 37px;
+}
+
 #contact-Page #address-area .social-links>img{
     width: 30px;
     margin-bottom: 30px;
