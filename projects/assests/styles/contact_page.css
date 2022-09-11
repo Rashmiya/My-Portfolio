@@ -12,8 +12,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid red;
+   /* border: 1px solid red;*/
 }
+/*topic area for contact*/
+#contact-Page>.topic-area{
+    border: 1px solid green;
+}
+
+/*==================================*/
+
 /*Address area*/
 #address-area {
     /* border: 1px solid green; */
@@ -63,12 +70,6 @@
     display: flex;
     flex-direction: column;
 }
-/*each social link images*/
-/*#contact-Page #address-area>div:first-child>img{
-    width: 30px;
-    height: 30px;
-}*/
-
 
 /*==================================*/
 
@@ -184,7 +185,6 @@ textarea:focus~label,textarea:valid~label{
 /*==================================*/
 
 /*on the blog area*/
-/*meke font sixes em wlin denna*/
 #contact-Page #address-area>div:nth-child(4){
     height: 75%;
     width: 12%;
@@ -218,7 +218,7 @@ textarea:focus~label,textarea:valid~label{
 /*phone call icon*/
 #contact-Page #address-area>div:nth-child(5)>img{
     position: fixed;
-    bottom: 45px;
+    bottom: 72px;
     left: 1140px;
     width: 85px;
     height: 85px;

@@ -617,14 +617,3 @@ main>section:nth-child(8){
     height: 90vh;
     border: 1px solid black;
 }
-/*full contact area*/
-/*main>section:nth-child(9){
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    border: 1px solid blue;
-}*/
-/*footer Area*/
-footer{
-    border: 2px solid red
-}
