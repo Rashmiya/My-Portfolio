@@ -16,7 +16,56 @@
 }
 /*topic area for contact*/
 #contact-Page>.topic-area{
-    border: 1px solid green;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 13vh;
+}
+/*blue color two side borders*/
+#contact-Page> .topic-area >div:nth-child(1),#contact-Page> .topic-area >div:nth-child(2){
+    top: 14px;
+    position: absolute;
+    width: 41%;
+    height: 15px;
+    background-color: #1F2234;
+}
+#contact-Page> .topic-area >div:nth-child(1){
+    left: 0;
+}
+#contact-Page> .topic-area >div:nth-child(2){
+    right: 0;
+}
+/*"contact me"*/
+#contact-Page> .topic-area>h3{
+    text-align: center;
+    font-size: 2em;
+}
+/*"Let's Keep in touch"*/
+#contact-Page> .topic-area >h6{
+    position: absolute;
+    left: 44.5%;
+    top: 39px;
+    font-size: 0.91em;
+    font-family: 'Merriweather', serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+/*horizontal line*/
+#contact-Page> .topic-area >div:nth-child(5){
+    position: absolute;
+    height: 3%;
+    width: 14%;
+    background-color: #c4c4c4;
+    top: 86%;
+    left: 43%;
+}
+/*orange color box*/
+#contact-Page> .topic-area >div:nth-child(6){
+    position: absolute;
+    height: 7px;
+    width: 87px;
+    background-color: #fd9d3c;
+    top: 84%;
+    left: 46.5%;
 }
 
 /*==================================*/
@@ -31,7 +80,8 @@
     height: 82vh;
     border-radius: 30px;
     box-shadow: 4px 6px 4px 1px #1f2234;
-    margin-top: 62px;
+    /*margin-top: 62px;*/
+    margin-top: 99px;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(244,245,247,1) 11%, rgba(231,231,236,1) 21%, rgba(217,217,221,1) 32%, rgba(180,180,185,1) 49%, rgba(31,34,52,1) 100%);
 }
@@ -216,6 +266,7 @@ textarea:focus~label,textarea:valid~label{
     font-weight: bold;
 }
 /*phone call icon*/
+/*meka view port eke bottom right side ekt gnna*/
 #contact-Page #address-area>div:nth-child(5)>img{
     position: fixed;
     bottom: 72px;
