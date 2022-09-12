@@ -8,9 +8,9 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   /* display: flex;*/
+   /* align-items: center;
+    justify-content: center;*/
 }
 /*topic area for Activity*/
 #activity-Page>section:first-child{
@@ -70,17 +70,71 @@
 
 /*content area*/
 #activity-Page>section:nth-child(2){
-    border: 1px solid red;
+   /* border: 1px solid red;*/
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   /* justify-content: center;*/
+   /* align-items: center;*/
     height: 84vh;
     margin-top: 99px;
 }
+/*interest area*/
 #activity-Page>section:nth-child(2)>#side-area{
-    border: 1px solid green;
+    /*border: 1px solid green;*/
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
+#activity-Page>section:nth-child(2)>#side-area>h3{
+   /* border: 1px solid black;*/
+   /* font-family: 'Merriweather', serif;
+    font-family: 'Noto Serif', serif;*/
+    font-family: 'Libre Baskerville', serif;
+    color: #FF9F43;
+    font-size: 2.2em;
+    padding-left: 16%;
+    padding-top: 10px;
+}
+#activity-Page>section:nth-child(2)>#side-area>section{
+   /* border: 1px solid red;*/
+    height: 80%;
+    border-right: 1px solid #878484;
+}
+#activity-Page>section:nth-child(2)>#side-area>section> .box{
+    display: flex;
+    margin-left: 33%;
+    margin-top: 20px;
+}
+#activity-Page>section:nth-child(2)>#side-area>section> .box>.icon>img{
+    width: 44px;
+    height: 44px;
+}
+#activity-Page>section:nth-child(2)>#side-area>section> .box>.text{
+    font-family: 'Merriweather', serif;
+}
+#activity-Page>section:nth-child(2)>#side-area>section> .box>.text p {
+    padding-left: 30px;
+    padding-top: 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/*gallery area*/
 #activity-Page>section:nth-child(2)>#gallery-area{
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
+    height: 100%;
+    width: 70%;
+}
+#activity-Page>section:nth-child(2)>#gallery-area>h3{
+   /* border: 1px solid black;*/
+   /* font-family: 'Merriweather', serif;
+    font-family: 'Noto Serif', serif;*/
+    font-family: 'Libre Baskerville', serif;
+    color: #F04A1E;
+    font-size: 2.2em;
+    padding-top: 10px;
+}
+#activity-Page>section:nth-child(2)>#gallery-area>div{
+   /* border: 1px solid yellow;*/
 }
