@@ -8,14 +8,13 @@ main>section:nth-child(6){
     position: relative;
     width: 100%;
     min-height: 80vh;
-    height: 84vh;
+    height: 120vh;
     border: 1px solid green;
 }
 /*topic area for services*/
 main>section:nth-child(6)>section:first-child{
      border: 1px solid blue;
-    position: absolute;
-    /*top: -100px;*/
+    position: relative;
     width: 100%;
     min-height: 13vh;
 }
@@ -67,3 +66,15 @@ main>section:nth-child(6)>section:first-child{
 }
 
 /*===================================*/
+
+/*icon areas for services*/
+#service-page>section:nth-child(2){
+    position: relative;
+    /*top: -87px;*/
+    height: 89%;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    font-family: sans-serif;
+    border: 1px solid orange;
+}
