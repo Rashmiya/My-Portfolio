@@ -4,18 +4,18 @@
     box-sizing: border-box;
 }
 /*full Services page*/
-#service-page{
+main>section:nth-child(6){
     position: relative;
     width: 100%;
     min-height: 80vh;
     height: 84vh;
-    /*border: 1px solid red;*/
+    border: 1px solid green;
 }
 /*topic area for services*/
-#service-page>section:first-child{
-    /* border: 1px solid blue;*/
+main>section:nth-child(6)>section:first-child{
+     border: 1px solid blue;
     position: absolute;
-    top: -100px;
+    /*top: -100px;*/
     width: 100%;
     min-height: 13vh;
 }

@@ -8,14 +8,12 @@ main>section:nth-child(7){
     position: relative;
     width: 100%;
     min-height: 80vh;
-    height: 84vh;
-    /*border: 1px solid red;*/
+    height: 100vh;
+   /* border: 1px solid red;*/
 }
 /*topic area for Activity*/
 #assignment-page>section:first-child{
-   /* border: 1px solid blue;*/
-    position: absolute;
-    top: -100px;
+    position: relative;
     width: 100%;
     min-height: 13vh;
 }
@@ -71,7 +69,9 @@ main>section:nth-child(7){
 
 /*assignment content area*/
 #assignment-page>section:nth-child(2){
-    height: 87%;
+    position: relative;
+    top: -87px;
+    height: 74%;
     margin: 0;
     padding: 0;
     background: #f2f2f2;
@@ -135,4 +135,32 @@ main>section:nth-child(7){
     left: 0;
     box-sizing: border-box;
     padding: 20px;
+}
+
+/*===================================*/
+#assignment-page .view-more{
+    top: -87px;
+    position: relative;
+   /* border: 1px solid red;*/
+    height: 8vh;
+}
+#assignment-page .view-more>div:first-child{
+    position: absolute;
+    width: 11%;
+    height: 65%;
+    background-color: #323545;
+    opacity: 0.75;
+    border-radius: 10px;
+}
+#assignment-page .view-more>div:nth-child(2){
+    position: absolute;
+    right: 44px;
+    width: 11%;
+    height: 65%;
+    background-color: #323545;
+    opacity: 0.75;
+    color: #FF9F43;
+    font-size: 1.5em;
+    padding-left: 23px;
+    border-radius: 10px;
 }

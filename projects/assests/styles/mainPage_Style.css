@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 main{
     position: relative;
     width: 98.7vw;;
@@ -273,7 +278,9 @@ main>section:nth-child(2)>section:nth-child(2)>article>button{
 main>section:nth-child(3){
     position: relative;
     width: 100%;
-    height: 90vh;
+   /* height: 90vh;*/
+    min-height: 90vh;
+    height: 125vh;
    /* border: 1px solid red;*/
 }
 /*topic area for Education*/
@@ -332,7 +339,7 @@ body>main>section:nth-child(3)>section:nth-child(2){
     position: absolute;
     top: 15%;
     width: 100%;
-    height: 150%;
+    height: 80%;
     background-color: #1F2234;
     margin-top: 30px;
 }
@@ -521,9 +528,10 @@ body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(6){
 main>section:nth-child(4){
     position: relative;
     width: 100%;
-    height: 110vh;
+  /*  height: 110vh;*/
+    min-height: 80vh;
     border: 1px solid red;
-    top: 390px;
+   /* top: 390px;*/
 }
 /*topic area for "skills"*/
 main>section:nth-child(4)>section:first-child{
@@ -593,7 +601,7 @@ main>section:nth-child(4)>section:nth-child(2){
 main>section:nth-child(5){
     position: relative;
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     border: 1px solid hotpink;
 }
 /*full services area*/
