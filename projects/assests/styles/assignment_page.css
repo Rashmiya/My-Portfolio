@@ -20,7 +20,6 @@ main>section:nth-child(7){
     min-height: 13vh;
 }
 /*blue color two side borders*/
-
 #assignment-page>section:first-child>div:first-child,#assignment-page>section:first-child>div:nth-child(2){
     top: 14px;
     position: absolute;
