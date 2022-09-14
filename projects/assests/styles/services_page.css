@@ -70,11 +70,125 @@ main>section:nth-child(6)>section:first-child{
 /*icon areas for services*/
 #service-page>section:nth-child(2){
     position: relative;
-    top: -45px;
+    top: 13px;
     height: 84%;
     margin: 0;
     padding: 0;
-    background: #f2f2f2;
+    background-color: #1F2234;
     font-family: sans-serif;
+    display: flex;
+    justify-content: space-evenly;
    /* border: 1px solid orange;*/
+}
+#service-page>section:nth-child(2)>.circle-area{
+    width: 200px;
+    height: 200px;
+    background-color: #323545;
+   /* margin-left: 20px;*/
+    border-radius: 100%;
+    border: 1px solid white;
+}
+#service-page>section:nth-child(2)>main:nth-child(2){
+    align-self: self-end;
+    margin-bottom: 80px;
+}
+#service-page>section:nth-child(2)>main:nth-child(4){
+    align-self: self-end;
+    margin-bottom: 80px;
+}
+#service-page>section:nth-child(2)>main:nth-child(6){
+    align-self: self-end;
+    margin-bottom: 80px;
+}
+/*each text area*/
+#service-page>section:nth-child(2)> .circle-area>pre{
+    color: #e1dfdf;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    position: absolute;
+}
+#service-page>section:nth-child(2)>main:nth-child(1)>pre{
+    top: 130px;
+    left: 18px;
+}
+#service-page>section:nth-child(2)>main:nth-child(2)>pre:nth-child(2){
+    top: 130px;
+    left: 24px;
+}
+#service-page>section:nth-child(2)>main:nth-child(2)>pre:nth-child(3){
+    top: 155px;
+    left: 46px;
+}
+#service-page>section:nth-child(2)>main:nth-child(3)>pre:nth-child(2){
+    top: 130px;
+    left: 24px;
+}
+#service-page>section:nth-child(2)>main:nth-child(3)>pre:nth-child(3){
+    top: 155px;
+    left: 46px;
+}
+#service-page>section:nth-child(2)>main:nth-child(4)>pre:nth-child(2){
+    top: 130px;
+    left: 60px;
+}
+#service-page>section:nth-child(2)>main:nth-child(4)>pre:nth-child(3){
+    top: 155px;
+    left: 40px;
+}
+#service-page>section:nth-child(2)>main:nth-child(5)>pre{
+    top: 135px;
+    left: 38px;
+}
+#service-page>section:nth-child(2)>main:nth-child(6)>pre:nth-child(2){
+    top: 130px;
+    left: 42px;
+}
+#service-page>section:nth-child(2)>main:nth-child(6)>pre:nth-child(3){
+    top: 155px;
+    left: 66px;
+}
+
+/*each icon area*/
+#service-page>section:nth-child(2)> .circle-area> .icon{
+    /*border: 1px solid orange;*/
+    width: 40%;
+    height: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    margin: auto;
+}
+#service-page>section:nth-child(2)>main:nth-child(1)>div{
+    background: url("../images/services/web Application.png");
+    background-size: cover;
+    background-position: center;
+}
+#service-page>section:nth-child(2)>main:nth-child(2)>div{
+    background: url("../images/services/icons8-mobile-app-58 (1).png");
+    background-size: cover;
+    background-position: center;
+}
+#service-page>section:nth-child(2)>main:nth-child(3)>div{
+    background: url("../images/services/sw development.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#service-page>section:nth-child(2)>main:nth-child(4)>div{
+    background: url("../images/services/network.png");
+    background-size: cover;
+    background-position: center;
+}
+#service-page>section:nth-child(2)>main:nth-child(5)>div{
+    background: url("../images/services/UI design.png");
+    background-size: cover;
+    background-position: center;
+}
+#service-page>section:nth-child(2)>main:nth-child(6)>div{
+    background: url("../images/services/data security 2.png");
+    background-size: cover;
+    background-position: center;
 }
