@@ -78,16 +78,81 @@ main>section:nth-child(6)>section:first-child{
     font-family: sans-serif;
     display: flex;
     justify-content: space-evenly;
-   /* border: 1px solid orange;*/
+    border: 1px solid orange;
+    animation: dot-animation 5s linear infinite
 }
+@Keyframes dot-animation {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(0deg);
+        /*filter: hue-rotate(360deg);*/
+    }
+}
+/*main circle*/
 #service-page>section:nth-child(2)>.circle-area{
-    width: 200px;
-    height: 200px;
+    /*width: 200px;
+    height: 200px;*/
+    /* margin-left: 20px;*/
+    width: 190px;
+    height: 190px;
     background-color: #323545;
-   /* margin-left: 20px;*/
     border-radius: 100%;
-    border: 1px solid white;
+  /*  border: 1px solid white;*/
+    box-shadow: 4px 6px 4px 2px #0c0d12;
 }
+
+/*=================for animation ==============*/
+#service-page>section:nth-child(2)>main:first-child{
+    position: relative;
+    width: 190px;
+    height: 190px;
+}
+#service-page>section:nth-child(2)>main:first-child>span{
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));*/
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 85%;
+    height: 85%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+#service-page>section:nth-child(2)>main:first-child>span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FF9F43;
+    box-shadow: 0 0 10px #FF9F43,
+    0 0 20px #FF9F43,
+    0 0 40px #FF9F43,
+    0 0 60px #FF9F43,
+    0 0 80px #FF9F43,
+    0 0 100px #FF9F43;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+/*=============animation end======================*/
+
+
 #service-page>section:nth-child(2)>main:nth-child(2){
     align-self: self-end;
     margin-bottom: 80px;
@@ -103,38 +168,51 @@ main>section:nth-child(6)>section:first-child{
 /*each text area*/
 #service-page>section:nth-child(2)> .circle-area>pre{
     color: #e1dfdf;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     font-family: 'Merriweather', serif;
     position: absolute;
 }
 #service-page>section:nth-child(2)>main:nth-child(1)>pre{
     top: 130px;
-    left: 18px;
+  /*  left: 18px;*/
+    left: 23px;
 }
 #service-page>section:nth-child(2)>main:nth-child(2)>pre:nth-child(2){
-    top: 130px;
-    left: 24px;
+   /* top: 130px;
+    left: 24px;*/
+    top: 125px;
+    left: 33px;
 }
 #service-page>section:nth-child(2)>main:nth-child(2)>pre:nth-child(3){
-    top: 155px;
-    left: 46px;
+    /*top: 155px;
+    left: 46px;*/
+    top: 149px;
+    left: 42px;
 }
 #service-page>section:nth-child(2)>main:nth-child(3)>pre:nth-child(2){
-    top: 130px;
-    left: 24px;
+   /* top: 130px;
+    left: 24px;*/
+    top: 127px;
+    left: 62px;
 }
 #service-page>section:nth-child(2)>main:nth-child(3)>pre:nth-child(3){
-    top: 155px;
-    left: 46px;
+   /* top: 155px;
+    left: 46px;*/
+    top: 149px;
+    left: 44px;
 }
 #service-page>section:nth-child(2)>main:nth-child(4)>pre:nth-child(2){
-    top: 130px;
+   /* top: 130px;
+    left: 60px;*/
+    top: 125px;
     left: 60px;
 }
 #service-page>section:nth-child(2)>main:nth-child(4)>pre:nth-child(3){
-    top: 155px;
-    left: 40px;
+    /*top: 155px;
+    left: 40px;*/
+    top: 149px;
+    left: 45px;
 }
 #service-page>section:nth-child(2)>main:nth-child(5)>pre{
     top: 135px;
