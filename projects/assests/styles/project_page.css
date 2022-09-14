@@ -92,6 +92,7 @@ main>section:nth-child(5)>section:first-child{
     padding: 30px;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 #project-page>section:nth-child(2)>.project-container>.project-card{
     max-width: 300px;
