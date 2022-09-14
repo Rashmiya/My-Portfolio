@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*full skills page*/
+main>section:nth-child(4){
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    height: 120vh;
+    border: 1px solid green;
+}
+/*topic area for skills*/
+main>section:nth-child(4)>section:first-child{
+    border: 1px solid blue;
+    position: relative;
+    width: 100%;
+    min-height: 13vh;
+}
+/*blue color two side borders*/
+#skills-page>section:first-child>div:first-child,#skills-page>section:first-child>div:nth-child(2){
+    top: 14px;
+    position: absolute;
+    width: 41%;
+    height: 15px;
+    background-color: #1F2234;
+}
+#skills-page>section:first-child>div:first-child{
+    left: 0;
+}
+#skills-page>section:first-child>div:nth-child(2){
+    right: 0;
+}
+/*"Skills"*/
+#skills-page>section:first-child>h3{
+    text-align: center;
+    font-size: 2em;
+}
+/*"Let's take a short"*/
+#skills-page>section:first-child>h6{
+    position: absolute;
+    left: 45%;
+    top: 42px;
+    font-size: 0.91em;
+    font-family: 'Merriweather', serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+/*horizontal line*/
+#skills-page>section:first-child>div:nth-child(5){
+    position: absolute;
+    height: 3%;
+    width: 14%;
+    background-color: #c4c4c4;
+    top: 86%;
+    left: 43%;
+}
+/*orange color box*/
+#skills-page>section:first-child>div:nth-child(6){
+    position: absolute;
+    height: 7px;
+    width: 87px;
+    background-color: #fd9d3c;
+    top: 84%;
+    left: 46.5%;
+}
+
+/*===================================*/
+
+/*content area for each skill icons*/
+#skills-page>section:nth-child(2){
+    border: 1px solid red;
+    height: 84%;
+}

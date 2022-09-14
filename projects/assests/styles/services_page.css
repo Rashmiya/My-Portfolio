@@ -78,7 +78,7 @@ main>section:nth-child(6)>section:first-child{
     font-family: sans-serif;
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid orange;
+   /* border: 1px solid orange;*/
     animation: dot-animation 5s linear infinite
 }
 @Keyframes dot-animation {
