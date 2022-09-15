@@ -16,14 +16,14 @@ body>header{
 header>img{
     position: relative;
     height: 45px;
-    padding-top: 9px;
-    padding-left: 24px;
+    margin-top: 10px;
+    padding-left: 25px;
 }
 /*right side navigation panel*/
 body>header>nav{
     position: absolute;
     right: 60px;
-    top: 7px;
+    top: 20px;
 }
 /*each nav links in navigation panel*/
 body>header>nav>ul>li{
