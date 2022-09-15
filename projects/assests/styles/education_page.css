@@ -114,9 +114,46 @@ main>section:nth-child(3)>section:nth-child(2){
 }
 /*institute images*/
 #education-page>section:nth-child(2)>.education-container>.image-year>.img{
-    width: 70px;
+    width: 29%;
+    margin-top: 18px;
+    margin-bottom: 5px;
+    position: relative;
     background: white;
-    border-radius: 100%;
+}
+/*get one by one image*/
+#education-page>section:nth-child(2)>div:first-child>.image-year>.img{
+    background: url("../images/education/6.png");
+    background-position: center;
+    background-size: cover;
+}
+#education-page>section:nth-child(2)>div:nth-child(2)>.image-year>.img{
+    background: url(../images/education/5.png);
+    background-position: center;
+    background-size: cover;
+    height: 120%;
+    width: 20%;
+    margin-top: 0px;
+    margin-right: 13px;
+    margin-bottom: 30px;
+}
+#education-page>section:nth-child(2)>div:nth-child(3)>.image-year>.img{
+    background: url(../images/education/4.png);
+    background-position: center;
+    background-size: cover;
+    height: 120%;
+    width: 24%;
+    margin-top: 0px;
+    margin-right: 13px;
+    margin-bottom: 30px;
+}
+#education-page>section:nth-child(2)>div:nth-child(4)>.image-year>.img{
+    background: url("../images/education/3.png");
+    background-position: center;
+    background-size: cover;
+    height: 141%;
+    width: 17%;
+    margin-top: -7px;
+    margin-right: 13px;
 }
 /*years*/
 #education-page>section:nth-child(2)>.education-container>.image-year>.year{
