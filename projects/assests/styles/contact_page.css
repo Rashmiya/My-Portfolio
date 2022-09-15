@@ -272,9 +272,10 @@ textarea:focus~label,textarea:valid~label{
 /*phone call icon*/
 /*meka view port eke bottom right side ekt gnna*/
 #contact-Page #address-area>div:nth-child(5)>img{
-    position: fixed;
-    bottom: 72px;
-    left: 1140px;
+   /* position: fixed;*/
+    position: relative;
+    right: 81px;
+    top: 194px;
     width: 85px;
     height: 85px;
 }

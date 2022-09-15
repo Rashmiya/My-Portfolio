@@ -91,7 +91,7 @@ main>section:nth-child(3)>section:nth-child(2){
     height: 25%;
 }
 #education-page>section:nth-child(2)>.education-container>.education-content{
-   /* border: 4px solid white;*/
+   border: 1px solid #979292;
     box-shadow: 3px 4px 5px 2px #979292;
     height: 82%;
 }
