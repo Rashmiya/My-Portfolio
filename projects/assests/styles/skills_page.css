@@ -9,11 +9,11 @@ main>section:nth-child(4){
     width: 100%;
     min-height: 80vh;
     height: 120vh;
-    border: 1px solid green;
+  /*  border: 1px solid green;*/
 }
 /*topic area for skills*/
 main>section:nth-child(4)>section:first-child{
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     position: relative;
     width: 100%;
     min-height: 13vh;
@@ -69,16 +69,17 @@ main>section:nth-child(4)>section:first-child{
 
 /*content area for each skill icons*/
 #skills-page>section:nth-child(2){
-    border: 1px solid red;
-    height: 84%;
+   /* border: 1px solid red;*/
+    height: 60%;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 #skills-page>section:nth-child(2)>.container{
     width: 20%;
     position: relative;
     margin-top: 67px;
-    height: 50%;
+    height: 82%;
     border-radius: 0px 80px 0px 80px;
     display: flex;
     flex-direction: column;
@@ -121,3 +122,9 @@ main>section:nth-child(4)>section:first-child{
     padding-bottom: 17px;
 }
 
+/*================================*/
+main>section:nth-child(4)>div:nth-child(3){
+    height: 27%;
+   /* border: 1px solid black;*/
+    position: relative;
+}

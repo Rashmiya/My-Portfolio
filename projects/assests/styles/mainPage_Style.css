@@ -117,22 +117,22 @@ main>section:first-child>section>nav>img:nth-child(1):hover, main>section:first-
     border-radius: 100%;
 }
 /*========================= Home Page END ========================*/
-
-/*full About me area*/
+/*!*full About me area*!
 main>section:nth-child(2){
     position: relative;
     width: 100%;
     height: 100vh;
-   /* border: 1px solid blue;*/
+   !* border: 1px solid blue;*!
     background-color: white;
-}
+}*/
 /*topic area for "About me"*/
+/*
 main>section:nth-child(2)>section:first-child{
     position: relative;
     height: 15%;
-   /* border: 1px solid red;*/
+   !* border: 1px solid red;*!
 }
-/*"About me"*/
+!*"About me"*!
 body>main>section:nth-child(2)>section:first-child>h3{
     position: absolute;
     margin-top: 8px;
@@ -142,7 +142,7 @@ body>main>section:nth-child(2)>section:first-child>h3{
     color: black;
     margin-bottom: 0;
 }
-/*blue color two side borders*/
+!*blue color two side borders*!
 body>main>section:nth-child(2)>section:first-child>div:first-child,body>main>section:nth-child(2)>section:first-child>div:nth-child(2){
     top: 20px;
     position: absolute;
@@ -156,7 +156,7 @@ body>main>section:nth-child(2)>section:first-child>div:first-child{
 body>main>section:nth-child(2)>section:first-child>div:nth-child(2){
     right: 0;
 }
-/*"Why choose me?"*/
+!*"Why choose me?"*!
 body>main>section:nth-child(2)>section:first-child>h6{
     position: absolute;
     left: 45%;
@@ -165,7 +165,7 @@ body>main>section:nth-child(2)>section:first-child>h6{
     font-family: 'Merriweather', serif;
     color: rgba(0, 0, 0, 0.7);
 }
-/*horizontal line*/
+!*horizontal line*!
 body>main>section:nth-child(2)>section:first-child>div:nth-child(5){
     position: absolute;
     height: 3%;
@@ -174,7 +174,7 @@ body>main>section:nth-child(2)>section:first-child>div:nth-child(5){
     top: 88%;
     left: 43%;
 }
-/*orange color box*/
+!*orange color box*!
 body>main>section:nth-child(2)>section:first-child>div:nth-child(6){
     position: absolute;
     height: 8.5%;
@@ -183,6 +183,7 @@ body>main>section:nth-child(2)>section:first-child>div:nth-child(6){
     top: 86%;
     left: 46.5%;
 }
+*/
 
 /*contact Area*/
 main>section:nth-child(2)>section:nth-child(2){
@@ -273,25 +274,25 @@ main>section:nth-child(2)>section:nth-child(2)>article>button{
     box-shadow: 4px 3px 3px 3px lightgrey;
 }
 /*=======================About Me END ===========================*/
-
-/*full Education area*/
+/*
+!*full Education area*!
 main>section:nth-child(3){
     position: relative;
     width: 100%;
-   /* height: 90vh;*/
+   !* height: 90vh;*!
     min-height: 90vh;
     height: 165vh;
-   /* border: 1px solid red;*/
+   !* border: 1px solid red;*!
 }
-/*topic area for Education*/
+!*topic area for Education*!
 main>section:nth-child(3)>section:first-child{
     position: absolute;
     width: 100%;
     height: 15%;
     margin-top: 10px;
-   /* border: 2px solid blue;*/
+   !* border: 2px solid blue;*!
 }
-/*"Education"*/
+!*"Education"*!
 main>section:nth-child(3)>section:first-child>h3{
     position: absolute;
     left: 45%;
@@ -300,7 +301,7 @@ main>section:nth-child(3)>section:first-child>h3{
     color: black;
     margin-bottom: 0;
 }
-/*blue color two side borders*/
+!*blue color two side borders*!
 body>main>section:nth-child(3)>section:first-child>div:first-child,body>main>section:nth-child(3)>section:first-child>div:nth-child(2){
     top: 40px;
     position: absolute;
@@ -314,7 +315,7 @@ body>main>section:nth-child(3)>section:first-child>div:first-child{
 body>main>section:nth-child(3)>section:first-child>div:nth-child(2){
     right: 0;
 }
-/*horizontal line*/
+!*horizontal line*!
 body>main>section:nth-child(3)>section:first-child>div:nth-child(4){
     position: absolute;
     height: 3%;
@@ -323,7 +324,7 @@ body>main>section:nth-child(3)>section:first-child>div:nth-child(4){
     top: 88%;
     left: 43%;
 }
-/*orange color box*/
+!*orange color box*!
 body>main>section:nth-child(3)>section:first-child>div:nth-child(5){
     position: absolute;
     height: 8.5%;
@@ -333,9 +334,9 @@ body>main>section:nth-child(3)>section:first-child>div:nth-child(5){
     left: 46.5%;
 }
 
-/*Education Details area*/
+!*Education Details area*!
 body>main>section:nth-child(3)>section:nth-child(2){
-   /* border: 2px solid purple;*/
+   !* border: 2px solid purple;*!
     position: absolute;
     top: 15%;
     width: 100%;
@@ -343,7 +344,7 @@ body>main>section:nth-child(3)>section:nth-child(2){
     background-color: #1F2234;
     margin-top: 30px;
 }
-/*Higher Education*/
+!*Higher Education*!
 body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
     border: 6px solid #FF9F43;
     position: absolute;
@@ -352,7 +353,7 @@ body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
     width: 27%;
     color: white;
 }
-/*External Education*/
+!*External Education*!
 body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(2){
     border: 6px solid #FF9F43;
     position: absolute;
@@ -361,7 +362,7 @@ body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(2){
     left: 10%;
     color: white;
 }
-/*Secondary Education*/
+!*Secondary Education*!
 body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(3){
     border: 6px solid #FF9F43;
     position: absolute;
@@ -370,7 +371,7 @@ body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(3){
     left: 60%;
     color: white;
 }
-/*primary Education*/
+!*primary Education*!
 body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(4){
     border: 6px solid #FF9F43;
     position: absolute;
@@ -384,15 +385,15 @@ main>section:nth-child(3)>section:nth-child(2)>div h3{
     padding-left: 30%;
 }
 
-/*2021*/
-/*2020*/
-/*2018*/
-/*2015*/
-/*small circles near in the content */
+!*2021*!
+!*2020*!
+!*2018*!
+!*2015*!
+!*small circles near in the content *!
 body>main>section:nth-child(3)>section:nth-child(2)>section{
     left: 38%;
     top: 19%;
-   /* border: 1px solid yellow;*/
+   !* border: 1px solid yellow;*!
     position: absolute;
     width: 22%;
     height: 70%;
@@ -469,7 +470,7 @@ body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(8){
     left: 50%;
     top: 76%;
 }
-/*horizontal line*/
+!*horizontal line*!
 body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(9){
     position: relative;
     width: 45%;
@@ -502,7 +503,7 @@ body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(12){
     left: 4%;
     top: 69.8%;
 }
-/*main vertical line*/
+!*main vertical line*!
 body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(13){
     position: relative;
     height: 130%;
@@ -512,7 +513,7 @@ body>main>section:nth-child(3)>section:nth-child(2)>section>div:nth-child(13){
     width: 2.6%;
     left: 50%;
 }
-/*main circle*/
+!*main circle*!
 body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(6){
     background: white;
     width: 1.5%;
@@ -520,7 +521,7 @@ body>main>section:nth-child(3)>section:nth-child(2)>div:nth-child(6){
     border-radius: 100%;
     margin-left: 48.65%;
     margin-top: 3%;
-}
+}*/
 /*=======================Education END ===========================*/
 /*
 
