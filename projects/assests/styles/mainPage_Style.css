@@ -20,12 +20,18 @@ main>section:first-child{
 /*own profile*/
 main>section:first-child>aside{
     position: absolute;
-    width: 40%;
-    height: 85%;
-    top: 30px;
-    right: 50px;
-    /*border: 2px solid red;*/
+    width: 25%;
+    height: 74%;
+    top: 68px;
+    right: 198px;
+    border: 5px solid #504f5e;
+    box-shadow: 1px 1px 3px 3px #9999a9;
+    border-radius: 100%;
+    background: url("../images/myProfile.jpg");
+    background-position: center;
+    background-size: cover;
 }
+
 /*left side content Area*/
 main>section:first-child>section{
     position: absolute;
@@ -33,7 +39,7 @@ main>section:first-child>section{
     left: 75px;
     width: 50%;
     height: 90%;
-    /*border: 2px solid green;*/
+   /* border: 2px solid green;*/
 }
 /*Article area*/
 main>section:first-child>section>article{
