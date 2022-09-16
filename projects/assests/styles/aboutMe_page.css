@@ -169,7 +169,72 @@ main>section:nth-child(2)>section:nth-child(2) {
 
 /* mobile small - 0-320px */
 @media all and (max-width: 320px){
+    /*about me page*/
+    #aboutMe-page>section:first-child {
+        min-height: 17vh;
+    }
+    main>section:nth-child(2) {
+        width: 102%;
+        height: 190vh;
+    }
+    #aboutMe-page>section:first-child>div:first-child,#aboutMe-page>section:first-child>div:nth-child(2){
+        top: 20px;
+        width: 28%;
+        height: 10px;
+    }
+    #aboutMe-page>section:first-child>h3 {
+        font-size: 1.7em;
+        padding-top: 7px;
+    }
+    #aboutMe-page>section:first-child>h6{
+        left: 33%;
+        font-size: 0.8em;
+    }
+    #aboutMe-page>section:first-child>div:nth-child(5) {
+        top: 80%;
+        left: 37%;
+        width: 24%;
+    }
+    #aboutMe-page>section:first-child>div:nth-child(6) {
+        height: 6px;
+        width: 45px;
+        top: 78%;
+        left: 42.5%;
+    }
+    #aboutMe-page>section:nth-child(2)>#shadow-area {
+        top: 20px;
+        left: 20px;
+        height: 40%;
+        width: 88%;
+        border-radius: 30px;
+    }
+    #aboutMe-page>section:nth-child(2)>#shadow-area>aside {
+        top: 14px;
+        left: 15px;
+        width: 90%;
+        height: 90%;
+    }
+    #aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:first-child, #aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:nth-child(3) {
+        height: 13px;
+    }
+    #aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:nth-child(2) {
+        width: 13px;
+    }
+    #aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:nth-child(3) {
+        top: 261px;
+    }
+    #aboutMe-page>section:nth-child(2)>#shadow-area>aside>pre {
+        margin-top: 0;
+        padding-left: 7px;
+        padding-bottom: 17px;
+    }
 
+    #aboutMe-page>section:nth-child(2)>#shadow-area>article {
+        position: absolute;
+        top: 276px;
+        left: 0;
+    }
+    /*about me page end*/
 }
 /* mobile medium - [320px-375px] */
 @media all and (min-width: 320px) and (max-width: 375px){
