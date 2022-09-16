@@ -128,3 +128,30 @@ main>section:nth-child(4)>div:nth-child(3){
    /* border: 1px solid black;*/
     position: relative;
 }
+
+/*media Queries*/
+
+/* mobile small - 0-320px */
+@media all and (max-width: 320px){
+
+}
+/* mobile medium - [320px-375px] */
+@media all and (min-width: 320px) and (max-width: 375px){
+
+}
+/* mobile large -  [375px-425px] */
+@media all and (min-width: 375px) and (max-width: 425px){
+
+}
+/* tablet - [425px-768px] */
+@media all and (min-width: 425px) and (max-width: 768px){
+
+}
+/* laptop - [768px-1024px] */
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+}
+/* laptop Large - [1024px-1440px] */
+@media all and (min-width: 1024px) and (max-width: 1440px){
+
+}
