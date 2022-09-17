@@ -97,11 +97,23 @@ main>section:nth-child(2)>section:nth-child(2) {
     height: 80%;
 }
 /*point wise details*/
-#aboutMe-page>section:nth-child(2)>#shadow-area>aside>pre{
+/*#aboutMe-page>section:nth-child(2)>#shadow-area>aside>pre{
     margin-top: 31px;
     font-family: 'Lato', sans-serif;
     padding-left: 48px;
     font-size: 1em;
+}*/
+main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#mobile-small-point{
+    visibility: hidden;
+}
+main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#default-point{
+    margin-top: 31px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 48px;
+    font-size: 1em;
+   /* margin-top: 0;
+    padding-left: 7px;
+    padding-bottom: 17px;*/
 }
 /*gray color box areas*/
 #aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:first-child,#aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:nth-child(3){
@@ -165,6 +177,10 @@ main>section:nth-child(2)>section:nth-child(2) {
     box-shadow: 4px 3px 3px 3px lightgrey;
 }
 
+
+
+
+
 /*media Queries*/
 
 /* mobile small - 0-320px */
@@ -175,7 +191,10 @@ main>section:nth-child(2)>section:nth-child(2) {
     }
     main>section:nth-child(2) {
         width: 102%;
-        height: 190vh;
+        height: 186vh;
+    }
+    main>section:nth-child(2)>section:nth-child(2) {
+        height: 90%;
     }
     #aboutMe-page>section:first-child>div:first-child,#aboutMe-page>section:first-child>div:nth-child(2){
         top: 20px;
@@ -203,15 +222,15 @@ main>section:nth-child(2)>section:nth-child(2) {
     }
     #aboutMe-page>section:nth-child(2)>#shadow-area {
         top: 20px;
-        left: 20px;
+        left: 10px;
         height: 40%;
-        width: 88%;
+        width: 94%;
         border-radius: 30px;
     }
     #aboutMe-page>section:nth-child(2)>#shadow-area>aside {
         top: 14px;
         left: 15px;
-        width: 90%;
+        width: 92%;
         height: 90%;
     }
     #aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:first-child, #aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:nth-child(3) {
@@ -221,21 +240,69 @@ main>section:nth-child(2)>section:nth-child(2) {
         width: 13px;
     }
     #aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:nth-child(3) {
-        top: 261px;
+        top: 266px;
     }
-    #aboutMe-page>section:nth-child(2)>#shadow-area>aside>pre {
-        margin-top: 0;
-        padding-left: 7px;
-        padding-bottom: 17px;
+    main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#default-point {
+        display: none;
     }
 
+    main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#mobile-small-point {
+        visibility: visible;
+        display: flex;
+        position: relative;
+        right: 2px;
+        top: 5px;
+    }
+    /*catch each div areas in mobile-small-point*/
+    main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#mobile-small-point>div:nth-child(1){
+        padding-left: 5px;
+    }
+    main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#mobile-small-point>div:nth-child(2){
+        padding-left: 11px;
+    }
+    main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#mobile-small-point>div:nth-child(3){
+        padding-left: 12px;
+    }
+    main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#mobile-small-point>div>pre{
+        font-family: 'Lato', sans-serif;
+        font-size: 1.07em;
+        margin-bottom: 14px;
+    }
     #aboutMe-page>section:nth-child(2)>#shadow-area>article {
         position: absolute;
-        top: 276px;
-        left: 0;
+        top: 365px;
+        margin-top: -67px;
+        margin-left: -81px;
+        width: 347px;
+        font-size: 1.03em;
     }
-    /*about me page end*/
+    #aboutMe-page>section:nth-child(2)>#shadow-area>article>button {
+        font-size: 1.03rem;
+        left: 53%;
+        top: 20px;
+        height: 11%;
+    }
+
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* mobile medium - [320px-375px] */
 @media all and (min-width: 320px) and (max-width: 375px){
 

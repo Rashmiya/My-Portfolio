@@ -123,65 +123,80 @@ main>section:first-child>section>nav>img:nth-child(1):hover, main>section:first-
     border-radius: 100%;
 }
 
+
+
+
+
 /*media Queries*/
 
 /* mobile small - 0-320px */
-@media all and (max-width: 320px){
+@media all and (max-width: 320px) {
     /*home page*/
-    main>section:first-child {
+    main > section:first-child {
         width: 102%;
     }
-    main>section:first-child>section {
+
+    main > section:first-child > section {
         left: 15px;
         width: 92%;
     }
-    main>section:first-child>section>article {
+
+    main > section:first-child > section > article {
         height: 387px;
         padding-top: 15px;
     }
-    main>section:first-child>section>article>pre:nth-child(1) {
+
+    main > section:first-child > section > article > pre:nth-child(1) {
         font-size: 1.1rem;
     }
-    main>section:first-child>section>article>pre:nth-child(2) {
+
+    main > section:first-child > section > article > pre:nth-child(2) {
         font-size: 1.95rem;
         margin-top: 15px;
     }
-    main>section:first-child>section>article>pre:nth-child(3) {
+
+    main > section:first-child > section > article > pre:nth-child(3) {
         font-size: 1.4rem;
         padding-left: 20px;
         margin-top: 16px;
         margin-bottom: 6px;
     }
-    main>section:first-child>section>article>pre:nth-child(4) {
+
+    main > section:first-child > section > article > pre:nth-child(4) {
         font-size: 1.3rem;
         padding-left: 90px;
         margin-top: 0;
         margin-bottom: 20px;
     }
-    main>section:first-child>aside {
+
+    main > section:first-child > aside {
         width: 35%;
         height: 36%;
         top: 144px;
         right: 20px;
     }
-    main>section:first-child>section>article>button {
+
+    main > section:first-child > section > article > button {
         position: absolute;
         top: 227px;
         right: 150px;
         width: 33%;
         height: 8%;
     }
-    main>section:first-child>section>nav {
+
+    main > section:first-child > section > nav {
         bottom: 16%;
         left: 5%;
         width: 100%;
     }
-    main>section:first-child>section>nav>img:nth-child(1), main>section:first-child>section>nav>img:nth-child(2), main>section:first-child>section>nav>img:nth-child(3), main>section:first-child>section>nav>img:nth-child(4), main>section:first-child>section>nav>img:nth-child(5), main>section:first-child>section>nav>img:nth-child(6) {
+
+    main > section:first-child > section > nav > img:nth-child(1), main > section:first-child > section > nav > img:nth-child(2), main > section:first-child > section > nav > img:nth-child(3), main > section:first-child > section > nav > img:nth-child(4), main > section:first-child > section > nav > img:nth-child(5), main > section:first-child > section > nav > img:nth-child(6) {
         height: 32px;
         width: 32px;
         margin-right: 10px;
     }
-    main>section:first-child>section>article>h5 {
+
+    main > section:first-child > section > article > h5 {
         font-size: 1.27rem;
         position: absolute;
         bottom: 22px;
@@ -190,9 +205,11 @@ main>section:first-child>section>nav>img:nth-child(1):hover, main>section:first-
         margin-top: 0;
         margin-bottom: 0;
     }
-    /*home page end*/
-
 }
+
+
+
+
 
 /* mobile medium - [320px-375px] */
 @media all and (min-width: 320px) and (max-width: 375px){
