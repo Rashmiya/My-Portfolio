@@ -78,7 +78,7 @@ main>section:nth-child(7){
     font-family: sans-serif;
 }
 
-.container{
+#assignment-page>section:nth-child(2)>.container{
     max-width: 1000px;
     margin: 100px auto;
     display: flex;

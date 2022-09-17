@@ -138,6 +138,126 @@ main>section:nth-child(4)>div:nth-child(3){
 @media all and (max-width: 320px){
     main>section:nth-child(4) {
         margin-top: 60px;
+        width: 102%;
+        height: 330vh;
+    }
+    main>section:nth-child(4)>section:first-child {
+        min-height: 17vh;
+        background: #D9D9D9;
+    }
+    #skills-page>section:first-child>div:first-child, #skills-page>section:first-child>div:nth-child(2) {
+        width: 28%;
+        height: 10px;
+    }
+    #skills-page>section:first-child>h3 {
+        font-size: 1.7em;
+    }
+    #skills-page>section:first-child>h6 {
+        left: 33%;
+        font-size: 0.8em;
+        top: 37px;
+    }
+    #skills-page>section:first-child>div:nth-child(5) {
+        top: 74%;
+        left: 37%;
+        width: 24%;
+    }
+    #skills-page>section:first-child>div:nth-child(6) {
+        height: 6px;
+        width: 45px;
+        top: 72%;
+        left: 42.5%;
+    }
+    #skills-page>section:nth-child(2) {
+        display: block;
+        height: 65%;
+    }
+    #skills-page>section:nth-child(2)>.container{
+        width: 75%;
+        height: 300px;
+        margin-top: 40px;
+        background-color: #D9D9D9;
+        box-shadow: none;
+        border: none;
+        border-radius: 0px 40px 0px 40px;
+        left: 40px;
+    }
+    #skills-page>section:nth-child(2)>.container>.text-area {
+        top: 33px;
+    }
+    #skills-page>section:nth-child(2)>.container>.header {
+        padding-top: 35px;
+    }
+    main>section:nth-child(4)>div:nth-child(3) {
+        background: #D9D9D9;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        column-gap: 12px;
+        row-gap: 12px;
+        width: 320px;
+        position: relative;
+        top: -30px;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(1){
+        background: url("../images/skills/java.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(2){
+        background: url("../images/skills/mysql.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(3){
+        background: url("../images/skills/html.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(4){
+        background: url("../images/skills/css.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(5){
+        background: url("../images/skills/javasript.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(6){
+        background: url("../images/skills/bootsrap.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(7){
+        background: url("../images/skills/intellij.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(8){
+        background: url("../images/skills/figma.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(9){
+        background: url("../images/skills/wireframe.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(10){
+        background: url("../images/skills/visual studio code.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(11){
+        background: url("../images/skills/github.png");
+        background-size: cover;
+        background-position: center;
+    }
+    main>section:nth-child(4)>div:nth-child(3)>div:nth-child(12){
+        background: url("../images/skills/slack.png");
+        background-size: cover;
+        background-position: center;
     }
 }
 
