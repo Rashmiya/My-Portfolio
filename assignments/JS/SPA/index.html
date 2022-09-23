@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System - with Single Page Application</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #1stPage #formFrame1 {
+            position: relative;
+            margin: auto;
+            top: 60px;
+        }
+
+        nav #logoutIcon {
+            color: white;
+        !important;
+        }
+
+        #1stPage #SearchFormFrame1 {
+            position: relative;
+            margin: auto;
+            top: 60px;
+        }
+
+        #1stPage #tableFrame1 {
+            position: relative;
+            margin: auto;
+            top: 90px;
+
+        }
+
+        #1stPage .CustomerPage-f1 {
+            padding-top: 20px;
+        }
+
+        #1stPage .CustomerPage-f2{
+            padding-top: 20px;
+        }
+
+        #1stPage .customer-btn1, .customer-btn2 {
+            margin-top: 10px;
+        }
+        #1stPage .col-lg-5 {
+            position: relative;
+            top: 59px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<main class="container-fluid">
+    <!--header area starts-->
+    <!-- nav-->
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid fixed-top shadow-lg" id="nav">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#" style="color: #42221B;"><strong>Rashmiya POS System</strong></a>
+            <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="#" style="color: #ffda00;"><b>Customers</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #967526;">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" style="color: #967526;">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #c11537;"><b>Logout</b></a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fas fa-power-off" id="logoutIcon"></i>
+        </div>
+    </nav>   <!--header area end-->
+
+  <!-- customerPage-->
+<section id="1stPage">
+    <!--1st row-->
+    <section class="row">
+        <div class="col-11 col-lg-5" id="formFrame1">
+            <div class="badge text-wrap col-12" style="color: #161B36;position: relative;top: 10px;font-size: 13px;">
+                Add New Customer
+            </div>
+            <div class="CustomerPage-f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder="NIC"
+                                    type="text"></div>
+            <div class="CustomerPage-f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder="Name"
+                                    type="text"></div>
+            <div class="CustomerPage-f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder="Address"
+                                    type="text"></div>
+            <div class="CustomerPage-f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder="Contact"
+                                    type="text"></div>
+            <button class="customer-btn1 btn btn-success col-12" type="button"><i class="fas fa-save"></i> SAVE</button>
+        </div>
+
+        <div class="col-11 col-lg-5" id="SearchFormFrame1">
+            <div class="badge text-wrap col-12" style="color: #161B36;position: relative;top: 10px;font-size: 13px;">
+                Update Customer
+            </div>
+            <div class="CustomerPage-f2 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder="Select Customer from the table"
+                                    type="text"></div>
+            <div class="CustomerPage-f2 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder=""
+                                    type="text"></div>
+            <div class="CustomerPage-f2 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder=""
+                                    type="text"></div>
+            <button class=" customer-btn2 btn btn-primary col-12 " type="button"><i class="fas fa-edit"></i> UPDATE</button>
+            <button class=" customer-btn2 btn btn-danger col-12  " type="button"><i class="fas fa-trash-alt"></i> DELETE</button>
+        </div>
+    </section>
+
+    <!--table-->
+    <section class="row col-11 justify-content-center" id="tableFrame1">
+        <table class="table table-striped table-hover ">
+            <thead style="background-color: #242C54;color: white">
+            <tr>
+                <th scope="col">NIC</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Contact</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Rashmiya</td>
+                <td>colombo</td>
+                <td>075-#######</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Rafeek</td>
+                <td>Nugegoda</td>
+                <td>075-#######</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Nimal</td>
+                <td>malwana</td>
+                <td>075-#######</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>kasun</td>
+                <td>Pitipana</td>
+                <td>075-#######</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</section>  <!--customer Page end-->
+
+    <!--item Page starts-->
+<setion id="2ndPage">
+    <section class="row">
+        <div class="col-11 col-lg-5" id="formFrame">
+            <div class="badge text-wrap col-12" style="color: #161B36;position: relative;top: 10px;font-size: 13px;">
+                Add New Item
+            </div>
+            <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Item Code"
+                                    type="text"></div>
+            <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Item Name"
+                                    type="text"></div>
+            <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Item Price"
+                                    type="text"></div>
+            <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Item Quantity"
+                                    type="text"></div>
+            <button class="btn1 btn btn-success col-12" type="button"><i class="fas fa-save"></i>    SAVE </button>
+        </div>
+
+        <div class="col-11 col-lg-5" id="SearchFormFrame">
+            <div class="badge text-wrap col-12" style="color: #161B36;position: relative;top: 10px;font-size: 13px;">
+                Update Item
+            </div>
+            <div class="f2 ">
+                <input  aria-label=".form-control-sm example" class="form-control form-control-sm"
+                        placeholder="Select Item from the table" type="text"   ></div>
+            <div class="f2 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder=""
+                                    type="text"  ></div>
+            <div class="f2 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder=""
+                                    type="text"  ></div>
+            <button class=" btn2 btn btn-primary col-12 " type="button"><i class="fas fa-edit"></i>     UPDATE</button>
+            <button class="btn2 btn btn-danger col-12  "  type="button"><i class="fas fa-trash-alt"></i>        DELETE </button>
+        </div>
+    </section>
+    <!--table-->
+    <section class="row col-11 justify-content-center" id="tableFrame">
+        <table class="table table-striped table-hover ">
+            <thead style="background-color: #242C54;color: white">
+            <tr>
+                <th scope="col">Item Code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Item Price</th>
+                <th scope="col">Item Quantity</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Noodles</td>
+                <td>320</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Rice Flour</td>
+                <td>230</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Yogurt</td>
+                <td>60</td>
+                <td>200</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</setion>
+    <!--item Page end-->
+
+    <!--orderPage starts-->
+    <section class="row">
+        <!--1st col-->
+        <div class="col-11 col-lg-3" id="formFrame">
+            <div class="badge text-wrap col-12" style="color: #161B36;position: relative;top: 10px;font-size: 13px;">
+                Add New Order
+            </div>
+            <select aria-label=".form-select-lg example" class=" f3 form-select form-select-sm">
+                <option selected>Select Customer</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <select aria-label=".form-select-lg example" class=" f3 form-select form-select-sm">
+                <option selected>Select Item</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder="Quantity"
+                                    type="text"></div>
+            <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder="Date & time"
+                                    type="text"></div>
+
+            <button class="btn1 btn btn-success col-12" data-bs-target="#staticBackdrop" data-bs-toggle="modal"
+                    type="button">
+                <i class="fas fa-save"></i> ADD
+            </button>
+
+            <!-- Modal -->
+            <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false"
+                 id="staticBackdrop" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Rashmiya POS System</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="f4 ">
+                                <input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                       disabled placeholder="Item Name" readonly
+                                       style="background-color: #ced6e0" type="text"></div>
+                            <div class="f4 ">
+                                <input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                       disabled placeholder="Item Code" readonly
+                                       style="background-color: #ced6e0" type="text"></div>
+                            <div class="f4 ">
+                                <input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                       disabled placeholder="Item Price" readonly
+                                       style="background-color:#ced6e0" type="text"></div>
+                            <div class="f4 ">
+                                <input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                       disabled placeholder="Item Quantity" readonly
+                                       style="background-color:#ced6e0" type="text"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                            <button class="btn btn-primary" type="button">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--2nd col-->
+        <div class="col-11 col-lg-3" id="btnFrame" style="border: 2px solid #161B36; border-radius: 10px">
+            <div class="f4 ">
+                <input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                       disabled placeholder="Item Name" readonly
+                       style="background-color: #ced6e0" type="text"></div>
+            <div class="f4 ">
+                <input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                       disabled placeholder="Item Code" readonly
+                       style="background-color: #ced6e0" type="text"></div>
+            <div class="f4 ">
+                <input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                       disabled placeholder="Item Price" readonly
+                       style="background-color:#ced6e0" type="text"></div>
+            <div class="f4 ">
+                <input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                       disabled placeholder="Item Quantity" readonly
+                       style="background-color:#ced6e0" type="text"></div>
+        </div>
+        <!--3rd col-->
+        <div class="col-11 col-lg-3" id="SearchFormFrame">
+            <div class="badge text-wrap col-12" style="color: #161B36;position: relative;top: 10px;font-size: 13px;">
+                Update Order
+            </div>
+            <div class="f2 ">
+                <input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                       placeholder="Select Order from the table" type="text"></div>
+            <div class="f2 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder=""
+                                    type="text"></div>
+            <div class="f2 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
+                                    placeholder=""
+                                    type="text"></div>
+            <button class=" btn2 btn btn-primary col-12 " type="button"><i class="fas fa-edit"></i> UPDATE</button>
+            <button class="btn2 btn btn-danger col-12  " type="button"><i class="fas fa-trash-alt"></i> DELETE</button>
+        </div>
+    </section>
+    <!--table-->
+    <section class="row col-11 justify-content-center" id="tableFrame">
+        <table class="table table-striped table-hover ">
+            <thead style="background-color: #242C54;color: white">
+            <tr>
+                <th scope="col">Order ID</th>
+                <th scope="col">Date/Time</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>2022-05-12</td>
+                <td>Rashmiya</td>
+                <td>Kiri Samba 5kg</td>
+                <td>2</td>
+                <td>2100</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>2022-06-10</td>
+                <td>Rafeek</td>
+                <td>Anchor milk powder</td>
+                <td>4</td>
+                <td>3200</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>2022-08-12</td>
+                <td>Nimal</td>
+                <td>Cococnut</td>
+                <td>3</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>2022-10-09</td>
+                <td>kasun</td>
+                <td>Rice Flour</td>
+                <td>5</td>
+                <td>2500</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <!--orderPage Ends-->
+</main>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+    $("#1stPage").css('display', 'block');
+    $("#2ndPage").css('display', 'none');
+    $("#3rdPage").css('display', 'none');
+
+    $("#customerBTN").click(function () {
+        $("#1stPage").css('display', 'block');
+        $("#2ndPage").css('display', 'none')
+        $("#3rdPage").css('display', 'none')
+        $("#homePage").css('display', 'none')
+    });
+    $("#itemBTN").click(function () {
+        $("#1stPage").css('display', 'none')
+        $("#2ndPage").css('display', 'block')
+        $("#3rdPage").css('display', 'none')
+        $("#homePage").css('display', 'none')
+    });
+    $("#orderBTN").click(function () {
+        $("#1stPage").css('display', 'none')
+        $("#2ndPage").css('display', 'none')
+        $("#3rdPage").css('display', 'block')
+        $("#homePage").css('display', 'none')
+    });
+
+    $("#homeBtn").click(function () {
+        $("#1stPage").css('display', 'none')
+        $("#2ndPage").css('display', 'none')
+        $("#3rdPage").css('display', 'none')
+        $("#homePage").css('display', 'block')
+    });
+</script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</body>
+</html>
