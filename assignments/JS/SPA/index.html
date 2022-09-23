@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        #1stPage #formFrame1 {
+        #customerPage #formFrame1 {
             position: relative;
             margin: auto;
             top: 60px;
@@ -17,31 +17,31 @@
         !important;
         }
 
-        #1stPage #SearchFormFrame1 {
+        #customerPage #SearchFormFrame1 {
             position: relative;
             margin: auto;
             top: 60px;
         }
 
-        #1stPage #tableFrame1 {
+        #customerPage #tableFrame1 {
             position: relative;
             margin: auto;
             top: 90px;
 
         }
 
-        #1stPage .CustomerPage-f1 {
+        #customerPage .CustomerPage-f1 {
             padding-top: 20px;
         }
 
-        #1stPage .CustomerPage-f2{
+        #customerPage .CustomerPage-f2{
             padding-top: 20px;
         }
 
-        #1stPage .customer-btn1, .customer-btn2 {
+        #customerPage .customer-btn1, .customer-btn2 {
             margin-top: 10px;
         }
-        #1stPage .col-lg-5 {
+        #customerPage .col-lg-5 {
             position: relative;
             top: 59px;
             left: 0;
@@ -81,7 +81,7 @@
     </nav>   <!--header area end-->
 
   <!-- customerPage-->
-<section id="1stPage">
+<section id="customerPage">
     <!--1st row-->
     <section class="row">
         <div class="col-11 col-lg-5" id="formFrame1">
@@ -163,7 +163,7 @@
 </section>  <!--customer Page end-->
 
     <!--item Page starts-->
-<setion id="2ndPage">
+<setion id="itemPage">
     <section class="row">
         <div class="col-11 col-lg-5" id="formFrame">
             <div class="badge text-wrap col-12" style="color: #161B36;position: relative;top: 10px;font-size: 13px;">
@@ -232,6 +232,7 @@
     <!--item Page end-->
 
     <!--orderPage starts-->
+    <section id="orderPage">
     <section class="row">
         <!--1st col-->
         <div class="col-11 col-lg-3" id="formFrame">
@@ -383,41 +384,42 @@
             </tbody>
         </table>
     </section>
+    </section>
     <!--orderPage Ends-->
 </main>
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script>
-    $("#1stPage").css('display', 'block');
-    $("#2ndPage").css('display', 'none');
-    $("#3rdPage").css('display', 'none');
+    $("#customerPage").css('display', 'block');
+    $("#itemPage").css('display', 'none');
+    $("#homePage").css('display', 'none');
+    $("#orderPage").css('display', 'none');
 
     $("#customerBTN").click(function () {
-        $("#1stPage").css('display', 'block');
-        $("#2ndPage").css('display', 'none')
-        $("#3rdPage").css('display', 'none')
+        $("#customerPage").css('display', 'block');
+        $("#itemPage").css('display', 'none')
+        $("#orderPage").css('display', 'none')
         $("#homePage").css('display', 'none')
     });
     $("#itemBTN").click(function () {
-        $("#1stPage").css('display', 'none')
-        $("#2ndPage").css('display', 'block')
-        $("#3rdPage").css('display', 'none')
+        $("#customerPage").css('display', 'none')
+        $("#itemPage").css('display', 'block')
+        $("#orderPage").css('display', 'none')
         $("#homePage").css('display', 'none')
     });
     $("#orderBTN").click(function () {
-        $("#1stPage").css('display', 'none')
-        $("#2ndPage").css('display', 'none')
-        $("#3rdPage").css('display', 'block')
+        $("#customerPage").css('display', 'none')
+        $("#itemPage").css('display', 'none')
+        $("#orderPage").css('display', 'block')
         $("#homePage").css('display', 'none')
     });
 
     $("#homeBtn").click(function () {
-        $("#1stPage").css('display', 'none')
-        $("#2ndPage").css('display', 'none')
-        $("#3rdPage").css('display', 'none')
+        $("#customerPage").css('display', 'none')
+        $("#itemPage").css('display', 'none')
+        $("#orderPage").css('display', 'none')
         $("#homePage").css('display', 'block')
     });
 </script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
 </body>
 </html>
