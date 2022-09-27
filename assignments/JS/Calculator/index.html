@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple Calculator</title>
+    <title>Basic Calculator</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="assets/fonts/css/all.min.css" rel="stylesheet">
@@ -122,7 +122,7 @@
         $("#input-area").val(currentDisplayValue);
     }));
 
-    /*when click each Arithmetic buttons*/
+    /*when click each symbol buttons*/
     if($("#devision").click(function (){
         $("#input-area").val($("#input-area").val()+$("#devision").text());
     }));
@@ -139,6 +139,21 @@
         $("#input-area").val($("#input-area").val()+$("#dot").text());
     }));
 
+    /*when click equal symbol calculation will start*/
+    /*01st method - using eval function*/
+    if($("#equal").click(function (){
+        try{
+            let lastDisplayValue = $("#input-area").val();
+            let finalOutput = eval(lastDisplayValue);
+            $("#input-area").val(finalOutput);
+        }catch{
+            $("#input-area").val("ERROR !");
+        }
+    }));
+
+    function clearInputField(){
+        $("#input-area").val("");
+    }
     /*when click clear button*/
     $("#clear").click(function(){
         $("#input-area").val("");

@@ -81,4 +81,6 @@ main>section>div:first-child{
 }
 #container #button-area button:hover{
     cursor: pointer;
+    background-color: #d3d9d587;
 }
+
