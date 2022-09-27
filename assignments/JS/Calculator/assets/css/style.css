@@ -55,6 +55,7 @@ main>section>div:first-child{
     height: 45px;
     margin-left: 8px;
     font-family: 'Anybody';
+    cursor: pointer;
 }
 
 #container #button-area{
@@ -77,4 +78,7 @@ main>section>div:first-child{
 #container #button-area #equal{
     background-color: #d3d9d587;
     font-weight: bolder;
+}
+#container #button-area button:hover{
+    cursor: pointer;
 }

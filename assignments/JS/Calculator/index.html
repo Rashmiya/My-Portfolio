@@ -34,7 +34,7 @@
             <!--numbers-->
             <div id="button-area">
                 <button id="seven">7</button>
-                <button id="eight">8</button>
+                <button id="eight" >8</button>
                 <button id="nine">9</button>
                 <button id="devision">/</button>
 
@@ -59,6 +59,90 @@
 
 <script src="assets/js/jquery-3.6.1.min.js"></script>  <!--plug the jQuery -->
 <script>
+    /*when click each number button*/
+    if($("#seven").click(function (){
+       /* alert("seven");*/
+        let previousDisplayValue = $("#input-area").val();
+        let numberSeven = $("#seven").text();
+        let currentDisplayValue  = previousDisplayValue+numberSeven;
+        $("#input-area").val(currentDisplayValue);
+    }));
+    if($("#eight").click(function (){
+        let previousDisplayValue = $("#input-area").val();
+        let numberEight = $("#eight").text();
+        let currentDisplayValue  = previousDisplayValue+numberEight;
+        $("#input-area").val(currentDisplayValue);
+    }));
+    if($("#nine").click(function (){
+        let previousDisplayValue = $("#input-area").val();
+        let numberNine = $("#nine").text();
+        let currentDisplayValue  = previousDisplayValue+numberNine;
+        $("#input-area").val(currentDisplayValue);
+    }));
+    if($("#four").click(function (){
+        let previousDisplayValue = $("#input-area").val();
+        let numberFour = $("#four").text();
+        let currentDisplayValue  = previousDisplayValue+numberFour;
+        $("#input-area").val(currentDisplayValue);
+    }));
+    if($("#five").click(function (){
+        let previousDisplayValue = $("#input-area").val();
+        let numberFive = $("#five").text();
+        let currentDisplayValue  = previousDisplayValue+numberFive;
+        $("#input-area").val(currentDisplayValue);
+    }));
+    if($("#six").click(function (){
+        let previousDisplayValue = $("#input-area").val();
+        let numberSix = $("#six").text();
+        let currentDisplayValue  = previousDisplayValue+numberSix;
+        $("#input-area").val(currentDisplayValue);
+    }));
+    if($("#one").click(function (){
+        let previousDisplayValue = $("#input-area").val();
+        let numberOne = $("#one").text();
+        let currentDisplayValue  = previousDisplayValue+numberOne;
+        $("#input-area").val(currentDisplayValue);
+    }));
+    if($("#two").click(function (){
+        let previousDisplayValue = $("#input-area").val();
+        let numberTwo = $("#two").text();
+        let currentDisplayValue  = previousDisplayValue+numberTwo;
+        $("#input-area").val(currentDisplayValue);
+    }));
+    if($("#three").click(function (){
+        let previousDisplayValue = $("#input-area").val();
+        let numberThree = $("#three").text();
+        let currentDisplayValue  = previousDisplayValue+numberThree;
+        $("#input-area").val(currentDisplayValue);
+    }));
+    if($("#zero").click(function (){
+        let previousDisplayValue = $("#input-area").val();
+        let numberZero = $("#zero").text();
+        let currentDisplayValue  = previousDisplayValue+numberZero;
+        $("#input-area").val(currentDisplayValue);
+    }));
+
+    /*when click each Arithmetic buttons*/
+    if($("#devision").click(function (){
+        $("#input-area").val($("#input-area").val()+$("#devision").text());
+    }));
+    if($("#multiplication").click(function (){
+        $("#input-area").val($("#input-area").val()+$("#multiplication").text());
+    }));
+    if($("#minus").click(function (){
+        $("#input-area").val($("#input-area").val()+ $("#minus").text());
+    }));
+    if($("#addition").click(function (){
+        $("#input-area").val($("#input-area").val()+$("#addition").text());
+    }));
+    if($("#dot").click(function (){
+        $("#input-area").val($("#input-area").val()+$("#dot").text());
+    }));
+
+    /*when click clear button*/
+    $("#clear").click(function(){
+        $("#input-area").val("");
+    });
 
 </script>
 </body>
