@@ -1,0 +1,80 @@
+body>main{
+    height:  99.5vh;
+    background: url("../images/red-paint-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#container{
+    border:1px solid darkgray;
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    box-shadow: -1px 1px 3px 3px #ffffff;
+}
+/*top area before the button area*/
+main>section>div:first-child{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+}
+#container #textField{
+    color: white;
+    font-size: 1.4em;
+    font-family: 'Anybody', cursive;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+#container>div:first-child>div{
+    height: 100%;
+}
+#container #input-area{
+    height: 95%;
+    width: 98%;
+    text-align-last: end;
+   /* font-size: 2em;*/
+    font-size: 2.5em;
+    font-family: sans-serif;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+#container>div:first-child>div>button{
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid #c1b4b4;
+    box-shadow: 3px 1px 3px 0px #d1c8c8;
+    color: black;
+    font-size: 2em;
+    border-radius: 20px;
+    margin-top: 65px;
+    width: 65px;
+    height: 45px;
+    margin-left: 8px;
+    font-family: 'Anybody';
+}
+
+#container #button-area{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+    height: 67%;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 8px 8px 8px 8px;
+}
+#container #button-area button{
+    background-color: transparent;
+    border: 2px solid #b9a6a6;
+    box-shadow: 2px 2px 4px 2px #cf5454;
+    color: white;
+    font-size: 2em;
+    border-radius: 20px;
+}
+#container #button-area #equal{
+    background-color: #d3d9d587;
+    font-weight: bolder;
+}
