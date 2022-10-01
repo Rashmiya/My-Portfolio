@@ -88,18 +88,18 @@
         Add New Customer
       </div>
       <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
-                              placeholder="NIC"
+                              id="txtCustomerNIC" placeholder="NIC"
                               type="text"></div>
       <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
-                              placeholder="Name"
+                              id="txtCustomerName" placeholder="Name"
                               type="text"></div>
       <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
-                              placeholder="Address"
+                              id="txtCustomerAddress" placeholder="Address"
                               type="text"></div>
       <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm"
-                              placeholder="Contact"
+                              id="txtCustomerContactNumber" placeholder="Contact"
                               type="text"></div>
-      <button class="btn1 btn btn-success col-12" type="button"><i class="fas fa-save"></i> SAVE</button>
+      <button class="btn1 btn btn-success col-12" type="button" id="saveCustomer"><i class="fas fa-save"></i> SAVE</button>
     </div>
 
     <div class="col-11 col-lg-5" id="SearchFormFrame">
@@ -162,5 +162,32 @@
 </main>
 
 <script src="../POS/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>   <!--import the jQuery-->
+<script>
+  var customerArray =[];
+
+  /*when click save customer button*/
+  $("#saveCustomer").click(function (){
+      // step_01-get values from textFields
+    var customerNIC = $("#txtCustomerNIC").val();
+    var customerName = $("#txtCustomerName").val();
+    var customerAddress = $("#txtCustomerAddress").val();
+    var customerContact = $("txtCustomerContactNumber").val();
+
+    // step_02 - create customer object with values
+    var customerObject ={
+      NIC : customerNIC,
+      name : customerName,
+      address : customerAddress,
+      contactNumber : customerContact
+    }
+    // step_03 - create global array $ pass object values into Array
+    customerArray.push(customerObject);
+    console.log(customerArray);
+  //  load data into customerTable
+    /*loadAllCustomers();*/
+  });
+
+</script>
 </body>
 </html>

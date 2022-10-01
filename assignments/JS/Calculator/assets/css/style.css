@@ -8,7 +8,8 @@ body>main{
     border:1px solid darkgray;
     position: absolute;
     width: 25%;
-    height: 80%;
+   /* height: 80%;*/
+    height: 83%;
     left: 0;
     right: 0;
     top: 0;
@@ -20,7 +21,8 @@ body>main{
 main>section>div:first-child{
     display: flex;
     flex-direction: column;
-    height: 30%;
+   /* height: 30%;*/
+    height: 33%;
 }
 #container #textField{
     color: white;
@@ -50,22 +52,26 @@ main>section>div:first-child{
     color: black;
     font-size: 2em;
     border-radius: 20px;
-    margin-top: 65px;
+   /* margin-top: 65px;*/
     width: 65px;
     height: 45px;
     margin-left: 8px;
     font-family: 'Anybody';
     cursor: pointer;
+    top: 122px;
+    margin-left: 10px;
 }
 
 #container #button-area{
     display: grid;
     grid-template-rows: repeat(4,1fr);
     grid-template-columns: repeat(4,1fr);
-    height: 67%;
+    /*height: 67%;*/
+    height: 64%;
     column-gap: 10px;
     row-gap: 10px;
-    padding: 8px 8px 8px 8px;
+   /* padding: 8px 8px 8px 8px;*/
+    padding: 7px 8px 8px 8px;
 }
 #container #button-area button{
     background-color: transparent;
@@ -83,4 +89,14 @@ main>section>div:first-child{
     cursor: pointer;
     background-color: #d3d9d587;
 }
-
+#container>div:first-child>div>#previous-Value{
+    background-color: #fdf9f9;
+    position: absolute;
+    left: 2px;
+    width: 99%;
+    height: 6%;
+    border-radius: 10px;
+    text-align: end;
+    color: #c6bfbf;
+    font-size: 1.5em;
+}

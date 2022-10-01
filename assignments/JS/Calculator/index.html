@@ -28,6 +28,7 @@
                 <textField id="textField">Standard Calculator</textField>
                 <div>
                  <button id="clear">C</button>
+                 <textField id="previous-Value"></textField>
                 <input type="text" id="input-area" placeholder="0" >
                 </div>
             </div>
@@ -59,6 +60,12 @@
 
 <script src="assets/js/jquery-3.6.1.min.js"></script>  <!--plug the jQuery -->
 <script>
+    /*at starting level*/
+    let currentValue = null;
+    let previousValue = null;
+    let tempValue = null;
+    let operator = null;
+
     /*when click each number button*/
     if($("#seven").click(function (){
        /* alert("seven");*/
@@ -121,6 +128,9 @@
         let currentDisplayValue  = previousDisplayValue+numberZero;
         $("#input-area").val(currentDisplayValue);
     }));
+    if($("#dot").click(function (){
+        $("#input-area").val($("#input-area").val()+$("#dot").text());
+    }));
 
     /*when click each symbol buttons*/
     if($("#devision").click(function (){
@@ -135,12 +145,37 @@
     if($("#addition").click(function (){
         $("#input-area").val($("#input-area").val()+$("#addition").text());
     }));
-    if($("#dot").click(function (){
-        $("#input-area").val($("#input-area").val()+$("#dot").text());
-    }));
+  /*  var operator=null;
+    if($("#equal").click(function () {
+        /!*me tika ywanna one*!/
+        let typedText = $('#calCurrentNumber').text();
+        if (tempValue === null) {
+            operator = previousNum.charAt(parseInt(previousNum.length - 2));
 
+            let prevNum = previousNum.split("" + operator + "");
+            let firstNum = prevNum[0];
+
+            equalLogics(firstNum, typedText, operator);
+            $('#calCurrentNumber').text(tempValue);
+
+            //check each operator
+        }
+    }));*/
+   /* function equalLogics(numb1,numb2,operator) {
+        if (operator === "+") {
+            tempValue = parseFloat(numb1) + parseFloat(numb2);
+            console.log(tempValue);
+        } else if (operator === "-") {
+            tempValue = parseFloat(numb1) - parseFloat(numb2);
+        } else if (operator === "/") {
+            tempValue = parseFloat(numb1) / parseFloat(numb2);
+        } else if (operator === "*") {
+            tempValue = parseFloat(numb1) * parseFloat(numb2);
+        }
+    }
+*/
     /*when click equal symbol calculation will start*/
-    /*01st method - using eval function*/
+   /* 01st method*/
     if($("#equal").click(function (){
         try{
             let lastDisplayValue = $("#input-area").val();
@@ -153,10 +188,13 @@
 
     function clearInputField(){
         $("#input-area").val("");
+       /* $("#previous-Value").val(" ");*/
     }
+
     /*when click clear button*/
     $("#clear").click(function(){
         $("#input-area").val("");
+        $("#previous-Value").text("");
     });
 
 </script>
