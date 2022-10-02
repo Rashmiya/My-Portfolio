@@ -81,14 +81,14 @@
         Add New Item
       </div>
       <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Item Code"
-                              type="text"></div>
+                              id="txtItemCode" type="text"></div>
       <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Item Name"
-                              type="text"></div>
+                              id="txtItemName" type="text"></div>
       <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Item Price"
-                              type="text"></div>
+                              id="txtItemPrice" type="text"></div>
       <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Item Quantity"
-                              type="text"></div>
-      <button class="btn1 btn btn-success col-12" type="button"><i class="fas fa-save"></i>    SAVE </button>
+                              id="txtItemQuantity" type="text"></div>
+      <button class="btn1 btn btn-success col-12" type="button" id="btnSaveItems"><i class="fas fa-save"></i>    SAVE </button>
     </div>
 
     <div class="col-11 col-lg-5" id="SearchFormFrame">
@@ -117,30 +117,45 @@
         <th scope="col">Item Quantity</th>
       </tr>
       </thead>
-      <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Noodles</td>
-        <td>320</td>
-        <td>25</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Rice Flour</td>
-        <td>230</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Yogurt</td>
-        <td>60</td>
-        <td>200</td>
-      </tr>
+      <tbody id="tblItems">
+
       </tbody>
     </table>
   </section>
 </main>
 
 <script src="../POS/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>   <!--import the jQuery-->
+<script>
+  var itemsArray = [];
+
+  /*when click save items button*/
+  $("#btnSaveItems").click(function(){
+    var itemCode = $("#txtItemCode").val();
+    var itemName = $("#txtItemName").val();
+    var itemPrice = $("#txtItemPrice").val();
+    var itemQuantity = $("#txtItemQuantity").val();
+
+    var itemObject = {
+      code : itemCode,
+      name : itemName,
+      price : itemPrice,
+      quantity : itemQuantity
+    }
+    itemsArray.push(itemObject);
+    console.log(itemsArray);
+    loadAllItems();
+  });
+
+  function loadAllItems(){
+    $("#tblItems").empty();
+
+    for (var items of itemsArray) {
+      var row = "<tr><td>"+items.code+'</td><td>'+items.name+'</td><td>'+items.price+'</td><td>'+items.quantity+'</td></tr>';
+      $("#tblItems").append(row);
+    }
+
+  }
+</script>
 </body>
 </html>
