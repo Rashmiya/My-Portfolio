@@ -9,13 +9,19 @@ body>header{
     box-shadow: 0px -1px 10px 3px rgba(10, 10, 10, 0.91);
 }
 /*"RR" logo in left side of header area*/
-header>img:first-child{
-    position: relative;
-    height: 45px;
-    margin-top: 10px;
-    padding-left: 25px;
-}
+/*header>img:first-child{*/
 header>img:nth-child(2){
+   /* position: relative;*/
+    position: absolute;
+    height: 45px;
+    /*margin-top: 10px;*/
+    margin-top: -56px;
+    padding-left: 25px;
+
+   /* background-color: #011C49;*/
+}
+/*header>img:nth-child(2){*/
+header>img:nth-child(3){
    /* display: none;*/
     visibility: hidden;
 }
@@ -55,12 +61,14 @@ header>nav>ul>li:hover{
     body>header>nav {
         display: none;
     }
-    header>img:first-child{
+    /*header>img:first-child{*/
+    header>img:nth-child(2){
         height: 38px;
         margin-top: 16px;
         padding-left: 19px;
     }
-    header>img:nth-child(2){
+   /* header>img:nth-child(2){*/
+    header>img:nth-child(3){
         visibility: visible;
         position: relative;
         bottom: 3px;
