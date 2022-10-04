@@ -105,6 +105,9 @@ main>section:first-child>section>article>button{
     border-radius: 21px;
     margin-left: 185px;
 }
+main>section:first-child>section>article>button:hover{
+    border: 3.5px solid #F04A1E;
+}
 /*social media link area*/
 main>section:first-child>section>nav{
     position: absolute;
