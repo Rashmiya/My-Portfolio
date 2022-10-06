@@ -1,0 +1,26 @@
+main #header-top{
+    width: 100vw;
+    height: 18vh;
+    border: 1px solid red;
+}
+main #header-top #logo-icon{
+    border: 1px solid green;
+    height: 117px;
+}
+main #header-top #header-text{
+    border: 1px solid green;
+    height: 117px;
+}
+main #header-top #label{
+    border: 1px solid green;
+    height: 117px;
+}
+main #header-top #date-time{
+    border: 1px solid green;
+    height: 117px;
+}
+main #content-area{
+    width: 100vw;
+    height: 82vh;
+    border: 1px solid blue;
+}
