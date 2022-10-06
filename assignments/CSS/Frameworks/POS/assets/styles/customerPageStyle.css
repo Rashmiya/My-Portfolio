@@ -56,3 +56,39 @@ main #content-area{
     height: 82vh;
    /* border: 1px solid blue;*/
 }
+
+/*====================navigation links=====================*/
+main #content-area #nav-links{
+    position: absolute;
+    top: 281px;
+    left: 22px;
+    height: 280px;
+    width: 255px;
+}
+main #content-area #nav-links>#Home #homeIcon,main #content-area #nav-links>#Customers #customerIcon, main #content-area #nav-links>#Items #itemIcon,main #content-area #nav-links>#Invoices #orderIcon{
+    position: relative;
+}
+main #content-area #nav-links>#Home #homeIcon, main #content-area #nav-links>#Customers #customerIcon, main #content-area #nav-links>#Items #itemIcon {
+    left: 4px;
+}
+main #content-area #nav-links>#Invoices #text4,main #content-area #nav-links>#Items #text3,main #content-area #nav-links>#Customers #text2, main #content-area #nav-links>#Home #text1{
+    text-align: end;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    color: #572C24;
+    font-family: revert;
+}
+main #content-area #nav-links>#Home #text1 {
+    width: 78%;
+    font-weight: bold;
+}
+main #content-area #nav-links>#Items #text3{
+    width: 70%;
+}
+main #content-area #nav-links>#Invoices #text4{
+    width: 84%;
+}
+main #content-area #nav-links>#Home,main #content-area #nav-links>#Customers,main #content-area #nav-links>#Items,main #content-area #nav-links>#Invoices{
+    height: 75px;
+}
