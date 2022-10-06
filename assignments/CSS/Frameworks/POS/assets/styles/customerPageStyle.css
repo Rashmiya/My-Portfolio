@@ -1,26 +1,58 @@
 main #header-top{
     width: 100vw;
     height: 18vh;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
-main #header-top #logo-icon{
+/*main #header-top #logo-icon{
     border: 1px solid green;
     height: 117px;
+}*/
+main #header-top #logo-icon #logo-image{
+    height: 125px;
+    padding-left: 20px;
+    border-right: 2.5px solid #F0CB9E;
 }
-main #header-top #header-text{
+/*main #header-top #header-text{
     border: 1px solid green;
     height: 117px;
+}*/
+main #header-top #header-text #main-topic h1{
+    font-family: 'Ledger', serif;
+    position: relative;
+    padding-left: 22px;
+    margin-top: 27px;
+    font-size: 1.65em;
 }
-main #header-top #label{
+main #header-top #header-text #second-topic h2{
+    color: #BD8F31;
+    font-size: 1em;
+    font-family: 'Lemonada', cursive;
+    font-weight: bold;
+    padding-left: 87px;
+}
+/*main #header-top #label{
     border: 1px solid green;
     height: 117px;
+}*/
+main #header-top #label img{
+    padding-left: 198px;
+    margin-top: 21px;
+    height: 85px;
 }
-main #header-top #date-time{
+main #header-top #label>label{
+    color: #BD8F31;
+    font-size: 1.4em;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+/*main #header-top #date-time{
     border: 1px solid green;
     height: 117px;
-}
+}*/
 main #content-area{
     width: 100vw;
     height: 82vh;
-    border: 1px solid blue;
+   /* border: 1px solid blue;*/
 }
