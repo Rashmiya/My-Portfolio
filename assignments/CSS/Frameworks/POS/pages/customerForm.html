@@ -22,6 +22,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
 <main>
@@ -35,10 +36,8 @@
       <div id="header-text">
         <div id="main-topic">
           <h1>Rashmiya POS System</h1>
-          <!--<div class="align-self-start">Rashmiya POS System</div>-->
         </div>
         <div id="second-topic">
-          <!--<div class="align-self-end">all products in one place</div>-->
           <h2 class="text-center">all products in one place</h2>
         </div>
       </div>
@@ -51,7 +50,6 @@
         <label>2:45:00</label>-->
       </div>
     </div>
-   <!-- </div>-->
   </section>
   <!--content area-->
   <section id="content-area">
@@ -123,7 +121,50 @@
 
       <!--update area-->
     <div id="update-area">
+      <div class="d-flex flex-column mb-3">
+        <div class="p-2" id="1">
+          <div class="d-flex justify-content-center">
+            <button type="button" id="btnViewAll" class="btn ">View All</button>
+            <img src="../assets/images/refresh-brown.png" class="img-fluid" alt="Refresh button">
+            <button type="button" id="btnAddCustomer" class="btn btn-lg">+ New Customer</button>
+          </div>
+        </div>
+        <div class="p-2" id="2">
+          <div class="d-flex justify-content-start">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search Customer by ID/NIC">
+            </div>
+            <button type="button" id="btnSearch" class="btn ">Search</button>
+          </div>
+        </div>
+        <div class="p-2" id="3">
+          <form>
+            <div class="row mb-4">
 
+              <label for="inputID" class="col-sm-2 col-form-label">ID/NIC</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputID">
+              </div>
+
+              <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputName">
+              </div>
+
+              <label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputAddress">
+              </div>
+
+              <label for="inputContactNumber" class="col-sm-2 col-form-label">Contact</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputContactNumber">
+              </div>
+            </div>
+            <button type="button" id="btnUpdateCustomer" class="btn  btn-lg">Update Customer</button>
+          </form>
+        </div>
+      </div>
     </div>
     </div>
   </section>

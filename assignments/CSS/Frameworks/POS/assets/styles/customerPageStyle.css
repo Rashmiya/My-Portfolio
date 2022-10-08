@@ -1,21 +1,12 @@
 main #header-top{
     width: 100vw;
     height: 18vh;
-    /*border: 1px solid red;*/
 }
-/*main #header-top #logo-icon{
-    border: 1px solid green;
-    height: 117px;
-}*/
 main #header-top #logo-icon #logo-image{
     height: 125px;
     padding-left: 20px;
     border-right: 2.5px solid #F0CB9E;
 }
-/*main #header-top #header-text{
-    border: 1px solid green;
-    height: 117px;
-}*/
 main #header-top #header-text #main-topic h1{
     font-family: 'Ledger', serif;
     position: relative;
@@ -30,10 +21,6 @@ main #header-top #header-text #second-topic h2{
     font-weight: bold;
     padding-left: 87px;
 }
-/*main #header-top #label{
-    border: 1px solid green;
-    height: 117px;
-}*/
 main #header-top #label img{
     padding-left: 198px;
     margin-top: 21px;
@@ -47,29 +34,14 @@ main #header-top #label>label{
     position: relative;
     top: 5px;
 }
-/*main #header-top #date-time{
-    border: 1px solid green;
-    height: 117px;
-}*/
 main #content-area{
     width: 100vw;
     height: 82vh;
-   /* border: 1px solid blue;*/
 }
-
 /*====================navigation links=====================*/
 main #content-area #nav-links{
-  /*  position: absolute;
-    top: 166px;
-    left: -5px;
-    height: 491px;
-    width: 255px;*/
-   /* margin-top: 53px;
-    width: 255px;
-    border: 1px solid black;*/
     margin-top: 53px;
     width: 177px;
-    /* border: 1px solid black; */
     margin-left: 20px;
 }
 main #content-area #nav-links>#Home #homeIcon,main #content-area #nav-links>#Customers #customerIcon, main #content-area #nav-links>#Items #itemIcon,main #content-area #nav-links>#Invoices #orderIcon{
@@ -88,6 +60,8 @@ main #content-area #nav-links>#Invoices #text4,main #content-area #nav-links>#It
 }
 main #content-area #nav-links>#Home #text1 {
     width: 78%;
+}
+main #content-area #nav-links>#Customers #text2 {
     font-weight: bold;
 }
 main #content-area #nav-links>#Items #text3{
@@ -114,8 +88,6 @@ main #content-area #nav-links>#Logout>.container-fluid{
 main #content-area #nav-links>#Logout #text5{
     padding-top: 2px;
 }
-
-
 /*==============table area===============*/
 main #content-area .table{
     border: 1px solid blue;
@@ -126,12 +98,103 @@ main #content-area .table .table-head{
     border-color: #A65444;
     text-align: center;
 }
-
+main #content-area .table #tblCustomer{
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+}
 /*===============update area===================*/
-#content-area #update-area{
+main #content-area #update-area{
     width: 870px;
     height: 78vh;
-    border: 1px solid red;
     background: #D9D9D9;
     border-radius: 45px;
 }
+main #content-area #update-area>.d-flex{
+    height: 100%;
+}
+main #content-area #update-area>.d-flex>div:nth-child(1){
+    border-bottom: 1px solid #A65444;
+    height: 17%;
+}
+main #content-area #update-area>.d-flex>div:nth-child(1) #btnViewAll{
+    margin-left: -69px;
+    margin-top: 15px;
+    height: 45px;
+    width: 93px;
+    border: 3px solid #F0CB9E;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    background-color: white;
+}
+main #content-area #update-area>.d-flex>div:nth-child(1) #btnAddCustomer{
+     border: 2px solid #6E382D;
+     height: 50px;
+     text-align: center;
+     margin-top: 14px;
+     position: relative;
+     left: 75px;
+    background-color: white;
+ }
+main #content-area #update-area>.d-flex>div:nth-child(1) .img-fluid{
+    margin-top: 10px;
+    height: 53px;
+}
+main #content-area #update-area>.d-flex >div:nth-child(2){
+    height: 15%;
+}
+main #content-area #update-area>.d-flex >div:nth-child(2) .form-control{
+    width: 271px;
+    height: 50px;
+    margin-right: 53px;
+    border: 2px solid #F0CB9E;
+    border-radius: 10px;
+    font-size: 1.2em;
+    background-color: #F6F0F0;
+}
+main #content-area #update-area>.d-flex >div:nth-child(2) #btnSearch{
+    height: 45px;
+    width: 93px;
+    border: 3px solid #F0CB9E;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    margin-top: 5px;
+    background-color: white;
+}
+main #content-area #update-area >.d-flex>div:nth-child(3){
+    height: 67%;
+    margin: 0px 30px 0px 30px;
+}
+
+main #content-area #update-area >.d-flex>div:nth-child(3) form{
+    background-color: #FDF9F9;
+    height: 100%;
+    border-radius: 20px;
+}
+main #content-area #update-area >.d-flex>div:nth-child(3) form label{
+    padding-left: 40px;
+    padding-top: 30px;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+}
+main #content-area #update-area >.d-flex>div:nth-child(3) form #btnUpdateCustomer{
+    border: 2px solid #6E382D;
+    height: 45px;
+    text-align: center;
+    position: relative;
+    left: 91px;
+    bottom: 9px;
+    background-color: white;
+}
+main #content-area #update-area >.d-flex>div:nth-child(3) form div>div{
+    padding-left: 60px;
+    margin-top: 25px;
+}
+main #content-area #update-area >.d-flex>div:nth-child(3) form div>div>input{
+    width: 90%;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    background-color: transparent;
+}
+
