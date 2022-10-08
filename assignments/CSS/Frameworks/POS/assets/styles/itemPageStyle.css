@@ -1,0 +1,215 @@
+main #header-top{
+    width: 100vw;
+    height: 18vh;
+}
+main #header-top #logo-icon #logo-image{
+    height: 125px;
+    padding-left: 20px;
+    border-right: 2.5px solid #F0CB9E;
+}
+main #header-top #header-text #main-topic h1{
+    font-family: 'Ledger', serif;
+    position: relative;
+    padding-left: 22px;
+    margin-top: 27px;
+    font-size: 1.65em;
+}
+main #header-top #header-text #second-topic h2{
+    color: #BD8F31;
+    font-size: 1em;
+    font-family: 'Lemonada', cursive;
+    font-weight: bold;
+    padding-left: 87px;
+}
+main #header-top #label img{
+    padding-left: 198px;
+    margin-top: 21px;
+    height: 85px;
+}
+main #header-top #label>label{
+    color: #BD8F31;
+    font-size: 1.4em;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+main #content-area{
+    width: 100vw;
+    height: 82vh;
+}
+/*====================navigation links=====================*/
+main #content-area #nav-links{
+    margin-top: 53px;
+    width: 177px;
+    margin-left: 20px;
+}
+main #content-area #nav-links>#Home #homeIcon,main #content-area #nav-links>#Customers #customerIcon, main #content-area #nav-links>#Items #itemIcon,main #content-area #nav-links>#Invoices #orderIcon{
+    position: relative;
+}
+main #content-area #nav-links>#Home #homeIcon, main #content-area #nav-links>#Customers #customerIcon, main #content-area #nav-links>#Items #itemIcon, main #content-area #nav-links>#Logout #logoutIcon {
+    left: 4px;
+}
+main #content-area #nav-links>#Invoices #text4,main #content-area #nav-links>#Items #text3,main #content-area #nav-links>#Customers #text2, main #content-area #nav-links>#Home #text1, main #content-area #nav-links>#Logout #text5{
+    text-align: end;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    color: #572C24;
+    font-family: revert;
+}
+main #content-area #nav-links>#Home #text1 {
+    width: 78%;
+}
+main #content-area #nav-links>#Items #text3{
+    width: 70%;
+    font-weight: bold;
+}
+main #content-area #nav-links>#Invoices #text4{
+    width: 84%;
+}
+main #content-area #nav-links>#Home,main #content-area #nav-links>#Customers,main #content-area #nav-links>#Items,main #content-area #nav-links>#Invoices{
+    height: 85px;
+}
+
+main #content-area #nav-links>#Logout{
+    width: 145px;
+    margin-left: 30px;
+    height: 95px;
+    margin-top: 20px;
+}
+main #content-area #nav-links>#Logout>.container-fluid{
+    border: 5px solid #F0CB9E;
+    border-radius: 10px;
+    height: 52px;
+}
+main #content-area #nav-links>#Logout #text5{
+    padding-top: 2px;
+}
+/*==============table area===============*/
+main #content-area .table{
+    border: 1px solid blue;
+    margin: 0px 10px 0px 22px;
+}
+main #content-area .table .table-head{
+    background-color: #F6F2F2;
+    border-color: #A65444;
+    text-align: center;
+}
+main #content-area .table #tblItem{
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+}
+/*===============update area===================*/
+main #content-area #update-area{
+    width: 870px;
+    height: 78vh;
+    background: #D9D9D9;
+    border-radius: 45px;
+}
+main #content-area #update-area>.d-flex{
+    height: 100%;
+}
+main #content-area #update-area>.d-flex>div:nth-child(1){
+    border-bottom: 1px solid #A65444;
+    height: 17%;
+}
+main #content-area #update-area>.d-flex>div:nth-child(1) #btnViewAll{
+    margin-left: -69px;
+    margin-top: 15px;
+    height: 45px;
+    width: 93px;
+    border: 3px solid #F0CB9E;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    background-color: white;
+}
+main #content-area #update-area>.d-flex>div:nth-child(1) #btnAddItems{
+    border: 2px solid #6E382D;
+    height: 50px;
+    text-align: center;
+    margin-top: 14px;
+    position: relative;
+    left: 75px;
+    background-color: white;
+}
+main #content-area #update-area>.d-flex>div:nth-child(1) .img-fluid{
+    margin-top: 10px;
+    height: 53px;
+}
+main #content-area #update-area>.d-flex >div:nth-child(2){
+    height: 15%;
+}
+main #content-area #update-area>.d-flex >div:nth-child(2) .form-control{
+    width: 271px;
+    height: 50px;
+    margin-right: 53px;
+    border: 2px solid #F0CB9E;
+    border-radius: 10px;
+    font-size: 1.2em;
+    background-color: #F6F0F0;
+}
+main #content-area #update-area>.d-flex >div:nth-child(2) #btnSearch{
+    height: 45px;
+    width: 93px;
+    border: 3px solid #F0CB9E;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    margin-top: 5px;
+    background-color: white;
+}
+main #content-area #update-area >.d-flex>div:nth-child(3){
+    height: 67%;
+    margin: 0px 30px 0px 30px;
+}
+
+main #content-area #update-area >.d-flex>div:nth-child(3) form{
+    background-color: #FDF9F9;
+    height: 100%;
+    border-radius: 20px;
+}
+main #content-area #update-area >.d-flex>div:nth-child(3) form label{
+    padding-left: 40px;
+    padding-top: 30px;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+}
+main #content-area #update-area >.d-flex>div:nth-child(3) form #btnUpdateItem{
+    border: 2px solid #6E382D;
+    height: 45px;
+    text-align: center;
+    position: relative;
+    left: 109px;
+    bottom: 9px;
+    background-color: white;
+}
+main #content-area #update-area >.d-flex>div:nth-child(3) form div>div{
+    padding-left: 60px;
+    margin-top: 25px;
+}
+main #content-area #update-area >.d-flex>div:nth-child(3) form div>div>input{
+    width: 90%;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+/*====================model view =================================*/
+main #content-area #update-area #staticBackdrop .modal-body #AddItemForm{
+    height: 265px;
+    width: 100%;
+}
+main #content-area #update-area #staticBackdrop .modal-body #AddItemForm .f1{
+    height: 45px;
+    margin-bottom: 20px;
+}
+main #content-area #update-area #staticBackdrop .modal-body #AddItemForm .f1 input{
+    height: 100%;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #6E382D;
+}
+
