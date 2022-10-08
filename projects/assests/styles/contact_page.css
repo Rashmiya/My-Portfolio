@@ -117,7 +117,7 @@
     margin-top: 37px;
 }
 
-#contact-Page #address-area .social-links>img{
+#contact-Page #address-area .social-links .contactPageIcons{
     width: 30px;
     margin-bottom: 30px;
     height: 30px;
@@ -125,6 +125,10 @@
     flex-direction: column;
 }
 
+#contact-Page #address-area .social-links .contactPageIcons:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+}
 /*==================================*/
 
 /*point wise address area - contact-info*/

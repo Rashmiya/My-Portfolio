@@ -116,22 +116,12 @@ main>section:first-child>section>nav{
     left: 5%;
 }
 /*each link by separately*/
-/*main>section:first-child>section>nav>img:nth-child(1), main>section:first-child>section>nav>img:nth-child(2), main>section:first-child>section>nav>img:nth-child(3), main>section:first-child>section>nav>img:nth-child(4), main>section:first-child>section>nav>img:nth-child(5), main>section:first-child>section>nav>img:nth-child(6){
+main>section:first-child>section>nav:nth-child(2) .icons{
     height: 38px;
     width: 38px;
     margin-right: 30px;
 }
-main>section:first-child>section>nav>img:nth-child(1):hover, main>section:first-child>section>nav>img:nth-child(2):hover, main>section:first-child>section>nav>img:nth-child(3):hover, main>section:first-child>section>nav>img:nth-child(4):hover, main>section:first-child>section>nav>img:nth-child(5):hover, main>section:first-child>section>nav>img:nth-child(6):hover{
-    cursor: pointer;
-    border:  3.75px solid #F04A1E;
-    border-radius: 100%;
-}*/
-main>section:first-child>section>nav>.icons{
-    height: 38px;
-    width: 38px;
-    margin-right: 30px;
-}
-main>section:first-child>section>nav>.icons:hover{
+main>section:first-child>section>nav:nth-child(2) .icons:hover{
     cursor: pointer;
     border:  3.75px solid #F04A1E;
     border-radius: 100%;
