@@ -267,12 +267,6 @@ textarea:focus~label,textarea:valid~label{
     padding-left: 27px;
     font-size: 0.91em;
 }
-#contact-Page #address-area>div .blog-links>li:hover{
-    cursor: pointer;
-    color: #FF9F43;
-    opacity: 1;
-    font-weight: bold;
-}
 #contact-Page #address-area>div .blog-links>li>a:hover{
     cursor: pointer;
     color: #FF9F43;
