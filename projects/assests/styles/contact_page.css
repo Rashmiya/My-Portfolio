@@ -234,6 +234,9 @@ label{
     font-size: 15px;
     cursor: pointer;
 }
+#contact-Page #address-area>section:nth-child(3)>form>button:hover{
+    box-shadow: 4px 3px 3px 2px #E7AD75;
+}
 input:focus~label,input:valid~label,
 textarea:focus~label,textarea:valid~label{
     top: -30px;
@@ -279,7 +282,7 @@ textarea:focus~label,textarea:valid~label{
 }
 /*phone call icon*/
 /*meka view port eke bottom right side ekt gnna*/
-#contact-Page #address-area>div:nth-child(5)>img{
+#contact-Page #address-area>div:nth-child(5) #callIcon{
     position: fixed;
    /* position: relative;
     right: 81px;
