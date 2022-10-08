@@ -198,3 +198,19 @@ main #content-area #update-area >.d-flex>div:nth-child(3) form div>div>input{
     background-color: transparent;
 }
 
+/*====================model view =================================*/
+main #content-area #update-area #staticBackdrop .modal-body #AddCustomerForm{
+    height: 265px;
+    width: 100%;
+}
+main #content-area #update-area #staticBackdrop .modal-body #AddCustomerForm .f1{
+    height: 45px;
+    margin-bottom: 20px;
+}
+main #content-area #update-area #staticBackdrop .modal-body #AddCustomerForm .f1 input{
+    height: 100%;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #6E382D;
+}
+

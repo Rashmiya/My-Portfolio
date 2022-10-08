@@ -120,14 +120,46 @@
       </table>
 
       <!--update area-->
-    <div id="update-area">
+      <div id="update-area">
       <div class="d-flex flex-column mb-3">
         <div class="p-2" id="1">
           <div class="d-flex justify-content-center">
             <button type="button" id="btnViewAll" class="btn ">View All</button>
             <img src="../assets/images/refresh-brown.png" class="img-fluid" alt="Refresh button">
-            <button type="button" id="btnAddCustomer" class="btn btn-lg">+ New Customer</button>
+          <!--  <button type="button" id="btnAddCustomer" class="btn btn-lg">+ New Customer</button>-->
+            <button type="button" id="btnAddCustomer" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              + New Customer
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">ADD New Customer</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!--text Fields for add customer-->
+                    <div class="col-11 col-lg-5" id="AddCustomerForm">
+                      <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer ID/NIC"
+                                              id="txtCustomerID" type="text"></div>
+                      <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer Name"
+                                              id="txtCustomerName" type="text"></div>
+                      <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer Address"
+                                              id="txtCustomerAddress" type="text"></div>
+                      <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Contact Number "
+                                              id="txtCustomerContact" type="text"></div>
+                  </div>
+                    <!--model end-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">ADD Customer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
         </div>
         <div class="p-2" id="2">
           <div class="d-flex justify-content-start">
@@ -137,6 +169,7 @@
             <button type="button" id="btnSearch" class="btn ">Search</button>
           </div>
         </div>
+
         <div class="p-2" id="3">
           <form>
             <div class="row mb-4">
@@ -166,6 +199,7 @@
         </div>
       </div>
     </div>
+
     </div>
   </section>
 </main>
