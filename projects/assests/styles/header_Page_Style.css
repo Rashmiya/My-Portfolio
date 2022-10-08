@@ -41,6 +41,10 @@ body>header>nav>ul>li{
     font-size: 18px;
     padding-left: 17px;
 }
+body>header>nav>ul>li>a{
+    text-decoration: none;
+    color: #d2cdcd;
+}
 /*add effects and transitions when hover the links*/
 header>nav>ul>li:hover{
     cursor: pointer;
