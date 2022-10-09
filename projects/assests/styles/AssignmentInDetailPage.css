@@ -262,3 +262,93 @@ main #Case-04 .content-area .content-4 .web{
     left: 210px;
     position: relative;
 }
+
+
+
+/*05*/
+main #Case-05 {
+    width: 95%;
+    height: 310px;
+    /* border: 1px solid red;*/
+    position: relative;
+    top: 150px;
+    margin-left: 35px;
+    display: flex;
+}
+/*==================================*/
+main #Case-05 .content-area{
+    height: 100%;
+    width: 60%;
+    /*border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
+}
+main #Case-05 .content-area .content-1{
+    /*border: 1px solid black;*/
+    font-family: 'Alfa Slab One', cursive;
+    height: 15%;
+    font-size: 1.5em;
+}
+main #Case-05 .content-area .content-1>p{
+    margin: 10px 0px 10px 0px;
+    padding-left: 155px;
+}
+main #Case-05 .content-area .content-2{
+    /* border: 1px solid black;*/
+    font-family: 'Red Hat Display', sans-serif;
+    height: 12%;
+    font-size: 1.2em;
+}
+main #Case-05 .content-area .content-2>p{
+    margin: 0px 0px 8px 0px;
+    padding-left: 150px;
+}
+main #Case-05 .content-area .content-3{
+    /*border:1px solid black;*/
+    font-family: 'Noto Sans Display', sans-serif;
+    color: #808080;
+    height: 120px;
+}
+main #Case-05 .content-area .content-3>p{
+    padding-left: 30px;
+    letter-spacing: 0.5px;
+}
+main #Case-05 .content-area .content-4{
+    /* border:1px solid black;*/
+    padding-top: 25px;
+}
+main #Case-05 .content-area .content-4 .github{
+    width: 30px;
+    height: 30px;
+    left: 200px;
+    position: relative;
+}
+main #Case-05 .content-area .content-4 .web{
+    width: 28px;
+    height: 28px;
+    left: 210px;
+    position: relative;
+}
+/*=========================*/
+main #Case-05 .image-area{
+    height: 123%;
+    width: 20%;
+    /* border: 1px solid black;*/
+    padding-left: 178px;
+}
+main #Case-05 .image-area .border{
+    width: 339px;
+    height: 345px;
+    background-color: #b7a9a9;
+    position: relative;
+    right: 80px;
+}
+main #Case-05 .image-area .imgSpace>img{
+    width: 355px;
+    height: 350px;
+}
+main #Case-05 .image-area .imgSpace{
+    position: absolute;
+    top: 30px;
+    right: 108px;
+}
