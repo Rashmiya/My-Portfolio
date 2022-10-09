@@ -264,7 +264,6 @@ main #Case-04 .content-area .content-4 .web{
 }
 
 
-
 /*05*/
 main #Case-05 {
     width: 95%;
@@ -315,7 +314,7 @@ main #Case-05 .content-area .content-3>p{
 }
 main #Case-05 .content-area .content-4{
     /* border:1px solid black;*/
-    padding-top: 25px;
+    padding-top: 30px;
 }
 main #Case-05 .content-area .content-4 .github{
     width: 30px;
