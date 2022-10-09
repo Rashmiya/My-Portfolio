@@ -176,6 +176,10 @@ main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#default-point{
     font-size: 1.1rem;
     box-shadow: 4px 3px 3px 3px lightgrey;
 }
+#aboutMe-page>section:nth-child(2)>#shadow-area>article>button:hover{
+    box-shadow: 4px 3px 3px 2px #FF9F43;
+}
+
 
 
 
