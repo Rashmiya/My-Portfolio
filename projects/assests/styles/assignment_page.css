@@ -8,7 +8,7 @@ main>section:nth-child(7){
     position: relative;
     width: 100%;
     min-height: 80vh;
-    height: 100vh;
+    height: 90vh;
    /* border: 1px solid red;*/
 }
 /*topic area for Activity*/
@@ -71,10 +71,10 @@ main>section:nth-child(7){
 #assignment-page>section:nth-child(2){
     position: relative;
     top: -87px;
-    height: 74%;
+    height: 65%;
     margin: 0;
     padding: 0;
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
     font-family: sans-serif;
 }
 
@@ -85,9 +85,10 @@ main>section:nth-child(7){
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.card{
+#assignment-page>section:nth-child(2)>.container .card{
     position: relative;
-    margin: 60px 0;
+   /* margin: 60px 0;*/
+    margin: 20px 0;
     width: 250px;
     height: 350px;
     background: #ffffff;
@@ -97,12 +98,12 @@ main>section:nth-child(7){
     box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
 }
 
-.card:hover{
+#assignment-page>section:nth-child(2)>.container .card:hover{
     z-index: 1000;
     transform: perspective(2000px) rotate(-10deg);
     box-shadow: inset 20px 0 50px rgba(0,0,0,0.5);
 }
-.card>.image-box{
+#assignment-page>section:nth-child(2)>.container .card>.image-box{
     position: relative;
     width: 100%;
     height: 100%;
@@ -113,11 +114,11 @@ main>section:nth-child(7){
     transition: 1s;
 }
 
-.card:hover>.image-box{
+#assignment-page>section:nth-child(2)>.container .card:hover>.image-box{
     transform: rotateY(-120deg);
 }
 
-.card>.image-box>img{
+#assignment-page>section:nth-child(2)>.container .card>.image-box>img{
     position: absolute;
     top: 0;
     left: 0;
@@ -125,11 +126,7 @@ main>section:nth-child(7){
     height: 100%;
     object-fit: cover;
 }
-.container>.card> .image-box>img{
-    width: 250px;
-    height: 350px;
-}
-.card .details{
+#assignment-page>section:nth-child(2)>.container .card .details{
     position: absolute;
     top: 0;
     left: 0;
@@ -139,21 +136,32 @@ main>section:nth-child(7){
 
 /*===================================*/
 #assignment-page .view-more{
-    top: -87px;
+    bottom: 50px;
     position: relative;
    /* border: 1px solid red;*/
     height: 8vh;
 }
-#assignment-page .view-more>div:first-child{
+/*#assignment-page .view-more>div:first-child{
     position: absolute;
     width: 11%;
     height: 65%;
     background-color: #323545;
     opacity: 0.75;
     border-radius: 10px;
-}
-#assignment-page .view-more>div:nth-child(2){
+}*/
+#assignment-page .view-more #btnViewMore{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
     position: absolute;
+    right: 60px;
+    text-align: center;
+    width: 150px;
+    height: 44px;
+    border: 3px solid #FF9F43;
+    background-color: #383b50;;
+   /* position: absolute;
     right: 44px;
     width: 11%;
     height: 65%;
@@ -162,7 +170,10 @@ main>section:nth-child(7){
     color: #FF9F43;
     font-size: 1.5em;
     padding-left: 23px;
-    border-radius: 10px;
+    border-radius: 10px;*/
+}
+#assignment-page .view-more #btnViewMore:hover{
+    cursor: pointer;
 }
 
 /*media Queries*/
