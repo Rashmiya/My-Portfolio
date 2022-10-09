@@ -1,28 +1,38 @@
 
 main{
     width: 100vw;
-    background-color: #EEEEEE;
-
+    background-color:  #f5efef;;
 }
 main #Case-02,  main #Case-03,  main #Case-04, main #Case-05{
-    width: 100%;
+    top: 55px;
+    /* padding-left: 35px; */
+    margin-left: 35px;
+    /* left: 35px; */
+    width: 95%;
     height: 310px;
-    /* border: 1px solid red;*/
+    /* border: 1px solid red; */
     position: relative;
     display: flex;
 }
-/*main #Case-02 .border{
-    width: 40%;
-    height: 100%;
-    background-color: red;
-}*/
 main #Case-02 .image-area{
-    height: 100%;
+    height: 115%;
     width: 40%;
-    /*  border:1px solid black;*/
-    background: url("../images/assignment/case_2.png");
-    background-size: cover;
-    background-position: center;
+  /*  border:1px solid black;*/
+}
+main #Case-02 .image-area .border{
+    width: 480px;
+    height: 320px;
+    background-color: #d9d2d2;
+}
+main #Case-02 .image-area .imgSpace>img{
+    width: 491px;
+    height: 327px;
+}
+
+main #Case-02 .image-area .imgSpace{
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 main #Case-02 .content-area{
     height: 100%;
@@ -52,12 +62,17 @@ main #Case-02 .content-area .content-2>p{
     padding-left: 100px;
 }
 main #Case-02 .content-area .content-3{
-    border:1px solid black;
+    /*border:1px solid black;*/
     font-family: 'Noto Sans Display', sans-serif;
     color: #808080;
+    height: 120px;
+}
+main #Case-02 .content-area .content-3>p{
+    padding-left: 30px;
+    letter-spacing: 0.5px;
 }
 main #Case-02 .content-area .content-4{
-    border:1px solid black;
+   /* border:1px solid black;*/
 }
 main #Case-02 .content-area .content-4 #github{
     width: 30px;
