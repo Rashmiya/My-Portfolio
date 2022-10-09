@@ -1,7 +1,7 @@
 
 main{
     width: 98.75vw;
-    height: 300vh;
+    height: 350vh;
     background-color:  #f5efef;;
 }
 
@@ -351,3 +351,93 @@ main #Case-05 .image-area .imgSpace{
     top: 30px;
     right: 35px;
 }
+
+
+
+
+/*06*/
+main #Case-06{
+    top: 465px;
+    /* padding-left: 35px; */
+    margin-left: 35px;
+    /* left: 35px; */
+    width: 95%;
+    height: 310px;
+    /*border: 1px solid red;*/
+    position: relative;
+    display: flex;
+}
+main #Case-06 .image-area{
+    height: 103%;
+    width: 40%;
+    /*  border:1px solid black;*/
+}
+main #Case-06 .image-area .border{
+    width: 473px;
+    height: 279px;
+    background-color: #d9d2d2;
+}
+main #Case-06 .image-area .imgSpace>img{
+    width: 484px;
+    height: 290px;
+}
+main #Case-06 .image-area .imgSpace{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+/*==================================*/
+main #Case-06 .content-area{
+    height: 100%;
+    width: 60%;
+    /*  border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
+}
+main #Case-06 .content-area .content-1{
+    /*  border: 1px solid black;*/
+    font-family: 'Alfa Slab One', cursive;
+    height: 15%;
+    font-size: 1.5em;
+}
+main #Case-06 .content-area .content-1>p{
+    margin: 10px 0px 10px 0px;
+    padding-left: 155px;
+}
+main #Case-06 .content-area .content-2{
+    /* border: 1px solid black;*/
+    font-family: 'Red Hat Display', sans-serif;
+    height: 12%;
+    font-size: 1.2em;
+}
+main #Case-06 .content-area .content-2>p{
+    margin: 0px 0px 8px 0px;
+    padding-left: 102px;
+}
+main #Case-06 .content-area .content-3{
+    /*border:1px solid black;*/
+    font-family: 'Noto Sans Display', sans-serif;
+    color: #808080;
+    height: 120px;
+}
+main #Case-06 .content-area .content-3>p{
+    padding-left: 30px;
+    letter-spacing: 0.5px;
+}
+main #Case-06 .content-area .content-4{
+    /* border:1px solid black;*/
+}
+main #Case-06 .content-area .content-4 .github{
+    width: 30px;
+    height: 30px;
+    left: 200px;
+    position: relative;
+}
+main #Case-06 .content-area .content-4 .web{
+    width: 28px;
+    height: 28px;
+    left: 210px;
+    position: relative;
+}
+
+
