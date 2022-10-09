@@ -1,7 +1,7 @@
 
 main{
     width: 98.75vw;
-    height: 200vh;
+    height: 300vh;
     background-color:  #f5efef;;
 }
 
@@ -271,7 +271,7 @@ main #Case-05 {
     height: 310px;
     /* border: 1px solid red;*/
     position: relative;
-    top: 150px;
+    top: 390px;
     margin-left: 35px;
     display: flex;
 }
@@ -301,7 +301,7 @@ main #Case-05 .content-area .content-2{
 }
 main #Case-05 .content-area .content-2>p{
     margin: 0px 0px 8px 0px;
-    padding-left: 150px;
+    padding-left: 160px;
 }
 main #Case-05 .content-area .content-3{
     /*border:1px solid black;*/
@@ -331,24 +331,24 @@ main #Case-05 .content-area .content-4 .web{
 }
 /*=========================*/
 main #Case-05 .image-area{
-    height: 123%;
-    width: 20%;
+    height: 100%;
+    width: 30%;
     /* border: 1px solid black;*/
     padding-left: 178px;
 }
 main #Case-05 .image-area .border{
-    width: 339px;
-    height: 345px;
+    width: 462px;
+    height: 270px;
     background-color: #b7a9a9;
     position: relative;
-    right: 80px;
+    right: 78px;
 }
 main #Case-05 .image-area .imgSpace>img{
-    width: 355px;
-    height: 350px;
+    width: 475px;
+    height: 281px;
 }
 main #Case-05 .image-area .imgSpace{
     position: absolute;
     top: 30px;
-    right: 108px;
+    right: 35px;
 }
