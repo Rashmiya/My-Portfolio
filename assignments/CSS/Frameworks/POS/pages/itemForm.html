@@ -153,7 +153,7 @@
                       <!--model end-->
                       <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">ADD Item</button>
+                        <button type="button" class="btn btn-success" id="btnAddItem">ADD Item</button>
                       </div>
                     </div>
                   </div>
@@ -207,6 +207,25 @@
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 
 <script src="../assets/js/jquery-3.6.1.min.js"></script>  <!--import the jQuery library-->
+<script>
+  var itemArray=[];
+  /*Add Item*/
+  $("#btnAddItem").click(function (){
+    var itemCode = $("#txtItemCode").val();
+    var itemDescription = $("#txtDescription").val();
+    var itemUnitPrice = $("#txtUnitPrice").val();
+    var itemQtyOnHand = $("#txtQtyOnHand").val();
+
+    var itemObject={
+      code:itemCode,
+      description:itemDescription,
+      unitPrice:itemUnitPrice,
+      qtyOnHand:itemQtyOnHand
+    }
+    itemArray.push(itemObject);
+    console.log(itemArray);
+  });
+</script>
 </body>
 </html>
 
