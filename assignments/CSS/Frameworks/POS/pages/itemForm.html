@@ -226,7 +226,24 @@
    /* console.log(itemArray);*/
     //  load data into itemTable
     loadAllItems();
+    bindRowClickEvents();
   });
+
+  function bindRowClickEvents(){
+    $("#tblItem>tr").click(function(){
+      /*get each texts separately from clicked table row-using traversing*/
+      let itemCode = $(this).children().eq(0).text();
+      let description = $(this).children().eq(1).text();
+      let unitPrice = $(this).children().eq(2).text();
+      let qtyOnHand = $(this).children().eq(3).text();
+
+      /*set table values to textFields*/
+      $("#inputCode").val(itemCode);
+      $("#inputDescription").val(description);
+      $("#inputUnitPrice").val(unitPrice);
+      $("#inputQtyOnHand").val(qtyOnHand);
+    });
+  }
 
   function loadAllItems(){
     $("#tblItem").empty();
@@ -235,7 +252,6 @@
       var row = "<tr><td>"+items.code+'</td><td>'+items.description+'</td><td>'+items.unitPrice+'</td><td>'+items.qtyOnHand+'</td></tr>';
       $("#tblItem").append(row);
     }
-
   }
 </script>
 </body>
