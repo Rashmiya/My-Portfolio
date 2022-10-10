@@ -105,7 +105,7 @@
       </div>
 
       <!--table area-->
-      <table class="table table-bordered">
+      <table class="table table-bordered table-hover">
         <thead class="table-head">
         <tr>
           <th scope="col">Item Code</th>
@@ -208,7 +208,7 @@
 
 <script src="../assets/js/jquery-3.6.1.min.js"></script>  <!--import the jQuery library-->
 <script>
-  var itemArray=[];
+  var itemsArray=[];
   /*Add Item*/
   $("#btnAddItem").click(function (){
     var itemCode = $("#txtItemCode").val();
@@ -222,9 +222,21 @@
       unitPrice:itemUnitPrice,
       qtyOnHand:itemQtyOnHand
     }
-    itemArray.push(itemObject);
-    console.log(itemArray);
+    itemsArray.push(itemObject);
+   /* console.log(itemArray);*/
+    //  load data into itemTable
+    loadAllItems();
   });
+
+  function loadAllItems(){
+    $("#tblItem").empty();
+
+    for (var items of itemsArray) {
+      var row = "<tr><td>"+items.code+'</td><td>'+items.description+'</td><td>'+items.unitPrice+'</td><td>'+items.qtyOnHand+'</td></tr>';
+      $("#tblItem").append(row);
+    }
+
+  }
 </script>
 </body>
 </html>

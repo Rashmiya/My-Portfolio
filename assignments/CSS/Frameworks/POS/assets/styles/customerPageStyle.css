@@ -90,7 +90,7 @@ main #content-area #nav-links>#Logout #text5{
 }
 /*==============table area===============*/
 main #content-area .table{
-    border: 1px solid blue;
+    border: 1px solid #A65444;
     margin: 0px 10px 0px 22px;
 }
 main #content-area .table .table-head{
