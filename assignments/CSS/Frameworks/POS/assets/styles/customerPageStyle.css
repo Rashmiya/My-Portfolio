@@ -127,7 +127,7 @@ main #content-area #update-area>.d-flex>div:nth-child(1) #btnViewAll{
     font-size: 1em;
     background-color: white;
 }
-main #content-area #update-area>.d-flex>div:nth-child(1) #btnAddCustomer{
+main #content-area #update-area>.d-flex>div:nth-child(1) #btnNewCustomer{
      border: 2px solid #6E382D;
      height: 50px;
      text-align: center;

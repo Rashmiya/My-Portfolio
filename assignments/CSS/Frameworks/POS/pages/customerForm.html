@@ -127,7 +127,7 @@
             <button type="button" id="btnViewAll" class="btn ">View All</button>
             <img src="../assets/images/refresh-brown.png" class="img-fluid" alt="Refresh button">
           <!--  <button type="button" id="btnAddCustomer" class="btn btn-lg">+ New Customer</button>-->
-            <button type="button" id="btnAddCustomer" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" id="btnNewCustomer" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               + New Customer
             </button>
             <!-- Modal -->
@@ -153,7 +153,7 @@
                     <!--model end-->
                   <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">ADD Customer</button>
+                    <button type="button" class="btn btn-success" id="btnAddCustomer">ADD Customer</button>
                   </div>
                 </div>
               </div>
@@ -207,6 +207,32 @@
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 
 <script src="../assets/js/jquery-3.6.1.min.js"></script>  <!--import the jQuery library-->
+
+<script>
+  var customerArray = [];
+  /*Add Customer*/
+  $("#btnAddCustomer").click(function (){
+    //step-01 ---- catch values from each input texts.
+    var customerID = $("#txtCustomerID").val();
+    var customerName = $("#txtCustomerName").val();
+    var customerAddress = $("#txtCustomerAddress").val();
+    var customerContact = $("#txtCustomerContact").val();
+
+    // step-02 ---- create a customer object and set values to that object
+    var customerObject = {
+      id :customerID,
+      name :customerName,
+      address:customerAddress,
+      contactNumber:customerContact
+    }
+
+    // step-03 ----- push that object values into the global array
+    customerArray.push(customerObject);
+
+    console.log(customerArray);
+
+  });
+</script>
 </body>
 </html>
 <!--
