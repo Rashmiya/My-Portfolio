@@ -227,6 +227,7 @@
     //  load data into itemTable
     loadAllItems();
     bindRowClickEvents();
+    deleteRowDetails();
   });
 
   function bindRowClickEvents(){
@@ -258,6 +259,26 @@
   $("#btnViewAll").click(function(){
     loadAllCustomers();
   });
+
+  /* when double click the row of the table -  should delete that row from the table*/
+  function deleteRowDetails(){
+    $("#tblItem>tr").on('dblclick',function(){
+      $(this).remove();     // catch the selected row at that moment
+      clearUpdateFormTextFields();
+    });
+  }
+  function clearUpdateFormTextFields(){
+    $("#inputCode").val("");
+    $("#inputDescription").val("");
+    $("#inputUnitPrice").val("");
+    $("#inputQtyOnHand").val("");
+  }
+  function clearSaveFormTextFields(){
+    $("#txtItemCode").val("");
+    $("#txtDescription").val("");
+    $("#txtUnitPrice").val("");
+    $("#txtQtyOnHand").val("");
+  }
 </script>
 </body>
 </html>

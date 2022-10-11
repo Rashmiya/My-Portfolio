@@ -236,6 +236,8 @@
     loadAllCustomers();
     //bind click event for added rows
     bindRowClickEvents();
+    // bind double click event for delete a row from the table
+    deleteRowDetails();
   });
 
   function bindRowClickEvents(){
@@ -267,6 +269,26 @@
   $("#btnViewAll").click(function(){
     loadAllCustomers();
   });
+
+  /* when double click the row of the table -  should delete that row from the table*/
+  function deleteRowDetails(){
+    $("#tblCustomer>tr").on('dblclick',function(){
+      $(this).remove();     // catch the selected row at that moment
+      clearUpdateFormTextFields();
+    });
+  }
+  function clearUpdateFormTextFields(){
+    $("#inputID").val("");
+    $("#inputName").val("");
+    $("#inputAddress").val("");
+    $("#inputContactNumber").val("");
+  }
+  function clearSaveFormTextFields(){
+    $("#txtCustomerID").val("");
+    $("#txtCustomerName").val("");
+    $("#txtCustomerAddress").val("");
+    $("#txtCustomerContact").val("");
+  }
 </script>
 </body>
 </html>
