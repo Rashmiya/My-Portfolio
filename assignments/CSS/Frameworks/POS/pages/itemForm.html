@@ -86,7 +86,7 @@
 
         <nav  id="Invoices" class="navbar">
           <div class="container-fluid">
-            <a id="text4" class="navbar-brand" href="../order-Form.html"">
+            <a id="text4" class="navbar-brand" href="../order-Form.html">
               <img id="orderIcon" src="../assets/images/order-brown.png" alt="Order Icon" width="32" height="34" class="d-inline-block align-text-top">
               Invoices
             </a>
@@ -125,7 +125,7 @@
           <div class="p-2" id="1">
             <div class="d-flex justify-content-center">
               <button type="button" id="btnViewAll" class="btn ">View All</button>
-              <img src="../assets/images/refresh-brown.png" class="img-fluid" alt="Refresh button">
+              <img src="../assets/images/refresh-brown.png" id="refreshIcon" class="img-fluid" alt="Refresh button">
               <!--  <button type="button" id="btnAddCustomer" class="btn btn-lg">+ New Customer</button>-->
               <button type="button" id="btnAddItems" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 + New Item
@@ -216,18 +216,20 @@
       event.preventDefault();
     }
   });
+
+  // Enter/ArrowDown process
   $("#txtItemCode").on('keydown', function(event){
-    if(event.key == 'Enter'){
+    if(event.key == 'Enter' ||event.key == 'ArrowDown'){
       $("#txtDescription").focus();
     }
   });
   $("#txtDescription").on('keydown', function(event){
-    if(event.key == 'Enter'){
+    if(event.key == 'Enter' ||event.key == 'ArrowDown'){
       $("#txtUnitPrice").focus();
     }
   });
   $("#txtUnitPrice").on('keydown', function(event){
-    if(event.key == 'Enter'){
+    if(event.key == 'Enter' ||event.key == 'ArrowDown'){
       $("#txtQtyOnHand").focus();
     }
   });
@@ -239,6 +241,28 @@
       deleteRowDetails();
       clearSaveFormTextFields();
       $("#txtItemCode").focus();
+    }
+  });
+
+  // ArrowUp process
+  $("#txtItemCode").on('keyup', function(event){
+    if(event.key == 'ArrowUp'){
+      $("#txtQtyOnHand").focus();
+    }
+  });
+  $("#txtDescription").on('keyup', function(event){
+    if(event.key == 'ArrowUp'){
+      $("#txtItemCode").focus();
+    }
+  });
+  $("#txtUnitPrice").on('keyup', function(event){
+    if(event.key == 'ArrowUp'){
+      $("#txtDescription").focus();
+    }
+  });
+  $("#txtQtyOnHand").on('keyup', function(event){
+    if(event.key == 'ArrowUp'){
+      $("#txtUnitPrice").focus();
     }
   });
 
@@ -306,11 +330,6 @@
     }
   }
 
-  /*when click getAll button*/
-  $("#btnViewAll").click(function(){
-    loadAllCustomers();
-  });
-
   /* when double click the row of the table -  should delete that row from the table*/
   function deleteRowDetails(){
     $("#tblItem>tr").on('dblclick',function(){
@@ -330,6 +349,17 @@
     $("#txtUnitPrice").val("");
     $("#txtQtyOnHand").val("");
   }
+
+  /*when click getAll button*/
+  $("#btnViewAll").click(function(){
+    loadAllItems();
+    console.log("viewAll");
+  });
+
+  /*when click refresh icon*/
+  $("#refreshIcon").on('click', function(){
+    clearUpdateFormTextFields();
+  });
 </script>
 </body>
 </html>
