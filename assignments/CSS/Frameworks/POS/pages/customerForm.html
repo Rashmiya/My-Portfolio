@@ -210,10 +210,54 @@
 <script>
   var customerArray = [];
 
-
+ // disable tab key for all textFields using grouping selector
+  $("#txtCustomerID, #txtCustomerName, #txtCustomerAddress, #txtCustomerContact").on('keydown', function(event){
+    if (event.key == 'Tab'){
+      event.preventDefault();
+    }
+  });
+  $("#txtCustomerID").on('keydown', function(event){
+    if(event.key == 'Enter'){
+      $("#txtCustomerName").focus();
+    }
+  });
+  $("#txtCustomerName").on('keydown', function(event){
+    if(event.key == 'Enter'){
+      $("#txtCustomerAddress").focus();
+    }
+  });
+  $("#txtCustomerAddress").on('keydown', function(event){
+    if(event.key == 'Enter'){
+      $("#txtCustomerContact").focus();
+    }
+  });
+  $("#txtCustomerContact").on('keydown', function(event){
+    if(event.key == 'Enter'){
+      getValues();
+      loadAllCustomers();
+      bindRowClickEvents();
+      deleteRowDetails();
+      clearSaveFormTextFields();
+      $("#txtCustomerID").focus();
+    }
+  });
 
   /*Add Customer*/
   $("#btnAddCustomer").click(function (){
+    // catch textField values and create object, after push the object into the array
+    getValues();
+    //  load data into customerTable
+    loadAllCustomers();
+    //bind click event for added rows
+    bindRowClickEvents();
+    // bind double click event for delete a row from the table
+    deleteRowDetails();
+
+    clearSaveFormTextFields();
+    $("#txtCustomerID").focus();
+  });
+
+  function getValues(){
     //step-01 ---- catch values from each input texts.
     var customerID = $("#txtCustomerID").val();
     var customerName = $("#txtCustomerName").val();
@@ -230,16 +274,7 @@
 
     // step-03 ----- push that object values into the global array
     customerArray.push(customerObject);
-    /*console.log(customerArray);*/
-
-    //  load data into customerTable
-    loadAllCustomers();
-    //bind click event for added rows
-    bindRowClickEvents();
-    // bind double click event for delete a row from the table
-    deleteRowDetails();
-  });
-
+  }
   function bindRowClickEvents(){
     $("#tblCustomer>tr").click(function(){
       /*get each texts separately from clicked table row-using traversing*/
