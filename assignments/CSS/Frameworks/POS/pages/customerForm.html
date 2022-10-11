@@ -209,6 +209,9 @@
 
 <script>
   var customerArray = [];
+
+
+
   /*Add Customer*/
   $("#btnAddCustomer").click(function (){
     //step-01 ---- catch values from each input texts.
@@ -260,6 +263,10 @@
     }
   }
 
+  /*when click getAll button*/
+  $("#btnViewAll").click(function(){
+    loadAllCustomers();
+  });
 </script>
 </body>
 </html>
