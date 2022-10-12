@@ -5,6 +5,7 @@ main{
 /*1st row*/
 main>section:nth-child(1){
    /* border: 1px solid black;*/
+    border-bottom: 1px solid black;
     height: 20%;
 }
 main>section:nth-child(1) #logo img{
@@ -47,6 +48,7 @@ main>section:nth-child(1) #title label{
 main>section:nth-child(1) #date-time{
    /* border:1px solid red;*/
     border-right: 1px solid black;
+    height: 91%;
 
 }
 main>section:nth-child(1) #date-time div:nth-child(1){
@@ -124,11 +126,179 @@ main>section:nth-child(1) #customerDetails div #third input{
 }
 /*2nd row*/
 main>section:nth-child(2){
-    border: 1px solid blue;
+   /* border: 1px solid blue;*/
     height: 70%;
 }
+main>section:nth-child(2) #update-area1{
+    width: 300px;
+    height: 67vh;
+    background: #D9D9D9;
+    border-radius: 45px;
+}
+main>section:nth-child(2) #update-area1>select, main>section:nth-child(2) #update-area1>input{
+   /* height: 44px; *!*/
+    width: 228px;
+    margin: 27px 0px 0px 28px;
+    /* left: 10px; */
+    border: 2px solid #6E382D;
+    color: #767171;
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+}
+main>section:nth-child(2) #update-area1>select{
+    margin: 37px 0px 0px 28px;
+}
+main>section:nth-child(2) #update-area1 label{
+    margin-top: 30px;
+    font-size: 1.3em;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    left: 80px;
+}
+main>section:nth-child(2) #update-area1 div>#qty{
+    width: 118px;
+    position: absolute;
+    left: 145px;
+    border: 2px solid #6E382D;
+    bottom: 170px;
+}
+main>section:nth-child(2) #update-area1 #btnAddToCart{
+    background-color: #6E382D;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    color: white;
+    height: 45px;
+    position: relative;
+    left: 77px;
+    top: 35px;
+}
+main>section:nth-child(2) #table{
+    width: 52%;
+}
+main>section:nth-child(2) .table{
+    border: 1px solid #A65444;
+    margin: 0px 10px 0px 22px;
+}
+main>section:nth-child(2) .table>thead{
+    background-color: #874848;
+    border-color: #A65444;
+    text-align: center;
+}
+main>section:nth-child(2) .table #tblCustomer{
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+}
+main>section:nth-child(2) #update-area2{
+    width: 309px;
+    height: 66vh;
+    background: #D9D9D9;
+    border-radius: 45px;
+    margin-left: 30px;
+}
+main>section:nth-child(2) #update-area2 label{
+    margin-top: 45px;
+    font-size: 1.3em;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    left: 24px;
+}
+main>section:nth-child(2) #update-area2 div:nth-child(1)>#total{
+    width: 151px;
+    position: absolute;
+    left: 1161px;
+    border: 2px solid #6E382D;
+    bottom: 436px;
+}
+main>section:nth-child(2) #update-area2 div:nth-child(2)>#discount{
+    width: 152px;
+    position: absolute;
+    left: 145px;
+    left: 1161px;
+    border: 2px solid #6E382D;
+    /* bottom: 170px; */
+    bottom: 380px;
+}
+main>section:nth-child(2) #update-area2 div:nth-child(2)> label{
+    margin-top: 21px;
+}
+main>section:nth-child(2) #update-area2 div:nth-child(3)>#subTotal{
+    width: 152px;
+    position: absolute;
+   /* left: 145px;*/
+    border: 2px solid #6E382D;
+    left: 1161px;
+    bottom: 320px;
+   /* bottom: 170px;*/
+}
+main>section:nth-child(2) #update-area2 div:nth-child(3)> label{
+    margin-top: 28px;
+ }
+
+main>section:nth-child(2) #update-area2 div:nth-child(4)>#cash{
+    width: 152px;
+    position: absolute;
+   /* left: 145px;*/
+    border: 2px solid #6E382D;
+    left: 1161px;
+    bottom: 260px;
+   /* bottom: 170px;*/
+}
+main>section:nth-child(2) #update-area2 div:nth-child(4)> label{
+    margin-top: 31px;
+}
+main>section:nth-child(2) #update-area2 div:nth-child(5)>#exchange{
+    width: 152px;
+    position: absolute;
+   /* left: 145px;*/
+    border: 2px solid #6E382D;
+    /*bottom: 170px;*/
+    left: 1161px;
+    bottom: 200px;
+}
+main>section:nth-child(2) #update-area2 div:nth-child(5)> label{
+    margin-top: 26px;
+}
+/*main>section:nth-child(2) #update-area2 div>#total, main>section:nth-child(2) #update-area2 div>#discount, main>section:nth-child(2) #update-area2 div>#cash, main>section:nth-child(2) #update-area2 div>#subTotal, main>section:nth-child(2) #update-area2 div>#exchange{
+    width: 118px;
+    position: absolute;
+    left: 145px;
+    border: 2px solid #6E382D;
+    bottom: 170px;
+}*/
+main>section:nth-child(2) #update-area2 #btnPlaceOrder{
+    background-color: #6E382D;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    color: white;
+    height: 45px;
+    position: relative;
+    left: 103px;
+    top: 46px;
+}
+
 /*3rd row*/
 main>section:nth-child(3){
-    border: 1px solid green;
+   /* border: 1px solid green;*/
     height: 10%;
+}
+main>section:nth-child(3) .container-fluid{
+   /* border: 5px solid #F0CB9E;*/
+    border: 4px solid #6E382D;
+    border-radius: 10px;
+    height: 52px;
+  /*  width:200px;*/
+}
+main>section:nth-child(3)  #btnNewCustomer{
+    border: 4px solid #6E382D;
+    border-radius: 10px;
+    height: 52px;
+    margin-top: 8px;
+}
+main>section:nth-child(3) #Home, main>section:nth-child(3) #Customers, main>section:nth-child(3) #Items, main>section:nth-child(3) #Invoices, main>section:nth-child(3)  #btnNewCustomer{
+    margin-left: 40px;
+}
+main>section:nth-child(3) #Logout{
+    margin-left: 145px;
 }

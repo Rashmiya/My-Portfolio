@@ -27,6 +27,7 @@
 </head>
 <body>
   <main class="d-flex p-2 flex-column mb-3">
+    <!--first row-header area-->
     <section class="d-flex flex-row mb-2">
       <div class="p-2" id="logo">
         <img id="logo-image" src="../assets/images/R-logo.png" class="rounded float-start" alt="Rashmiya Logo">
@@ -34,7 +35,7 @@
       <div class="p-2" id="title">
         <h1>Rashmiya POS System</h1>
         <h2>all products in one place</h2>
-        <img src="../assets/images/order-brown.png" class="img-fluid" alt="...">
+        <img src="../assets/images/order-BrownColor.png" class="img-fluid" alt="...">
         <label>Place Order</label>
       </div>
       <div class="d-flex flex-column p-2" id="date-time">
@@ -72,8 +73,154 @@
         </div>
       </div>
     </section>
-    <section>Hello-2</section>
-    <section>HEllo-3</section>
+
+    <!--second row-content area-->
+    <section class="d-flex flex-row">
+      <!--update area-->
+      <div id="update-area1">
+        <select aria-label=".form-select-lg example" class=" f3 form-select form-select-sm" id="1">
+          <option selected>Item Code</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <input type="text" class="form-control" placeholder="Description" id="2">
+        <input type="text" class="form-control" placeholder="Unit Price" id="3">
+        <input type="text" class="form-control" placeholder="Qty On Hand" id="4">
+        <div>
+          <label>Qty</label>
+          <input type="text" class="form-control" id="qty">
+        </div>
+
+        <button type="button" id="btnAddToCart" class="btn ">Add To Cart</button>
+      </div>
+      <!--table area-->
+      <div id="table">
+        <table class="table table-bordered table-hover">
+          <thead class="text-white">
+          <tr>
+            <th>Item Code</th>
+            <th>Description</th>
+            <th>Unit Price</th>
+            <th>Qty</th>
+            <th>Total Cost</th>
+            <th>Action</th>
+          </tr>
+          </thead>
+          <tbody id="tblCustomer">
+
+          </tbody>
+        </table>
+      </div>
+      <div id="update-area2">
+        <div>
+          <label>Total</label>
+          <input type="text" class="form-control" id="total">
+        </div>
+
+        <div>
+          <label>Discount</label>
+          <input type="text" class="form-control" id="discount">
+        </div>
+
+        <div>
+          <label>Sub Total</label>
+          <input type="text" class="form-control" id="subTotal">
+        </div>
+
+        <div>
+          <label>Cash</label>
+          <input type="text" class="form-control" id="cash">
+        </div>
+
+        <div>
+          <label>Exchange</label>
+          <input type="text" class="form-control" id="exchange">
+        </div>
+        <button type="button" id="btnPlaceOrder" class="btn ">Place Order</button>
+      </div>
+    </section>
+
+    <!--third row-nav links area-->
+    <section class="d-flex flex-row mb-2">
+     <nav id="Home" class="navbar">
+      <div class="container-fluid">
+        <a  id="text1"class="navbar-brand" href="../index.html">
+         <img id="homeIcon" src="../assets/images/home-brown.png" alt="Home Icon" width="30" height="30" class="d-inline-block align-text-top">
+          Home
+        </a>
+      </div>
+    </nav>
+
+      <nav  id="Customers" class="navbar">
+        <div class="container-fluid">
+          <a id="text2"class="navbar-brand" href="customerForm.html">
+            <img id="customerIcon" src="../assets/images/user-brown.png" alt="Customer Icon" width="32" height="32" class="d-inline-block align-text-top">
+            Customers
+          </a>
+        </div>
+      </nav>
+
+      <nav  id="Items" class="navbar">
+        <div class="container-fluid">
+          <a id="text3" class="navbar-brand" href="itemForm.html">
+            <img id="itemIcon" src="../assets/images/items-Brown.png" alt="Item Icon" width="48" height="50" class="d-inline-block align-text-top">
+            Items
+          </a>
+        </div>
+      </nav>
+
+      <nav  id="Invoices" class="navbar">
+        <div class="container-fluid">
+          <a id="text4" class="navbar-brand" href="orderForm.html">
+            <img id="orderIcon" src="../assets/images/order-brown.png" alt="Order Icon" width="32" height="34" class="d-inline-block align-text-top">
+            Invoices
+          </a>
+        </div>
+      </nav>
+
+      <button type="button" id="btnNewCustomer" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        + New Customer
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">ADD New Customer</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!--text Fields for add customer-->
+              <div class="col-11 col-lg-5" id="AddCustomerForm">
+                <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer ID/NIC"
+                                        id="txtCustomerID" type="text"></div>
+                <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer Name"
+                                        id="txtCustomerName" type="text"></div>
+                <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer Address"
+                                        id="txtCustomerAddress" type="text"></div>
+                <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Contact Number "
+                                        id="txtCustomerContact" type="text"></div>
+              </div>
+              <!--model end-->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" id="btnAddCustomer">ADD Customer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav  id="Logout" class="navbar">
+        <div class="container-fluid">
+          <a id="text5" class="navbar-brand" href="../index.html">
+            <img id="logoutIcon" src="../assets/images/logout-BrownColor.png" alt="Logout Icon" width="40" height="40" class="d-inline-block align-text-top">
+            Log Out
+          </a>
+        </div>
+      </nav>
+    </section>
   </main>
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>    <!--import bootstrap js-->
 </body>
