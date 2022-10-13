@@ -20,7 +20,7 @@ main>section:nth-child(2){
 }
 /*blue color two side borders*/
 #aboutMe-page>section:first-child>div:first-child,#aboutMe-page>section:first-child>div:nth-child(2){
-    top: 14px;
+    top: 28px;
     position: absolute;
     width: 41%;
     height: 15px;
@@ -36,12 +36,14 @@ main>section:nth-child(2){
 #aboutMe-page>section:first-child>h3{
     text-align: center;
     font-size: 2em;
+    top: 16px;
+    position: relative;
 }
 /*"Whu Choose Me?"*/
 #aboutMe-page>section:first-child>h6{
     position: absolute;
     left: 45%;
-    top: 42px;
+    top: 59px;
     font-size: 0.91em;
     font-family: 'Merriweather', serif;
     color: rgba(0, 0, 0, 0.7);
@@ -52,7 +54,7 @@ main>section:nth-child(2){
     height: 3%;
     width: 14%;
     background-color: #c4c4c4;
-    top: 86%;
+    top: 100%;
     left: 43%;
 }
 /*orange color box*/
@@ -61,7 +63,7 @@ main>section:nth-child(2){
     height: 7px;
     width: 87px;
     background-color: #fd9d3c;
-    top: 84%;
+    top: 98%;
     left: 46.5%;
 }
 
@@ -104,16 +106,27 @@ main>section:nth-child(2)>section:nth-child(2) {
     font-size: 1em;
 }*/
 main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#mobile-small-point{
-    visibility: hidden;
+   display: none;
 }
 main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#default-point{
-    margin-top: 31px;
+    /*margin-top: 31px;
     font-family: 'Lato', sans-serif;
     padding-left: 48px;
-    font-size: 1em;
+    font-size: 1em;*/
    /* margin-top: 0;
     padding-left: 7px;
     padding-bottom: 17px;*/
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 25px;
+    height: 77%;
+   /* border: 1px solid red;*/
+    width: 90%;
+}
+main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#default-point>pre{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 37px;
 }
 /*gray color box areas*/
 #aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:first-child,#aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:nth-child(3){
@@ -135,7 +148,7 @@ main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#default-point{
     background: #D9D9D9;
 }
 #aboutMe-page>section:nth-child(2)>#shadow-area>aside>div:nth-child(3){
-    top: 413px;
+    top: 441px;
     background: #D9D9D9;
 }
 /*====================================*/
@@ -251,7 +264,7 @@ main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#default-point{
     }
 
     main>#aboutMe-page>section:nth-child(2)>#shadow-area>aside>#mobile-small-point {
-        visibility: visible;
+        display:block;
         display: flex;
         position: relative;
         right: 2px;
