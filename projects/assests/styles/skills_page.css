@@ -70,21 +70,28 @@ main>section:nth-child(4)>section:first-child{
 /*content area for each skill icons*/
 #skills-page>section:nth-child(2){
    /* border: 1px solid red;*/
-    height: 60%;
+    height: 50%;
     display: flex;
     justify-content: space-around;
     position: relative;
+    bottom: 35px;
 }
 #skills-page>section:nth-child(2)>.container{
     width: 20%;
     position: relative;
     margin-top: 67px;
-    height: 82%;
-    border-radius: 0px 80px 0px 80px;
+    height: 88%;
+    border-radius: 0px 50px 0px 50px;
     display: flex;
     flex-direction: column;
-    border: 3px solid #F04A1E;
-    box-shadow: -7px -5px 4px 5px #ff9f43;
+    /* border: 3px solid #F04A1E; */
+    /* box-shadow: -7px -5px 4px 5px #ff9f43; */
+    background-color: #D9D9D9;
+    box-shadow: 4px 4px 5px 3px grey;
+    /* box-shadow: 4px 4px 5px 3px #ff9f43; */
+}
+#skills-page>section:nth-child(2)>.container:hover{
+    box-shadow: 4px 4px 5px 3px #f04a1e;
 }
 /*#skills-page>section:nth-child(2)>div:nth-child(1){
     border: 1px solid orange;
@@ -103,31 +110,108 @@ main>section:nth-child(4)>section:first-child{
     color: black;
     font-weight: bold;
     font-size: 1.5em;
+    /* border: 1px solid black; */
+    position: relative;
+    top: 42px;
 /* font-family: 'Lato', sans-serif;*/
 }
 #skills-page>section:nth-child(2)>.container>.text-area {
    /* border: 1px solid purple;*/
     width: 100%;
     position: relative;
-    top: -26px;
+    top: 85px;
+    height: 207px;
     text-align: center;
     font-size: 1.05em;
     font-family: 'Lato', sans-serif;
 }
 #skills-page>section:nth-child(2)>.container>.text-area >ul{
     list-style: none;
-    height: 170px;
+    height: 100%;
 }
 #skills-page>section:nth-child(2)>.container>.text-area >ul>li{
-    padding-bottom: 17px;
+    padding-bottom: 25px;
 }
 
 /*================================*/
 main>section:nth-child(4)>div:nth-child(3){
-    height: 27%;
-   /* border: 1px solid black;*/
+    height: 30%;
+    top: 30px;
+    /* border: 1px solid black; */
+    display: grid;
+    /* background: #D9D9D9; */
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+    width: 55%;
+    /* width: 320px; */
     position: relative;
+    /* top: -30px; */
+    left: 22%;
 }
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(1){
+    background: url("../images/skills/java.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(2){
+    background: url("../images/skills/mysql.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(3){
+    background: url("../images/skills/html.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(4){
+    background: url("../images/skills/css.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(5){
+    background: url("../images/skills/javasript.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(6){
+    background: url("../images/skills/bootsrap.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(7){
+    background: url("../images/skills/intellij.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(8){
+    background: url("../images/skills/figma.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(9){
+    background: url("../images/skills/wireframe.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(10){
+    background: url("../images/skills/visual studio code.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(11){
+    background: url("../images/skills/github.png");
+    background-size: cover;
+    background-position: center;
+}
+main>section:nth-child(4)>div:nth-child(3)>div:nth-child(12){
+    background: url("../images/skills/slack.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 
 
