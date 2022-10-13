@@ -8,7 +8,7 @@ main>section:nth-child(1){
     border-bottom: 1px solid black;
     height: 20%;
 }
-main>section:nth-child(1) #logo img{
+main>section:nth-child(1) .logo img{
     width: 100px;
     height: 100%;
     border-right: 2.5px solid #F0CB9E;
@@ -299,6 +299,6 @@ main>section:nth-child(3)  #btnNewCustomer{
 main>section:nth-child(3) #Home, main>section:nth-child(3) #Customers, main>section:nth-child(3) #Items, main>section:nth-child(3) #Invoices, main>section:nth-child(3)  #btnNewCustomer{
     margin-left: 40px;
 }
-main>section:nth-child(3) #Logout{
+main>section:nth-child(3) .Logout{
     margin-left: 145px;
 }

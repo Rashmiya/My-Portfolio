@@ -1,0 +1,142 @@
+
+main>#left-side>.logo-image{
+    top: 10px;
+    height: 207px;
+    position: relative;
+    left: 30px;
+    border-right: 2.5px solid #F0CB9E;
+}
+main>#left-side{
+    height: 100vh;
+    width: 50vh;
+    position: absolute;
+}
+main>#right-side{
+    position: absolute;
+    left: 50vh;
+    height: 100vh;
+    width: 74vw;
+}
+
+main>#left-side>.nav-links{
+    position: absolute;
+    top: 281px;
+    left: 22px;
+    height: 280px;
+    width: 255px;
+}
+
+.nav-links>#Home .homeIcon, .nav-links>#Customers .customerIcon, .nav-links>#Items .itemIcon,.nav-links>#Invoices .orderIcon{
+    position: relative;
+}
+.nav-links>#Home .homeIcon, .nav-links>#Customers .customerIcon, .nav-links>#Items .itemIcon {
+    left: 4px;
+}
+
+.nav-links>#Invoices #text4,.nav-links>#Items #text3,.nav-links>#Customers #text2, .nav-links>#Home #text1{
+    text-align: end;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    color: #572C24;
+    font-family: revert;
+}
+.nav-links>#Home #text1 {
+    width: 78%;
+    font-weight: bold;
+}
+.nav-links>#Items #text3{
+    width: 70%;
+}
+.nav-links>#Invoices #text4{
+    width: 84%;
+}
+.nav-links>#Home, .nav-links>#Customers,.nav-links>#Items,.nav-links>#Invoices{
+    height: 75px;
+}
+#right-side #title-area{
+    color:  #572C24;
+    position: relative;
+    top: 20px;
+}
+#right-side #title-area>h1{
+    font-family: 'Ledger', serif;
+    position: relative;
+    padding-left: 149px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 2em;
+}
+#right-side #center-image{
+    position: relative;
+    top: 36px;
+    width: 885px;
+    height: 465px;
+    background: url("../images/vegetables.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 6px solid #C89B63;
+    box-shadow: 6px 7px 4px 3px #e3cdb1;
+}
+#orderDetailsImage{
+    position: absolute;
+    right: 23px;
+    bottom: 44px;
+    width: 117px;
+    height: 123px;
+}
+#orderDetailsImage>img{
+    width: 117px;
+    height: 123px;
+}
+#orderImage{
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    width: 150px;
+    height: 155px;
+}
+#orderImage>img{
+    position: absolute;
+    right: -3px;
+    top: -6px;
+    width: 150px;
+    height: 155px;
+}
+#itemImage{
+    position: absolute;
+    width: 150px;
+    height: 155px;
+    left: 27px;
+    bottom: 37px;
+}
+#itemImage>img{
+    position: absolute;
+    width: 140px;
+    height: 145px;
+    bottom: 0;
+}
+#customerImage{
+    position: absolute;
+    width: 144px;
+    height: 150px;
+    top: 38px;
+    left: 34px;
+}
+#customerImage>img{
+    width: 144px;
+    height: 150px;
+}
+main>#right-side>div:nth-child(2){
+    position: relative;
+    top: 20px;
+    height: 32px;
+}
+#right-side>div:nth-child(2)>h2{
+    color: #BD8F31;
+    font-style: italic;
+    font-size: 1.3em;
+    font-family: 'Lemonada', cursive;
+    font-weight: bold;
+    margin-top: 16px;
+}
