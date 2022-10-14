@@ -71,7 +71,7 @@ main>section:nth-child(5)>section:first-child{
 #project-page>section:nth-child(2){
    /* border: 1px solid red;*/
     /*height: 84%;*/
-    height: 75%;
+    height: 84%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +93,7 @@ main>section:nth-child(5)>section:first-child{
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    top:35px;
 }
 #project-page>section:nth-child(2)>.project-container>.project-card{
     max-width: 300px;
@@ -119,22 +120,22 @@ main>section:nth-child(5)>section:first-child{
 #project-page>section:nth-child(2)>.project-container>.project-card:hover{
     height: 420px;
 }
-#project-page>section:nth-child(2)>.project-container>div:nth-child(1)>div:nth-child(1){
+#project-page>section:nth-child(2)>.project-container>div:nth-child(1) #Box1{
     background: url("../images/project/superMarket_system.jpg");
     background-size: cover;
     background-position: center;
 }
-#project-page>section:nth-child(2)>.project-container>div:nth-child(2)>div:nth-child(1){
+#project-page>section:nth-child(2)>.project-container>div:nth-child(2) #Box2{
     background: url("../images/project/room-reservation.jpg");
     background-size: cover;
     background-position: center;
 }
-#project-page>section:nth-child(2)>.project-container>div:nth-child(3)>div:nth-child(1){
+#project-page>section:nth-child(2)>.project-container>div:nth-child(3) #Box3{
     background: url("../images/project/pos_system.jpg");
     background-size: cover;
     background-position: center;
 }
-#project-page>section:nth-child(2)>.project-container >.project-card >.project-imageBox{
+#project-page>section:nth-child(2)>.project-container >.project-card .project-imageBox{
     position: relative;
     width: 260px;
     height: 260px;
@@ -144,7 +145,7 @@ main>section:nth-child(5)>section:first-child{
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     z-index: 1;
 }
-#project-page>section:nth-child(2)>.project-container >.project-card>.project-content{
+#project-page>section:nth-child(2)>.project-container >.project-card .project-content{
     position: relative;
     margin-top: -210px;
     padding: 10px 15px;
@@ -161,12 +162,15 @@ main>section:nth-child(5)>section:first-child{
     margin-top: -40px;
     transition-delay: 0.3s;
 }*/
-#project-page>section:nth-child(2)>.project-container>.project-card:hover>.project-content{
+#project-page>section:nth-child(2)>.project-container>.project-card:hover .project-content{
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
     color: white;
+}
+#project-page>section:nth-child(2)>.project-container>.project-card:hover{
+    height: 500px;
 }
 #project-page>section:nth-child(2)>.project-container>.project-card:hover>.project-content>h2{
     /* color: #FF9F43;*/
