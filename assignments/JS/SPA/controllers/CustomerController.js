@@ -1,4 +1,4 @@
-var customerArray = [];
+/*var customerArray = [];*/
 
 // disable tab key for all textFields using grouping selector
 $("#txtCustomerID, #txtCustomerName, #txtCustomerAddress, #txtCustomerContact").on('keydown', function(event){
