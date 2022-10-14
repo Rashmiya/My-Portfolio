@@ -92,9 +92,6 @@ main>section:nth-child(6)>section:first-child{
 }
 /*main circle*/
 #service-page>section:nth-child(2)>.circle-area{
-    /*width: 200px;
-    height: 200px;*/
-    /* margin-left: 20px;*/
     width: 190px;
     height: 190px;
     background-color: #323545;
@@ -103,19 +100,13 @@ main>section:nth-child(6)>section:first-child{
     box-shadow: 4px 6px 4px 2px #0c0d12;
 }
 
-/*=================for animation ==============*/
+/*=================animation for web development ==============*/
 #service-page>section:nth-child(2)>main:first-child{
     position: relative;
     width: 190px;
     height: 190px;
 }
 #service-page>section:nth-child(2)>main:first-child>span{
-    /*position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: rotate(calc(18deg * var(--i)));*/
     position: absolute;
     top: 14px;
     left: 15px;
@@ -149,10 +140,51 @@ main>section:nth-child(6)>section:first-child{
         transform: scale(0);
     }
 }
-
 /*=============animation end======================*/
 
 
+/*=============animation for Data security=================*/
+#service-page>section:nth-child(2)>main:nth-child(6){
+    position: relative;
+    width: 190px;
+    height: 190px;
+}
+#service-page>section:nth-child(2)>main:nth-child(6)>span{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    width: 85%;
+    height: 85%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+#service-page>section:nth-child(2)>main:nth-child(6)>span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FF9F43;
+    box-shadow: 0 0 10px #FF9F43,
+    0 0 20px #FF9F43,
+    0 0 40px #FF9F43,
+    0 0 60px #FF9F43,
+    0 0 80px #FF9F43,
+    0 0 100px #FF9F43;
+    animation: animate2 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate2 {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+/*================animation end==================*/
 #service-page>section:nth-child(2)>main:nth-child(2){
     align-self: self-end;
     margin-bottom: 80px;
