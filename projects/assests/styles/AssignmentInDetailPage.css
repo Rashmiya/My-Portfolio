@@ -8,9 +8,7 @@ main{
 /*02*/
 main #Case-02{
     top: 55px;
-    /* padding-left: 35px; */
     margin-left: 35px;
-    /* left: 35px; */
     width: 95%;
     height: 310px;
     /*border: 1px solid red;*/
@@ -83,11 +81,21 @@ main #Case-02 .content-area .content-4 .github{
     left: 200px;
     position: relative;
 }
+main #Case-02 .content-area .content-4 .github:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
 main #Case-02 .content-area .content-4 .web{
     width: 28px;
     height: 28px;
     left: 210px;
     position: relative;
+}
+main #Case-02 .content-area .content-4 .web:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
 }
 
 /*03*/
@@ -148,11 +156,21 @@ main #Case-03 .content-area .content-4 .github{
     left: 200px;
     position: relative;
 }
+main #Case-03 .content-area .content-4 .github:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
 main #Case-03 .content-area .content-4 .web{
     width: 28px;
     height: 28px;
     left: 210px;
     position: relative;
+}
+main #Case-03 .content-area .content-4 .web:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
 }
 /*=========================*/
 main #Case-03 .image-area{
@@ -256,13 +274,23 @@ main #Case-04 .content-area .content-4 .github{
     left: 200px;
     position: relative;
 }
+
+main #Case-04 .content-area .content-4 .github:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
 main #Case-04 .content-area .content-4 .web{
     width: 28px;
     height: 28px;
     left: 210px;
     position: relative;
 }
-
+main #Case-04 .content-area .content-4 .web:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
 
 /*05*/
 main #Case-05 {
@@ -322,11 +350,22 @@ main #Case-05 .content-area .content-4 .github{
     left: 200px;
     position: relative;
 }
+main #Case-05 .content-area .content-4 .github:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
 main #Case-05 .content-area .content-4 .web{
     width: 28px;
     height: 28px;
     left: 210px;
     position: relative;
+}
+
+main #Case-05 .content-area .content-4 .web:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
 }
 /*=========================*/
 main #Case-05 .image-area{
@@ -351,8 +390,6 @@ main #Case-05 .image-area .imgSpace{
     top: 30px;
     right: 35px;
 }
-
-
 
 
 /*06*/
@@ -433,11 +470,21 @@ main #Case-06 .content-area .content-4 .github{
     left: 200px;
     position: relative;
 }
+main #Case-06 .content-area .content-4 .github:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
 main #Case-06 .content-area .content-4 .web{
     width: 28px;
     height: 28px;
     left: 210px;
     position: relative;
+}
+main #Case-06 .content-area .content-4 .web:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
 }
 
 
