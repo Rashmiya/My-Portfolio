@@ -132,8 +132,58 @@ main>section:nth-child(7){
     left: 0;
     box-sizing: border-box;
     padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+/*first assignment starts*/
+#assignment-page>section:nth-child(2)>.container .card .details .content-1{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1.5em;
+}
+#assignment-page>section:nth-child(2)>.container .card .details .content-1>p{
+    padding-top: 10px;
+    margin-bottom: 15px;
 }
 
+#assignment-page>section:nth-child(2)>.container .card .details .content-2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.2em;
+}
+
+#assignment-page>section:nth-child(2)>.container .card .details .content-3{
+    font-family: 'Noto Sans Display', sans-serif;
+}
+#assignment-page>section:nth-child(2)>.container .card .details .content-3>p{
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+#assignment-page>section:nth-child(2)>.container .card .details .content-4{
+    margin-top:20px;
+}
+#assignment-page>section:nth-child(2)>.container .card .details .content-4 .github{
+    width: 30px;
+    height: 30px;
+    left: 65px;
+    position: relative;
+}
+#assignment-page>section:nth-child(2)>.container .card .details .content-4 .github:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
+#assignment-page>section:nth-child(2)>.container .card .details .content-4 .web{
+    width: 30px;
+    height: 30px;
+    left: 65px;
+    position: relative;
+}
+#assignment-page>section:nth-child(2)>.container .card .details .content-4 .web:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
+/*first assignment end*/
 /*===================================*/
 #assignment-page .view-more{
     bottom: 50px;
