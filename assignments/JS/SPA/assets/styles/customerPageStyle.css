@@ -1,32 +1,37 @@
-main #header-top{
+#customerContainer{
+    padding-left: 0;
+    padding-right: 0;
+}
+#customerContainer>#header-top{
     width: 100vw;
     height: 18vh;
+    border-bottom: 0px solid;
 }
-main #header-top #logo-icon .logo-image{
+#customerContainer>#header-top>.d-flex>div:nth-child(1)>#logo-image{
     height: 125px;
     padding-left: 20px;
     border-right: 2.5px solid #F0CB9E;
 }
-main #header-top #header-text #main-topic h1{
+#customerContainer>#header-top #header-text #main-topic h1{
     font-family: 'Ledger', serif;
     position: relative;
     padding-left: 22px;
     margin-top: 27px;
     font-size: 1.65em;
 }
-main #header-top #header-text #second-topic h2{
+#customerContainer>#header-top #header-text #second-topic h2{
     color: #BD8F31;
     font-size: 1em;
     font-family: 'Lemonada', cursive;
     font-weight: bold;
     padding-left: 87px;
 }
-main #header-top #label img{
+#customerContainer>#header-top #label img{
     padding-left: 198px;
     margin-top: 21px;
     height: 85px;
 }
-main #header-top #label>label{
+#customerContainer>#header-top #label>label{
     color: #BD8F31;
     font-size: 1.4em;
     font-family: sans-serif;
@@ -34,23 +39,23 @@ main #header-top #label>label{
     position: relative;
     top: 5px;
 }
-main #content-area{
+#customerContainer  #content-area{
     width: 100vw;
     height: 82vh;
 }
 /*====================navigation links=====================*/
-main #content-area .nav-links{
+#customerContainer #content-area #Customernav-links{
     margin-top: 53px;
     width: 177px;
     margin-left: 20px;
 }
-main #content-area .nav-links>#Home .homeIcon,main #content-area .nav-links>#Customers .customerIcon, main #content-area .nav-links>#Items .itemIcon,main #content-area .nav-links>#Invoices .orderIcon{
+#customerContainer #content-area #Customernav-links>#Home2 #homeIcon2,#customerContainer #content-area #Customernav-links>#Customers2 #customerIcon2, #customerContainer #content-area #Customernav-links>#Items2 #itemIcon2,#customerContainer #content-area #Customernav-links>#Invoices2 #orderIcon2{
     position: relative;
 }
-main #content-area .nav-links>#Home .homeIcon, main #content-area .nav-links>#Customers .customerIcon, main #content-area .nav-links>#Items .itemIcon, main #content-area .nav-links>#Logout .logoutIcon {
+#customerContainer #content-area #Customernav-links>#Home2 #homeIcon2, #customerContainer #content-area #Customernav-links>#Customers2 #customerIcon2, #customerContainer #content-area #Customernav-links>#Items2 #itemIcon2, #customerContainer #content-area #Customernav-links>#Logout2 #logoutIcon2 {
     left: 4px;
 }
-main #content-area .nav-links>#Invoices #text4,main #content-area .nav-links>#Items #text3,main #content-area .nav-links>#Customers #text2, main #content-area .nav-links>#Home #text1, main #content-area .nav-links>#Logout #text5{
+#customerContainer #content-area #Customernav-links>#Invoices2 #Customertext4,#customerContainer #content-area #Customernav-links>#Items2 #Customertext3,#customerContainer #content-area #Customernav-links>#Customers2 #Customertext2, #customerContainer #content-area #Customernav-links>#Home2 #Customertext1, #customerContainer #content-area #Customernav-links>#Logout2 #Customertext5{
     text-align: end;
     justify-content: space-evenly;
     display: flex;
@@ -58,65 +63,65 @@ main #content-area .nav-links>#Invoices #text4,main #content-area .nav-links>#It
     color: #572C24;
     font-family: revert;
 }
-main #content-area .nav-links>#Home #text1 {
+#customerContainer #content-area #Customernav-links>#Home2 #Customertext1 {
     width: 78%;
 }
-main #content-area .nav-links>#Customers #text2 {
+#customerContainer #content-area #Customernav-links>#Customers2 #Customertext2 {
     font-weight: bold;
 }
-main #content-area .nav-links>#Items #text3{
+#customerContainer #content-area #Customernav-links>#Items2 #Customertext3{
     width: 70%;
 }
-main #content-area .nav-links>#Invoices #text4{
+#customerContainer #content-area #Customernav-links>#Invoices2 #Customertext4{
     width: 84%;
 }
-main #content-area .nav-links>#Home,main #content-area .nav-links>#Customers,main #content-area .nav-links>#Items,main #content-area .nav-links>#Invoices{
+#customerContainer #content-area #Customernav-links>#Home2,#customerContainer #content-area #Customernav-links>#Customers2,#customerContainer #content-area #Customernav-links>#Items2,#customerContainer #content-area #Customernav-links>#Invoices2{
     height: 85px;
 }
 
-main #content-area .nav-links>#Logout{
+#customerContainer #content-area #Customernav-links>#Logout2{
     width: 145px;
     margin-left: 30px;
     height: 95px;
     margin-top: 20px;
 }
-main #content-area .nav-links>#Logout>.container-fluid{
+#customerContainer #content-area #Customernav-links>#Logout2>.container-fluid{
     border: 5px solid #F0CB9E;
     border-radius: 10px;
     height: 52px;
 }
-main #content-area .nav-links>#Logout #text5{
+#customerContainer #content-area #Customernav-links>#Logout2 #Customertext5{
     padding-top: 2px;
 }
 /*==============table area===============*/
-main #content-area .table{
+#customerContainer #content-area .table{
     border: 1px solid #A65444;
     margin: 0px 10px 0px 22px;
 }
-main #content-area .table>thead{
+#customerContainer #content-area .table>thead{
     background-color: #874848;
     border-color: #A65444;
     text-align: center;
 }
-main #content-area .table #tblCustomer{
+#customerContainer #content-area .table #tblCustomer{
     font-size: 1em;
     font-family: 'Inter', sans-serif;
 }
 /*===============update area===================*/
-main #content-area #update-area{
+#customerContainer #content-area #update-area{
     width: 870px;
     height: 78vh;
     background: #D9D9D9;
     border-radius: 45px;
 }
-main #content-area #update-area>.d-flex{
+#customerContainer #content-area #update-area>.d-flex{
     height: 100%;
 }
-main #content-area #update-area>.d-flex>div:nth-child(1){
+#customerContainer #content-area #update-area>.d-flex>div:nth-child(1){
     border-bottom: 1px solid #A65444;
     height: 17%;
 }
-main #content-area #update-area>.d-flex>div:nth-child(1) #btnViewAll{
+#customerContainer #content-area #update-area>.d-flex>div:nth-child(1) #btnViewAll{
     margin-left: -69px;
     margin-top: 15px;
     height: 45px;
@@ -127,23 +132,23 @@ main #content-area #update-area>.d-flex>div:nth-child(1) #btnViewAll{
     font-size: 1em;
     background-color: white;
 }
-main #content-area #update-area>.d-flex>div:nth-child(1) #btnNewCustomer{
-     border: 2px solid #6E382D;
-     height: 50px;
-     text-align: center;
-     margin-top: 14px;
-     position: relative;
-     left: 75px;
+#customerContainer #content-area #update-area>.d-flex>div:nth-child(1) #btnNewCustomer{
+    border: 2px solid #6E382D;
+    height: 50px;
+    text-align: center;
+    margin-top: 14px;
+    position: relative;
+    left: 75px;
     background-color: white;
- }
-main #content-area #update-area>.d-flex>div:nth-child(1) .img-fluid{
+}
+#customerContainer #content-area #update-area>.d-flex>div:nth-child(1) .img-fluid{
     margin-top: 10px;
     height: 53px;
 }
-main #content-area #update-area>.d-flex >div:nth-child(2){
+#customerContainer #content-area #update-area>.d-flex >div:nth-child(2){
     height: 15%;
 }
-main #content-area #update-area>.d-flex >div:nth-child(2) .form-control{
+#customerContainer #content-area #update-area>.d-flex >div:nth-child(2) .form-control{
     width: 271px;
     height: 50px;
     margin-right: 53px;
@@ -152,7 +157,7 @@ main #content-area #update-area>.d-flex >div:nth-child(2) .form-control{
     font-size: 1.2em;
     background-color: #F6F0F0;
 }
-main #content-area #update-area>.d-flex >div:nth-child(2) #btnSearch{
+#customerContainer #content-area #update-area>.d-flex >div:nth-child(2) #btnSearch{
     height: 45px;
     width: 93px;
     border: 3px solid #F0CB9E;
@@ -162,23 +167,23 @@ main #content-area #update-area>.d-flex >div:nth-child(2) #btnSearch{
     margin-top: 5px;
     background-color: white;
 }
-main #content-area #update-area >.d-flex>div:nth-child(3){
+#customerContainer #content-area #update-area >.d-flex>div:nth-child(3){
     height: 67%;
     margin: 0px 30px 0px 30px;
 }
 
-main #content-area #update-area >.d-flex>div:nth-child(3) form{
+#customerContainer #content-area #update-area >.d-flex>div:nth-child(3) form{
     background-color: #FDF9F9;
     height: 100%;
     border-radius: 20px;
 }
-main #content-area #update-area >.d-flex>div:nth-child(3) form label{
+#customerContainer #content-area #update-area >.d-flex>div:nth-child(3) form label{
     padding-left: 40px;
     padding-top: 30px;
     font-size: 1em;
     font-family: 'Inter', sans-serif;
 }
-main #content-area #update-area >.d-flex>div:nth-child(3) form #btnUpdateCustomer{
+#customerContainer #content-area #update-area >.d-flex>div:nth-child(3) form #btnUpdateCustomer{
     border: 2px solid #6E382D;
     height: 45px;
     text-align: center;
@@ -187,11 +192,11 @@ main #content-area #update-area >.d-flex>div:nth-child(3) form #btnUpdateCustome
     bottom: 9px;
     background-color: white;
 }
-main #content-area #update-area >.d-flex>div:nth-child(3) form div>div{
+#customerContainer #content-area #update-area >.d-flex>div:nth-child(3) form div>div{
     padding-left: 60px;
     margin-top: 25px;
 }
-main #content-area #update-area >.d-flex>div:nth-child(3) form div>div>input{
+#customerContainer #content-area #update-area >.d-flex>div:nth-child(3) form div>div>input{
     width: 90%;
     font-size: 1em;
     font-family: 'Inter', sans-serif;
@@ -199,15 +204,15 @@ main #content-area #update-area >.d-flex>div:nth-child(3) form div>div>input{
 }
 
 /*====================model view =================================*/
-main #content-area #update-area #staticBackdrop .modal-body #AddCustomerForm{
+#customerContainer #content-area #update-area #staticBackdrop .modal-body #AddCustomerForm{
     height: 265px;
     width: 100%;
 }
-main #content-area #update-area #staticBackdrop .modal-body #AddCustomerForm .f1{
+#customerContainer #content-area #update-area #staticBackdrop .modal-body #AddCustomerForm .f1{
     height: 45px;
     margin-bottom: 20px;
 }
-main #content-area #update-area #staticBackdrop .modal-body #AddCustomerForm .f1 input{
+#customerContainer #content-area #update-area #staticBackdrop .modal-body #AddCustomerForm .f1 input{
     height: 100%;
     font-size: 1em;
     font-family: 'Inter', sans-serif;

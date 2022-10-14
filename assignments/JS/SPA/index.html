@@ -27,56 +27,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Ledger&display=swap" rel="stylesheet">
 </head>
 <body>
-<main class="container-fluid">
-    <!--home page starts-->
+<!--home page container-->
+<main class="container-fluid" id="homeContainer">
     <!-- left side-->
-    <section id="left-side" id="mainhomePage">
-        <img class="logo-image" src="assets/images/R-logo.png" class="rounded float-start" alt="Rashmiya Logo">
+    <section id="left-side">
+        <img src="assets/images/R-logo.png" class="rounded float-start" alt="Rashmiya Logo">
 
         <!-- for navigation links-->
-        <div class="nav-links">
+        <div id="Home-nav-links">
             <!-- <h1>Nav Area</h1>-->
-            <nav  class="Home" class="navbar">
+            <nav  id="Home1" class="navbar">
                 <div class="container-fluid">
-                    <li class="nav-item" nav-link active class="homeButton">
-                        <a  aria-current="page" class="text1"class="navbar-brand active" href="#">
-                            <img class="homeIcon" src="assets/images/home-brown.png" alt="Home Icon" width="30" height="30" class="d-inline-block align-text-top">
-                            Home
-                        </a>
-                    </li>
+                    <a  id="Hometext1"class="navbar-brand" href="index.html">
+                        <img id="homeIcon1" src="assets/images/home-brown.png" alt="Home Icon" width="30" height="30" class="d-inline-block align-text-top">
+                        Home
+                    </a>
                 </div>
             </nav>
 
-            <nav  class="Customers" class="navbar">
+            <nav id="HomePagecustomerButton" id="Customers1" class="navbar">
                 <div class="container-fluid">
-                    <li class="nav-item" nav-link active class="customerButton">
-                        <a class="text2"class="navbar-brand" href="#">
-                            <img class="customerIcon" src="assets/images/user-brown.png" alt="Customer Icon" width="32" height="32" class="d-inline-block align-text-top">
-                            Customers
-                        </a>
-                    </li>
+                    <a id="Hometext2"class="navbar-brand" href="#">
+                        <img id="customerIcon1" src="assets/images/user-brown.png" alt="Customer Icon" width="32" height="32" class="d-inline-block align-text-top">
+                        Customers
+                    </a>
                 </div>
             </nav>
 
-            <nav  class="Items" class="navbar">
+            <nav  id="HomePageItemButton" id="Items1" class="navbar">
                 <div class="container-fluid">
-                    <li class="nav-item" nav-link active class="itemButton">
-                        <a class="text3" class="navbar-brand" href="#">
-                            <img class="itemIcon" src="assets/images/items-Brown.png" alt="Item Icon" width="48" height="50" class="d-inline-block align-text-top">
-                            Items
-                        </a>
-                    </li>
+                    <a id="Hometext3" class="navbar-brand" href="#">
+                        <img id="itemIcon1" src="assets/images/items-Brown.png" alt="Item Icon" width="48" height="50" class="d-inline-block align-text-top">
+                        Items
+                    </a>
                 </div>
             </nav>
 
-            <nav  class="Invoices" class="navbar">
+            <nav  id="HomePageOrderButton" id="Invoices1" class="navbar">
                 <div class="container-fluid">
-                    <li class="nav-item" nav-link active class="orderButton">
-                        <a class="text4" class="navbar-brand" href="#">
-                            <img class="orderIcon" src="assets/images/order-brown.png" alt="Order Icon" width="32" height="34" class="d-inline-block align-text-top">
-                            Invoices
-                        </a>
-                    </li>
+                    <a id="Hometext4" class="navbar-brand" href="#">
+                        <img id="orderIcon1" src="assets/images/order-brown.png" alt="Order Icon" width="32" height="34" class="d-inline-block align-text-top">
+                        Invoices
+                    </a>
                 </div>
             </nav>
         </div>
@@ -84,7 +76,7 @@
 
     <!--right side-->
     <section id="right-side">
-        <div id="title-area">
+        <div id="Home-title-area">
             <h1>Rashmiya POS System</h1>
             <!--link date and time-->
         </div>
@@ -92,106 +84,97 @@
             <h2 class="text-center">all products in one place</h2>
         </div>
         <div id="center-image">
-            <div id="customerImage">
+            <div id="home-customerImage">
                 <img src="assets/images/user-BrownColor.png" class="img-fluid" alt="Customer Image">
             </div>
-            <div id="orderImage">
+            <div id="home-orderImage">
                 <img src="assets/images/order-BrownColor.png" class="img-fluid" alt="Order Image">
             </div>
-            <div id="itemImage">
+            <div id="home-itemImage">
                 <img src="assets/images/item-Brown.png" class="img-fluid" alt="Item Image">
             </div>
-            <div id="orderDetailsImage">
+            <div id="home-orderDetailsImage">
                 <img src="assets/images/orderDetails.png" class="img-fluid" alt="OrderDetails Image">
             </div>
         </div>
     </section>
-    <!--home page end-->
+</main>
 
-    <!--customer page starts-->
+<!--customer container-->
+<main class="container-fluid" id="customerContainer">
     <!--header area-->
-    <section class="header-top" id="maincustomerPage">
+    <section id="header-top">
         <!-- <div class="d-flex justify-content-center">-->
         <div class="d-flex p-2">
-            <div class="logo-icon">
-                <img class="logo-image" src="assets/images/R-logo.png" class="rounded float-start" alt="Rashmiya Logo">
+            <div>
+                <img id="logo-image" src="assets/images/R-logo.png" class="rounded float-start" alt="Rashmiya Logo">
             </div>
-            <div class="header-text">
-                <div class="main-topic">
+            <div id="header-text">
+                <div id="main-topic">
                     <h1>Rashmiya POS System</h1>
                 </div>
-                <div class="second-topic">
+                <div id="second-topic">
                     <h2 class="text-center">all products in one place</h2>
                 </div>
             </div>
-            <div class="label">
+            <div id="label">
                 <img src="assets/images/user-BrownColor.png" class="img-fluid" alt="...">
                 <label>Customer Form</label>
             </div>
-            <div class="date-time">
+            <div id="date-time">
                 <!-- <label>2022/09/17</label>
                  <label>2:45:00</label>-->
             </div>
         </div>
     </section>
     <!--content area-->
-    <section class="content-area">
+    <section id="content-area">
         <div class="d-flex p-2">
             <!-- for navigation links-->
-            <div class="nav-links">
+            <div id="Customernav-links">
                 <!-- <h1>Nav Area</h1>-->
-                <nav  class="Home" class="navbar">
+                <nav  id="Home2" class="navbar">
                     <div class="container-fluid">
-                        <li class="nav-item" nav-link active class="homeButton">
-                            <a  class="text1"class="navbar-brand" href="#">
-                                <img class="homeIcon" src="assets/images/home-brown.png" alt="Home Icon" width="30" height="30" class="d-inline-block align-text-top">
-                                Home
-                            </a>
-                        </li>
+                        <a  id="Customertext1"class="navbar-brand" href="#">
+                            <img id="homeIcon2" src="assets/images/home-brown.png" alt="Home Icon" width="30" height="30" class="d-inline-block align-text-top">
+                            Home
+                        </a>
                     </div>
                 </nav>
 
-                <nav  class="Customers" class="navbar">
+                <nav  id="Customers2" class="navbar">
                     <div class="container-fluid">
-                        <li class="nav-item" nav-link active class="customerButton">
-                            <a aria-current="page" class="text2"class="navbar-brand active" href="#">
-                                <img class="customerIcon" src="assets/images/user-brown.png" alt="Customer Icon" width="32" height="32" class="d-inline-block align-text-top">
-                                Customers
-                            </a>
-                        </li>
+                        <a id="Customertext2"class="navbar-brand" href="#">
+                            <img id="customerIcon" src="assets/images/user-brown.png" alt="Customer Icon" width="32" height="32" class="d-inline-block align-text-top">
+                            Customers
+                        </a>
                     </div>
                 </nav>
 
-                <nav  class="Items" class="navbar">
+                <nav  id="Items2" class="navbar">
                     <div class="container-fluid">
-                        <li class="nav-item" nav-link active class="itemButton">
-                            <a class="text3" class="navbar-brand" href="#">
-                                <img class="itemIcon" src="assets/images/items-Brown.png" alt="Item Icon" width="48" height="50" class="d-inline-block align-text-top">
-                                Items
-                            </a>
-                        </li>
+                        <a id="Customertext3" class="navbar-brand" href="#">
+                            <img id="itemIcon" src="assets/images/items-Brown.png" alt="Item Icon" width="48" height="50" class="d-inline-block align-text-top">
+                            Items
+                        </a>
                     </div>
                 </nav>
 
-                <nav  class="Invoices" class="navbar">
+                <nav  id="Invoices2" class="navbar">
                     <div class="container-fluid">
-                        <li class="nav-item" nav-link active class="orderButton">
-                            <a class="text4" class="navbar-brand" href="#">
-                                <img class="orderIcon" src="assets/images/order-brown.png" alt="Order Icon" width="32" height="34" class="d-inline-block align-text-top">
-                                Invoices
-                            </a>
-                        </li>
+                        <a id="Customertext4" class="navbar-brand" href="#">
+                            <img id="orderIcon" src="assets/images/order-brown.png" alt="Order Icon" width="32" height="34" class="d-inline-block align-text-top">
+                            Invoices
+                        </a>
                     </div>
                 </nav>
 
-                <nav  id="Logout" class="navbar">
+                <nav  id="Logout2" class="navbar">
                     <div class="container-fluid">
-                        <li class="nav-item" nav-link active class="logoutButton">
-                            <a id="text5" class="navbar-brand" href="#">
-                                <img class="logoutIcon" src="assets/images/logout-BrownColor.png" alt="Logout Icon" width="40" height="40" class="d-inline-block align-text-top">
-                                Log Out
-                            </a>
-                        </li>
+                        <a id="Customertext5" class="navbar-brand" href="#">
+                            <img id="logoutIcon2" src="assets/images/logout-BrownColor.png" alt="Logout Icon" width="40" height="40" class="d-inline-block align-text-top">
+                            Log Out
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -206,46 +189,46 @@
                     <th>Contact NO</th>
                 </tr>
                 </thead>
-                <tbody class="tblCustomer">
+                <tbody id="tblCustomer">
 
                 </tbody>
             </table>
 
             <!--update area-->
-            <div class="update-area">
+            <div id="update-area">
                 <div class="d-flex flex-column mb-3">
-                    <div class="p-2" class="1">
+                    <div class="p-2" id="1">
                         <div class="d-flex justify-content-center">
-                            <button type="button" class="btnViewAll" class="btn ">View All</button>
-                            <img src="assets/images/refresh-brown.png" class="refreshIcon" class="img-fluid" alt="Refresh button">
+                            <button type="button" id="btnViewAll" class="btn ">View All</button>
+                            <img src="assets/images/refresh-brown.png" id="refreshIcon" class="img-fluid" alt="Refresh button">
                             <!--  <button type="button" id="btnAddCustomer" class="btn btn-lg">+ New Customer</button>-->
-                            <button type="button" class="btnNewCustomer" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <button type="button" id="btnNewCustomer" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 + New Customer
                             </button>
                             <!-- Modal -->
-                            <div class="modal fade" class="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" class="staticBackdropLabel">ADD New Customer</h1>
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">ADD New Customer</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <!--text Fields for add customer-->
-                                            <div class="col-11 col-lg-5" class="AddCustomerForm">
+                                            <div class="col-11 col-lg-5" id="AddCustomerForm">
                                                 <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer ID/NIC"
-                                                                        class="txtCustomerID" type="text"></div>
+                                                                        id="txtCustomerID" type="text"></div>
                                                 <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer Name"
-                                                                        class="txtCustomerName" type="text"></div>
+                                                                        id="txtCustomerName" type="text"></div>
                                                 <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer Address"
-                                                                        class="txtCustomerAddress" type="text"></div>
+                                                                        id="txtCustomerAddress" type="text"></div>
                                                 <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Contact Number "
-                                                                        class="txtCustomerContact" type="text"></div>
+                                                                        id="txtCustomerContact" type="text"></div>
                                             </div>
                                             <!--model end-->
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-success" class="btnAddCustomer">ADD Customer</button>
+                                                <button type="button" class="btn btn-success" id="btnAddCustomer">ADD Customer</button>
                                             </div>
                                         </div>
                                     </div>
@@ -253,16 +236,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-2" class="2">
+                    <div class="p-2" id="2">
                         <div class="d-flex justify-content-start">
                             <div class="mb-3">
-                                <input type="text" class="form-control" class="formGroupExampleInput" placeholder="Search Customer by ID/NIC">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search Customer by ID/NIC">
                             </div>
-                            <button type="button" class="btnSearch" class="btn ">Search</button>
+                            <button type="button" id="btnSearch" class="btn ">Search</button>
                         </div>
                     </div>
 
-                    <div class="p-2" class="3">
+                    <div class="p-2" id="3">
                         <form>
                             <div class="row mb-4">
 
@@ -294,92 +277,83 @@
 
         </div>
     </section>
-    <!--customer page end-->
+</main>
 
-    <!--item page starts-->
+<!--item container-->
+<main class="container-fluid" id="itemContainer">
     <!--header area-->
-    <section id="header-top" id="mainitemPage">
+    <section id="item-header-top">
         <!-- <div class="d-flex justify-content-center">-->
         <div class="d-flex p-2">
             <div id="logo-icon">
-                <img class="logo-image" src="assets/images/R-logo.png" class="rounded float-start" alt="Rashmiya Logo">
+                <img id="item-logo-image" src="assets/images/R-logo.png" class="rounded float-start" alt="Rashmiya Logo">
             </div>
-            <div id="header-text">
-                <div id="main-topic">
+            <div id="item-header-text">
+                <div id="item-main-topic">
                     <h1>Rashmiya POS System</h1>
                 </div>
-                <div id="second-topic">
+                <div id="item-second-topic">
                     <h2 class="text-center">all products in one place</h2>
                 </div>
             </div>
-            <div id="label">
+            <div id="item-label">
                 <img src="assets/images/item-Brown.png" class="img-fluid" alt="...">
                 <label>Item Form</label>
             </div>
-            <div class="date-time">
+            <div id="item-date-time">
                 <!-- <label>2022/09/17</label>
                  <label>2:45:00</label>-->
             </div>
         </div>
     </section>
     <!--content area-->
-    <section id="content-area">
+    <section id="item-content-area">
         <div class="d-flex p-2">
             <!-- for navigation links-->
-            <div class="nav-links">
+            <div id="nav-links">
                 <!-- <h1>Nav Area</h1>-->
-                <nav  class="Home" class="navbar">
+                <nav  id="Home" class="navbar">
                     <div class="container-fluid">
-                        <li class="nav-item" nav-link active class="homeButton">
-                            <a  class="text1"class="navbar-brand" href="#">
-                                <img class="homeIcon" src="assets/images/home-brown.png" alt="Home Icon" width="30" height="30" class="d-inline-block align-text-top">
-                                Home
-                            </a>
-                        </li>
+                        <a  id="text1"class="navbar-brand" href="#">
+                            <img id="homeIcon3" src="assets/images/home-brown.png" alt="Home Icon" width="30" height="30" class="d-inline-block align-text-top">
+                            Home
+                        </a>
                     </div>
                 </nav>
 
-                <nav  class="Customers" class="navbar">
+                <nav  id="Customers" class="navbar">
                     <div class="container-fluid">
-                        <li class="nav-item" nav-link active class="customerButton">
-                            <a class="text2"class="navbar-brand" href="#">
-                                <img class="customerIcon" src="assets/images/user-brown.png" alt="Customer Icon" width="32" height="32" class="d-inline-block align-text-top">
-                                Customers
-                            </a>
-                        </li>
+                        <a id="text2"class="navbar-brand" href="#">
+                            <img id="customerIcon3" src="assets/images/user-brown.png" alt="Customer Icon" width="32" height="32" class="d-inline-block align-text-top">
+                            Customers
+                        </a>
                     </div>
                 </nav>
 
-                <nav  class="Items" class="navbar">
+                <nav  id="Items" class="navbar">
                     <div class="container-fluid">
-                        <li class="nav-item" nav-link active class="itemButton">
-                            <a aria-current="page" class="text3" class="navbar-brand active" href="#">
-                                <img class="itemIcon" src="assets/images/items-Brown.png" alt="Item Icon" width="48" height="50" class="d-inline-block align-text-top">
-                                Items
-                            </a>
-                        </li>
+                        <a id="text3" class="navbar-brand" href="#">
+                            <img id="itemIcon3" src="assets/images/items-Brown.png" alt="Item Icon" width="48" height="50" class="d-inline-block align-text-top">
+                            Items
+                        </a>
                     </div>
                 </nav>
 
-                <nav  class="Invoices" class="navbar">
+                <nav  id="Invoices" class="navbar">
                     <div class="container-fluid">
-                        <li class="nav-item" nav-link active class="orderButton">
-                            <a class="text4" class="navbar-brand" href="#">
-                                <img class="orderIcon" src="assets/images/order-brown.png" alt="Order Icon" width="32" height="34" class="d-inline-block align-text-top">
-                                Invoices
-                            </a>
-                        </li>
+                        <a id="text4" class="navbar-brand" href="#">
+                            <img id="orderIcon3" src="assets/images/order-brown.png" alt="Order Icon" width="32" height="34" class="d-inline-block align-text-top">
+                            Invoices
+                        </a>
                     </div>
                 </nav>
 
-                <nav  class="Logout" class="navbar">
+                <nav  id="Logout" class="navbar">
                     <div class="container-fluid">
-                        <li class="nav-item" nav-link active class="logoutButton">
-                            <a class="text5" class="navbar-brand" href="#">
-                                <img class="logoutIcon" src="assets/images/logout-BrownColor.png" alt="Logout Icon" width="40" height="40" class="d-inline-block align-text-top">
-                                Log Out
-                            </a>
-                        </li>
+                        <a id="text5" class="navbar-brand" href="#">
+                            <img id="logoutIcon3" src="assets/images/logout-BrownColor.png" alt="Logout Icon" width="40" height="40" class="d-inline-block align-text-top">
+                            Log Out
+                        </a>
                     </div>
                 </nav>
 
@@ -401,22 +375,22 @@
             </table>
 
             <!--update area-->
-            <div id="update-area">
+            <div id="item-update-area">
                 <div class="d-flex flex-column mb-3">
-                    <div class="p-2" id="1">
+                    <div class="p-2">
                         <div class="d-flex justify-content-center">
-                            <button type="button" id="btnViewAll" class="btn ">View All</button>
-                            <img src="assets/images/refresh-brown.png" id="refreshIcon" class="img-fluid" alt="Refresh button">
+                            <button type="button" id="item-btnViewAll" class="btn ">View All</button>
+                            <img src="assets/images/refresh-brown.png" id="item-refreshIcon" class="img-fluid" alt="Refresh button">
                             <!--  <button type="button" id="btnAddCustomer" class="btn btn-lg">+ New Customer</button>-->
                             <button type="button" id="btnAddItems" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 + New Item
                             </button>
                             <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal fade" id="item-staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" class="staticBackdropLabel">ADD New Item</h1>
+                                            <h1 class="modal-title fs-5" id="item-staticBackdropLabel">ADD New Item</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
@@ -442,16 +416,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-2" class="2">
+                    <div class="p-2">
                         <div class="d-flex justify-content-start">
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search Item by ItemCode">
+                                <input type="text" class="form-control"  placeholder="Search Item by ItemCode">
                             </div>
-                            <button type="button" id="btnSearch" class="btn ">Search</button>
+                            <button type="button" id="item-btnSearch" class="btn ">Search</button>
                         </div>
                     </div>
 
-                    <div class="p-2" class="3">
+                    <div class="p-2">
                         <form>
                             <div class="row mb-4">
 
@@ -483,249 +457,212 @@
 
         </div>
     </section>
-    <!--item page ends-->
+</main>
 
-    <!--order page starts-->
-    <main class="d-flex p-2 flex-column mb-3" id="mainorderPage">
-        <!--first row-header area-->
-        <section class="d-flex flex-row mb-2">
-            <div class="p-2" id="logo">
-                <img class="logo-image" src="assets/images/R-logo.png" class="rounded float-start" alt="Rashmiya Logo">
+<!--order container-->
+<main class="container-fluid" id="orderContainer">
+<main class="d-flex p-2 flex-column mb-3">
+    <!--first row-header area-->
+    <section class="d-flex flex-row mb-2">
+        <div class="p-2" id="logo">
+            <img src="assets/images/R-logo.png" class="rounded float-start" alt="Rashmiya Logo">
+        </div>
+        <div class="p-2" id="title">
+            <h1>Rashmiya POS System</h1>
+            <h2>all products in one place</h2>
+            <img src="assets/images/order-BrownColor.png" class="img-fluid" alt="...">
+            <label>Place Order</label>
+        </div>
+        <div class="d-flex flex-column p-2" id="order-date-time">
+            <div>
+                <label>Order ID :- </label>
+                <label>OID-001</label>
             </div>
-            <div class="p-2" id="title">
-                <h1>Rashmiya POS System</h1>
-                <h2>all products in one place</h2>
-                <img src="assets/images/order-BrownColor.png" class="img-fluid" alt="...">
-                <label>Place Order</label>
+            <div>
+                <label>Date :- </label>
+                <label>2022/09/17</label>
+                <label>2:45:00</label>
             </div>
-            <div class="d-flex flex-column p-2" id="date-time">
-                <div>
-                    <label>Order ID :- </label>
-                    <label>OID-001</label>
-                </div>
-                <div>
-                    <label>Date :- </label>
-                    <label>2022/09/17</label>
-                    <label>2:45:00</label>
-                </div>
-            </div>
-            <div class="p-2 d-flex flex-row " id="customerDetails">
-                <div>
-                    <select aria-label=".form-select-lg example" class=" f3 form-select form-select-sm" id="first">
-                        <option selected>Customer ID/NIC</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div>
-                    <div class="col-sm-10" id="second1">
-                        <input type="text" class="form-control" placeholder="Customer Name">
-                    </div>
-                    <div class="col-sm-10" id="second2">
-                        <input type="text" class="form-control" placeholder="Customer Address">
-                    </div>
-                </div>
-                <div>
-                    <div class="col-sm-10" id="third">
-                        <input type="number" class="form-control" placeholder="Contact Number">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--second row-content area-->
-        <section class="d-flex flex-row">
-            <!--update area-->
-            <div id="update-area1">
-                <select aria-label=".form-select-lg example" class=" f3 form-select form-select-sm" class="1">
-                    <option selected>Item Code</option>
+        </div>
+        <div class="p-2 d-flex flex-row " id="customerDetails">
+            <div>
+                <select aria-label=".form-select-lg example" class=" f3 form-select form-select-sm" id="first">
+                    <option selected>Customer ID/NIC</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
-                <input type="text" class="form-control" placeholder="Description" id="2">
-                <input type="text" class="form-control" placeholder="Unit Price" id="3">
-                <input type="text" class="form-control" placeholder="Qty On Hand" id="4">
-                <div>
-                    <label>Qty</label>
-                    <input type="text" class="form-control" id="qty">
-                </div>
-
-                <button type="button" id="btnAddToCart" class="btn ">Add To Cart</button>
             </div>
-            <!--table area-->
-            <div id="table">
-                <table class="table table-bordered table-hover">
-                    <thead class="text-white">
-                    <tr>
-                        <th>Item Code</th>
-                        <th>Description</th>
-                        <th>Unit Price</th>
-                        <th>Qty</th>
-                        <th>Total Cost</th>
-                        <th>Action</th>
-                    </tr>
-                    </thead>
-                    <tbody id="tblCustomer">
-
-                    </tbody>
-                </table>
+            <div>
+                <div class="col-sm-10" id="second1">
+                    <input type="text" class="form-control" placeholder="Customer Name">
+                </div>
+                <div class="col-sm-10" id="second2">
+                    <input type="text" class="form-control" placeholder="Customer Address">
+                </div>
             </div>
-            <div id="update-area2">
-                <div>
-                    <label>Total</label>
-                    <input type="text" class="form-control" id="total">
+            <div>
+                <div class="col-sm-10" id="third">
+                    <input type="number" class="form-control" placeholder="Contact Number">
                 </div>
-
-                <div>
-                    <label>Discount</label>
-                    <input type="text" class="form-control" id="discount">
-                </div>
-
-                <div>
-                    <label>Sub Total</label>
-                    <input type="text" class="form-control" id="subTotal">
-                </div>
-
-                <div>
-                    <label>Cash</label>
-                    <input type="text" class="form-control" id="cash">
-                </div>
-
-                <div>
-                    <label>Exchange</label>
-                    <input type="text" class="form-control" id="exchange">
-                </div>
-                <button type="button" id="btnPlaceOrder" class="btn ">Place Order</button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--third row-nav links area-->
-        <section class="d-flex flex-row mb-2">
-            <nav id="Home" class="navbar">
-                <div class="container-fluid">
-                    <li class="nav-item" nav-link active class="homeButton">
-                        <a  id="text1"class="navbar-brand" href="#">
-                            <img class="homeIcon" src="assets/images/home-brown.png" alt="Home Icon" width="30" height="30" class="d-inline-block align-text-top">
-                            Home
-                        </a>
-                    </li>
-                </div>
-            </nav>
+    <!--second row-content area-->
+    <section class="d-flex flex-row">
+        <!--update area-->
+        <div id="update-area1">
+            <select aria-label=".form-select-lg example" class=" f3 form-select form-select-sm">
+                <!--<option selected>Item Code</option>-->
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <input type="text" class="form-control" placeholder="Description">
+            <input type="text" class="form-control" placeholder="Unit Price">
+            <input type="text" class="form-control" placeholder="Qty On Hand">
+            <div>
+                <label>Qty</label>
+                <input type="text" class="form-control" id="qty">
+            </div>
 
-            <nav  id="Customers" class="navbar">
-                <div class="container-fluid">
-                    <li class="nav-item" nav-link active class="customerButton">
-                        <a id="text2"class="navbar-brand" href="#">
-                            <img class="customerIcon" src="assets/images/user-brown.png" alt="Customer Icon" width="32" height="32" class="d-inline-block align-text-top">
-                            Customers
-                        </a>
-                    </li>
-                </div>
-            </nav>
+            <button type="button" id="btnAddToCart" class="btn ">Add To Cart</button>
+        </div>
+        <!--table area-->
+        <div id="table">
+            <table class="table table-bordered table-hover">
+                <thead class="text-white">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Description</th>
+                    <th>Unit Price</th>
+                    <th>Qty</th>
+                    <th>Total Cost</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody id="tblCart">
 
-            <nav  id="Items" class="navbar">
-                <div class="container-fluid">
-                    <li class="nav-item" nav-link active class="itemButton">
-                        <a id="text3" class="navbar-brand" href="#">
-                            <img class="itemIcon" src="assets/images/items-Brown.png" alt="Item Icon" width="48" height="50" class="d-inline-block align-text-top">
-                            Items
-                        </a>
-                    </li>
-                </div>
-            </nav>
+                </tbody>
+            </table>
+        </div>
+        <div id="update-area2">
+            <div>
+                <label>Total</label>
+                <input type="text" class="form-control" id="total">
+            </div>
 
-            <nav  id="Invoices" class="navbar">
-                <div class="container-fluid">
-                    <li class="nav-item" nav-link active class="orderButton">
-                        <a aria-current="page" id="text4" class="navbar-brand active" href="#">
-                            <img class="orderIcon" src="assets/images/order-brown.png" alt="Order Icon" width="32" height="34" class="d-inline-block align-text-top">
-                            Invoices
-                        </a>
-                    </li>
-                </div>
-            </nav>
+            <div>
+                <label>Discount</label>
+                <input type="text" class="form-control" id="discount">
+            </div>
 
-            <button type="button" id="btnNewCustomer" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                + New Customer
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" class="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">ADD New Customer</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div>
+                <label>Sub Total</label>
+                <input type="text" class="form-control" id="subTotal">
+            </div>
+
+            <div>
+                <label>Cash</label>
+                <input type="text" class="form-control" id="cash">
+            </div>
+
+            <div>
+                <label>Exchange</label>
+                <input type="text" class="form-control" id="exchange">
+            </div>
+            <button type="button" id="btnPlaceOrder" class="btn ">Place Order</button>
+        </div>
+    </section>
+
+    <!--third row-nav links area-->
+    <section class="d-flex flex-row mb-2">
+        <nav id="Home4" class="navbar">
+            <div class="container-fluid">
+                <a  id="Ordertext1"class="navbar-brand" href="#">
+                    <img id="homeIcon" src="assets/images/home-brown.png" alt="Home Icon" width="30" height="30" class="d-inline-block align-text-top">
+                    Home
+                </a>
+            </div>
+        </nav>
+
+        <nav  id="Customers4" class="navbar">
+            <div class="container-fluid">
+                <a id="Ordertext2"class="navbar-brand" href="#">
+                    <img id="customerIcon4" src="assets/images/user-brown.png" alt="Customer Icon" width="32" height="32" class="d-inline-block align-text-top">
+                    Customers
+                </a>
+            </div>
+        </nav>
+
+        <nav  id="Items4" class="navbar">
+            <div class="container-fluid">
+                <a id="Ordertext3" class="navbar-brand" href="#">
+                    <img id="itemIcon4" src="assets/images/items-Brown.png" alt="Item Icon" width="48" height="50" class="d-inline-block align-text-top">
+                    Items
+                </a>
+            </div>
+        </nav>
+
+        <nav  id="Invoices4" class="navbar">
+            <div class="container-fluid">
+                <a id="Ordertext4" class="navbar-brand" href="#">
+                    <img id="orderIcon4" src="assets/images/order-brown.png" alt="Order Icon" width="32" height="34" class="d-inline-block align-text-top">
+                    Invoices
+                </a>
+            </div>
+        </nav>
+
+        <button type="button" id="order-btnNewCustomer" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            + New Customer
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="order-staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="order-staticBackdropLabel">ADD New Customer</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--text Fields for add customer-->
+                        <div class="col-11 col-lg-5" id="order-AddCustomerForm">
+                            <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer ID/NIC"
+                                                    id="order-txtCustomerID" type="text"></div>
+                            <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer Name"
+                                                    id="order-txtCustomerName" type="text"></div>
+                            <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer Address"
+                                                    id="order-txtCustomerAddress" type="text"></div>
+                            <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Contact Number "
+                                                    id="order-txtCustomerContact" type="text"></div>
                         </div>
-                        <div class="modal-body">
-                            <!--text Fields for add customer-->
-                            <div class="col-11 col-lg-5" id="AddCustomerForm">
-                                <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer ID/NIC"
-                                                        id="txtCustomerID" type="text"></div>
-                                <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer Name"
-                                                        id="txtCustomerName" type="text"></div>
-                                <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Customer Address"
-                                                        id="txtCustomerAddress" type="text"></div>
-                                <div class="f1 "><input aria-label=".form-control-sm example" class="form-control form-control-sm" placeholder="Contact Number "
-                                                        id="txtCustomerContact" type="text"></div>
-                            </div>
-                            <!--model end-->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success" id="btnAddCustomer">ADD Customer</button>
-                            </div>
+                        <!--model end-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">ADD Customer</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <nav  class="Logout" class="navbar">
-                <div class="container-fluid">
-                    <li class="nav-item" nav-link active class="logoutButton">
-                        <a class="text5" class="navbar-brand" href="#" >
-                            <img class="logoutIcon" src="assets/images/logout-BrownColor.png" alt="Logout Icon" width="40" height="40" class="d-inline-block align-text-top">
-                            Log Out
-                        </a>
-                    </li>
-                </div>
-            </nav>
-        </section>
-    </main>
-    <!--order page ends-->
+        <nav  id="order-Logout" class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img id="logoutIcon" src="assets/images/logout-BrownColor.png" alt="Logout Icon" width="40" height="40" class="d-inline-block align-text-top">
+                    Log Out
+                </a>
+            </div>
+        </nav>
+    </section>
 </main>
-<script src="assets/js/jquery-3.6.1.min.js"></script>  <!--import jQuery library-->
-<script>
-    $("#mainhomePage").css('display', 'block');
-    $("#maincustomerPage").css('display', 'none');
-    $("#mainitemPage").css('display', 'none');
-    $("#mainorderPage").css('display', 'none');
-
-    $(".homeButton").click(function () {
-        $("#mainhomePage").css('display', 'block');
-        $("#maincustomerPage").css('display', 'none');
-        $("#mainitemPage").css('display', 'none');
-        $("#mainorderPage").css('display', 'none');
-    });
-    $(".customerButton").click(function () {
-        $("#maincustomerPage").css('display', 'block');
-        $("#mainhomePage").css('display', 'none');
-        $("#mainitemPage").css('display', 'none');
-        $("#mainorderPage").css('display', 'none');
-    });
-    $(".itemButton").click(function () {
-        $("#mainitemPage").css('display', 'block');
-        $("#mainhomePage").css('display', 'none');
-        $("#maincustomerPage").css('display', 'none');
-        $("#mainorderPage").css('display', 'none');
-    });
-    $(".orderButton").click(function () {
-        $("#mainorderPage").css('display', 'block');
-        $("#mainhomePage").css('display', 'none');
-        $("#maincustomerPage").css('display', 'none');
-        $("#mainitemPage").css('display', 'none');
-    });
-</script>
+</main>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="controllers/DashboardController.js"></script>   <!--import the SPA controllers-->
+
+
 </body>
 </html>

@@ -1,43 +1,50 @@
-main{
-   /* border: 1px solid red;*/
+#orderContainer{
+    padding-left: 0;
+    padding-right: 0;
     height: 100vh;
 }
-/*1st row*/
-main>section:nth-child(1){
-   /* border: 1px solid black;*/
-    border-bottom: 1px solid black;
-    height: 20%;
+#orderContainer>main{
+    /* border: 1px solid red;*/
+    height: 170%;
 }
-main>section:nth-child(1) .logo img{
+/*1st row*/
+#orderContainer>main>section:nth-child(1){
+    /* border: 1px solid black;*/
+    border-bottom: 1px solid black;
+    /*height: 20%;*/
+    /*height: 17%;*/
+    height: 12%;
+}
+#orderContainer>main>section:nth-child(1) #logo img{
     width: 100px;
     height: 100%;
     border-right: 2.5px solid #F0CB9E;
 }
-main>section:nth-child(1) #title{
-   /* border: 1px solid;*/
+#orderContainer>main>section:nth-child(1) #title{
+    /* border: 1px solid;*/
     width: 316px;
 }
-main>section:nth-child(1) #title h1{
+#orderContainer>main>section:nth-child(1) #title h1{
     font-family: 'Ledger', serif;
     font-size: 1.5em;
     position: relative;
     right: 10px;
 }
-main>section:nth-child(1) #title h2{
+#orderContainer>main>section:nth-child(1) #title h2{
     color: #BD8F31;
     font-size: 0.95em;
     font-family: 'Lemonada', cursive;
     font-weight: bold;
     margin-left: 24px;
 }
-main>section:nth-child(1) #title img{
+#orderContainer>main>section:nth-child(1) #title img{
     height: 78px;
     width: 76px;
     position: relative;
     right: 10px;
     bottom: 26px;
 }
-main>section:nth-child(1) #title label{
+#orderContainer>main>section:nth-child(1) #title label{
     font-family: sans-serif;
     font-weight: bold;
     color: #BD8F31;
@@ -45,98 +52,99 @@ main>section:nth-child(1) #title label{
     position: relative;
     bottom: 12px;
 }
-main>section:nth-child(1) #date-time{
-   /* border:1px solid red;*/
+#orderContainer>main>section:nth-child(1) #date-time{
+    /* border:1px solid red;*/
     border-right: 1px solid black;
     height: 91%;
 
 }
-main>section:nth-child(1) #date-time div:nth-child(1){
+#orderContainer>main>section:nth-child(1) #date-time div:nth-child(1){
     padding-top: 17px;
 }
 
-main>section:nth-child(1) #date-time div{
-   /* border: 1px solid blue;*/
+#orderContainer>main>section:nth-child(1) #date-time div{
+    /* border: 1px solid blue;*/
     font-size: 1.1em;
     font-family: sans-serif;
     padding: 0px 0px 16px 20px;
     width: 278px;
 }
-main>section:nth-child(1) #date-time div>label:nth-child(1){
+#orderContainer>main>section:nth-child(1) #date-time div>label:nth-child(1){
     padding-right: 20px;
 }
-main>section:nth-child(1) #date-time div:nth-child(2)>label:nth-child(2){
+#orderContainer>main>section:nth-child(1) #date-time div:nth-child(2)>label:nth-child(2){
     padding-right: 20px;
 }
 
-main>section:nth-child(1) #customerDetails{
+#orderContainer>main>section:nth-child(1) #customerDetails{
     font-size: 1em;
     font-family: 'Inter', sans-serif;
     justify-content: center;
 }
-main>section:nth-child(1) #customerDetails>div{
-   /* border: 1px solid black;*/
+#orderContainer>main>section:nth-child(1) #customerDetails>div{
+    /* border: 1px solid black;*/
     width: 30%;
 }
-main>section:nth-child(1) #customerDetails div #first{
+#orderContainer>main>section:nth-child(1) #customerDetails div #first{
     position: relative;
     top: 30px;
     height: 34%;
     width: 95%;
-   /* left: 10px;*/
+    /* left: 10px;*/
     border: 2px solid #6E382D;
     color: #767171;
 }
-main>section:nth-child(1) #customerDetails div #second1{
+#orderContainer>main>section:nth-child(1) #customerDetails div #second1{
     width: 95%;
     position: relative;
     left: 26px;
 }
-main>section:nth-child(1) #customerDetails div #second1 input{
-   border: 2px solid #6E382D;
+#orderContainer>main>section:nth-child(1) #customerDetails div #second1 input{
+    border: 2px solid #6E382D;
     /*color: #767171;
    position: relative;
    left: 10px;*/
 }
-main>section:nth-child(1) #customerDetails div #second2 input{
+#orderContainer>main>section:nth-child(1) #customerDetails div #second2 input{
     border: 2px solid #6E382D;
     /* color: #767171;
     position: relative;
     left: 10px;*/
 }
-main>section:nth-child(1) #customerDetails div #second2{
+#orderContainer>main>section:nth-child(1) #customerDetails div #second2{
     width: 95%;
     position: relative;
     left: 26px;
     top: 17px;
 }
 
-main>section:nth-child(1) #customerDetails div #third{
+#orderContainer>main>section:nth-child(1) #customerDetails div #third{
     width: 95%;
     position: relative;
     left: 35px;
     top: 27px;
 }
 
-main>section:nth-child(1) #customerDetails div #third input{
+#orderContainer>main>section:nth-child(1) #customerDetails div #third input{
     border: 2px solid #6E382D;
     /* color: #767171;
     position: relative;
     left: 10px;*/
 }
 /*2nd row*/
-main>section:nth-child(2){
-   /* border: 1px solid blue;*/
-    height: 70%;
+#orderContainer>main>section:nth-child(2){
+    /* border: 1px solid blue;*/
+  /*  height: 70%;*/
+    height: 39%;
 }
-main>section:nth-child(2) #update-area1{
+#orderContainer>main>section:nth-child(2) #update-area1{
     width: 300px;
     height: 67vh;
     background: #D9D9D9;
     border-radius: 45px;
 }
-main>section:nth-child(2) #update-area1>select, main>section:nth-child(2) #update-area1>input{
-   /* height: 44px; *!*/
+#orderContainer>main>section:nth-child(2) #update-area1>select, #orderContainer>main>section:nth-child(2) #update-area1>input{
+    /* height: 44px; *!*/
     width: 228px;
     margin: 27px 0px 0px 28px;
     /* left: 10px; */
@@ -145,24 +153,24 @@ main>section:nth-child(2) #update-area1>select, main>section:nth-child(2) #updat
     font-size: 1em;
     font-family: 'Inter', sans-serif;
 }
-main>section:nth-child(2) #update-area1>select{
+#orderContainer>main>section:nth-child(2) #update-area1>select{
     margin: 37px 0px 0px 28px;
 }
-main>section:nth-child(2) #update-area1 label{
+#orderContainer>main>section:nth-child(2) #update-area1 label{
     margin-top: 30px;
     font-size: 1.3em;
     font-family: 'Inter', sans-serif;
     position: relative;
     left: 80px;
 }
-main>section:nth-child(2) #update-area1 div>#qty{
+#orderContainer>main>section:nth-child(2) #update-area1 div>#qty{
     width: 118px;
     position: absolute;
     left: 145px;
     border: 2px solid #6E382D;
     bottom: 170px;
 }
-main>section:nth-child(2) #update-area1 #btnAddToCart{
+#orderContainer>main>section:nth-child(2) #update-area1 #btnAddToCart{
     background-color: #6E382D;
     border-radius: 10px;
     font-family: 'Inter', sans-serif;
@@ -173,44 +181,44 @@ main>section:nth-child(2) #update-area1 #btnAddToCart{
     left: 77px;
     top: 35px;
 }
-main>section:nth-child(2) #table{
+#orderContainer>main>section:nth-child(2) #table{
     width: 52%;
 }
-main>section:nth-child(2) .table{
+#orderContainer>main>section:nth-child(2) .table{
     border: 1px solid #A65444;
     margin: 0px 10px 0px 22px;
 }
-main>section:nth-child(2) .table>thead{
+#orderContainer>main>section:nth-child(2) .table>thead{
     background-color: #874848;
     border-color: #A65444;
     text-align: center;
 }
-main>section:nth-child(2) .table #tblCustomer{
+#orderContainer>main>section:nth-child(2) .table #tblCart{
     font-size: 1em;
     font-family: 'Inter', sans-serif;
 }
-main>section:nth-child(2) #update-area2{
+#orderContainer>main>section:nth-child(2) #update-area2{
     width: 309px;
     height: 66vh;
     background: #D9D9D9;
     border-radius: 45px;
     margin-left: 30px;
 }
-main>section:nth-child(2) #update-area2 label{
+#orderContainer>main>section:nth-child(2) #update-area2 label{
     margin-top: 45px;
     font-size: 1.2em;
     font-family: 'Inter', sans-serif;
     position: relative;
     left: 24px;
 }
-main>section:nth-child(2) #update-area2 div:nth-child(1)>#total{
+#orderContainer>main>section:nth-child(2) #update-area2 div:nth-child(1)>#total{
     width: 151px;
     position: absolute;
     left: 1161px;
     border: 2px solid #6E382D;
     bottom: 436px;
 }
-main>section:nth-child(2) #update-area2 div:nth-child(2)>#discount{
+#orderContainer>main>section:nth-child(2) #update-area2 div:nth-child(2)>#discount{
     width: 152px;
     position: absolute;
     left: 145px;
@@ -219,44 +227,44 @@ main>section:nth-child(2) #update-area2 div:nth-child(2)>#discount{
     /* bottom: 170px; */
     bottom: 380px;
 }
-main>section:nth-child(2) #update-area2 div:nth-child(2)> label{
+#orderContainer>main>section:nth-child(2) #update-area2 div:nth-child(2)> label{
     margin-top: 27px;
 }
-main>section:nth-child(2) #update-area2 div:nth-child(3)>#subTotal{
+#orderContainer>main>section:nth-child(2) #update-area2 div:nth-child(3)>#subTotal{
     width: 152px;
     position: absolute;
-   /* left: 145px;*/
+    /* left: 145px;*/
     border: 2px solid #6E382D;
     left: 1161px;
     bottom: 320px;
-   /* bottom: 170px;*/
+    /* bottom: 170px;*/
 }
-main>section:nth-child(2) #update-area2 div:nth-child(3)> label{
+#orderContainer>main>section:nth-child(2) #update-area2 div:nth-child(3)> label{
     margin-top: 28px;
- }
+}
 
-main>section:nth-child(2) #update-area2 div:nth-child(4)>#cash{
+#orderContainer>main>section:nth-child(2) #update-area2 div:nth-child(4)>#cash{
     width: 152px;
     position: absolute;
-   /* left: 145px;*/
+    /* left: 145px;*/
     border: 2px solid #6E382D;
     left: 1161px;
     bottom: 260px;
-   /* bottom: 170px;*/
+    /* bottom: 170px;*/
 }
-main>section:nth-child(2) #update-area2 div:nth-child(4)> label{
+#orderContainer>main>section:nth-child(2) #update-area2 div:nth-child(4)> label{
     margin-top: 31px;
 }
-main>section:nth-child(2) #update-area2 div:nth-child(5)>#exchange{
+#orderContainer>main>section:nth-child(2) #update-area2 div:nth-child(5)>#exchange{
     width: 152px;
     position: absolute;
-   /* left: 145px;*/
+    /* left: 145px;*/
     border: 2px solid #6E382D;
     /*bottom: 170px;*/
     left: 1161px;
     bottom: 200px;
 }
-main>section:nth-child(2) #update-area2 div:nth-child(5)> label{
+#orderContainer>main>section:nth-child(2) #update-area2 div:nth-child(5)> label{
     margin-top: 32px;
 }
 /*main>section:nth-child(2) #update-area2 div>#total, main>section:nth-child(2) #update-area2 div>#discount, main>section:nth-child(2) #update-area2 div>#cash, main>section:nth-child(2) #update-area2 div>#subTotal, main>section:nth-child(2) #update-area2 div>#exchange{
@@ -266,7 +274,7 @@ main>section:nth-child(2) #update-area2 div:nth-child(5)> label{
     border: 2px solid #6E382D;
     bottom: 170px;
 }*/
-main>section:nth-child(2) #update-area2 #btnPlaceOrder{
+#orderContainer>main>section:nth-child(2) #update-area2 #btnPlaceOrder{
     background-color: #6E382D;
     border-radius: 10px;
     font-family: 'Inter', sans-serif;
@@ -279,26 +287,27 @@ main>section:nth-child(2) #update-area2 #btnPlaceOrder{
 }
 
 /*3rd row*/
-main>section:nth-child(3){
-   /* border: 1px solid green;*/
-    height: 10%;
+#orderContainer>main>section:nth-child(3){
+    /* border: 1px solid green;*/
+    /*height: 10%;*/
+    height: 8%;
 }
-main>section:nth-child(3) .container-fluid{
-   /* border: 5px solid #F0CB9E;*/
+#orderContainer>main>section:nth-child(3) .container-fluid{
+    /* border: 5px solid #F0CB9E;*/
     border: 4px solid #6E382D;
     border-radius: 10px;
     height: 52px;
-  /*  width:200px;*/
+    /*  width:200px;*/
 }
-main>section:nth-child(3)  #btnNewCustomer{
+#orderContainer>main>section:nth-child(3)  #order-btnNewCustomer{
     border: 4px solid #6E382D;
     border-radius: 10px;
     height: 52px;
-    margin-top: 8px;
+    margin-top: 19px;
 }
-main>section:nth-child(3) #Home, main>section:nth-child(3) #Customers, main>section:nth-child(3) #Items, main>section:nth-child(3) #Invoices, main>section:nth-child(3)  #btnNewCustomer{
+#orderContainer>main>section:nth-child(3) #Home4,#orderContainer> main>section:nth-child(3) #Customers4, #orderContainer>main>section:nth-child(3) #Items4, #orderContainer>main>section:nth-child(3) #Invoices4, #orderContainer>main>section:nth-child(3)  #order-btnNewCustomer{
     margin-left: 40px;
 }
-main>section:nth-child(3) .Logout{
+#orderContainer>main>section:nth-child(3) #order-Logout{
     margin-left: 145px;
 }

@@ -1,24 +1,26 @@
 
-main>#left-side>.logo-image{
+#homeContainer>#left-side>img{
     top: 10px;
     height: 207px;
     position: relative;
     left: 30px;
     border-right: 2.5px solid #F0CB9E;
 }
-main>#left-side{
+#homeContainer>#left-side{
     height: 100vh;
     width: 50vh;
     position: absolute;
+    border-bottom: 0px solid;
+    left: 0px;
 }
-main>#right-side{
+#homeContainer>#right-side{
     position: absolute;
     left: 50vh;
     height: 100vh;
     width: 74vw;
 }
 
-main>#left-side>.nav-links{
+#homeContainer>#left-side>#Home-nav-links{
     position: absolute;
     top: 281px;
     left: 22px;
@@ -26,14 +28,14 @@ main>#left-side>.nav-links{
     width: 255px;
 }
 
-.nav-links>#Home .homeIcon, .nav-links>#Customers .customerIcon, .nav-links>#Items .itemIcon,.nav-links>#Invoices .orderIcon{
+#homeContainer>#left-side>#Home-nav-links>#Home1 #homeIcon1, #homeContainer>#left-side>#Home-nav-links>#Customers1 #customerIcon1, #homeContainer>#left-side>#Home-nav-links>#Items1 #itemIcon1,#homeContainer>#left-side>#Home-nav-links>#Invoices1 #orderIcon1{
     position: relative;
 }
-.nav-links>#Home .homeIcon, .nav-links>#Customers .customerIcon, .nav-links>#Items .itemIcon {
+#homeContainer>#left-side>#Home-nav-links>#Home1 #homeIcon1,#homeContainer>#left-side>#Home-nav-links>#Customers1 #customerIcon1, #homeContainer>#left-side>#Home-nav-links>#Items1 #itemIcon1{
     left: 4px;
 }
 
-.nav-links>#Invoices #text4,.nav-links>#Items #text3,.nav-links>#Customers #text2, .nav-links>#Home #text1{
+#homeContainer>#left-side>#Home-nav-links>#Invoices1 #Hometext4,#homeContainer>#left-side>#Home-nav-links>#Items1 #Hometext3,#homeContainer>#left-side>#Home-nav-links>#Customers1 #Hometext2, #homeContainer>#left-side>#Home-nav-links>#Home1 #Hometext1{
     text-align: end;
     justify-content: space-evenly;
     display: flex;
@@ -41,25 +43,25 @@ main>#left-side>.nav-links{
     color: #572C24;
     font-family: revert;
 }
-.nav-links>#Home #text1 {
+#homeContainer>#left-side>#Home-nav-links>#Home1 #Hometext1{
     width: 78%;
     font-weight: bold;
 }
-.nav-links>#Items #text3{
+#homeContainer>#left-side>#Home-nav-links>#Items1 #Hometext3{
     width: 70%;
 }
-.nav-links>#Invoices #text4{
+#homeContainer>#left-side>#Home-nav-links>#Invoices1 #Hometext4{
     width: 84%;
 }
-.nav-links>#Home, .nav-links>#Customers,.nav-links>#Items,.nav-links>#Invoices{
+#homeContainer>#left-side>#Home-nav-links>#Home1, main>#left-side>#Home-nav-links>#Customers1,main>#left-side>#Home-nav-links>#Items1,main>#left-side>#Home-nav-links>#Invoices1{
     height: 75px;
 }
-#right-side #title-area{
+#homeContainer>#right-side #Home-title-area{
     color:  #572C24;
     position: relative;
     top: 20px;
 }
-#right-side #title-area>h1{
+#homeContainer>#right-side #Home-title-area>h1{
     font-family: 'Ledger', serif;
     position: relative;
     padding-left: 149px;
@@ -67,7 +69,7 @@ main>#left-side>.nav-links{
     margin-top: 10px;
     font-size: 2em;
 }
-#right-side #center-image{
+#homeContainer>#right-side #center-image{
     position: relative;
     top: 36px;
     width: 885px;
@@ -78,61 +80,61 @@ main>#left-side>.nav-links{
     border: 6px solid #C89B63;
     box-shadow: 6px 7px 4px 3px #e3cdb1;
 }
-#orderDetailsImage{
+#home-orderDetailsImage{
     position: absolute;
     right: 23px;
     bottom: 44px;
     width: 117px;
     height: 123px;
 }
-#orderDetailsImage>img{
+#home-orderDetailsImage>img{
     width: 117px;
     height: 123px;
 }
-#orderImage{
+#home-orderImage{
     position: absolute;
     right: 24px;
     top: 20px;
     width: 150px;
     height: 155px;
 }
-#orderImage>img{
+#home-orderImage>img{
     position: absolute;
     right: -3px;
     top: -6px;
     width: 150px;
     height: 155px;
 }
-#itemImage{
+#home-itemImage{
     position: absolute;
     width: 150px;
     height: 155px;
     left: 27px;
     bottom: 37px;
 }
-#itemImage>img{
+#home-itemImage>img{
     position: absolute;
     width: 140px;
     height: 145px;
     bottom: 0;
 }
-#customerImage{
+#home-customerImage{
     position: absolute;
     width: 144px;
     height: 150px;
     top: 38px;
     left: 34px;
 }
-#customerImage>img{
+#home-customerImage>img{
     width: 144px;
     height: 150px;
 }
-main>#right-side>div:nth-child(2){
+#homeContainer>#right-side>div:nth-child(2){
     position: relative;
     top: 20px;
     height: 32px;
 }
-#right-side>div:nth-child(2)>h2{
+#homeContainer>#right-side>div:nth-child(2)>h2{
     color: #BD8F31;
     font-style: italic;
     font-size: 1.3em;
