@@ -1,0 +1,17 @@
+body>section:nth-child(1){
+    display: flex;
+    border: 1px solid blue;
+    position: relative;
+    top: 40px;
+    height: 50px;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+body>section:nth-child(1)>button{
+    border: 1px solid red;
+    width: 150px;
+}
+body>section:nth-child(1)>#btnJavaScript{
+    width: 205px;
+}
