@@ -3,7 +3,7 @@ body{
 }
 body>section:nth-child(1){
     display: flex;
-    border: 1px solid blue;
+  /*  border: 1px solid blue;*/
     position: relative;
     top: 40px;
     height: 50px;
@@ -21,7 +21,7 @@ body>section:nth-child(1)>#btnJavaScript{
 
 /*========================================*/
 body>main{
-    border: 1px solid red;
+   /* border: 1px solid red;*/
     position: relative;
     top: 80px;
     height: 2100px;

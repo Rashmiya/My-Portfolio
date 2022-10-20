@@ -1,6 +1,10 @@
+body{
+    background-color: #E7F1FC;
+}
+
 body>section:nth-child(1){
     display: flex;
-    border: 1px solid blue;
+   /* border: 1px solid blue;*/
     position: relative;
     top: 40px;
     height: 50px;
@@ -9,9 +13,109 @@ body>section:nth-child(1){
     font-size: 18px;
 }
 body>section:nth-child(1)>button{
-    border: 1px solid red;
+   /* border: 1px solid red;*/
     width: 150px;
 }
 body>section:nth-child(1)>#btnJavaScript{
     width: 205px;
+}
+
+/*========Animation-case-01====================*/
+body>main{
+    /* border: 1px solid red;*/
+    position: relative;
+    top: 80px;
+    height: 2100px;
+}
+
+main #Animation-case-01{
+    top: 55px;
+    margin-left: 35px;
+    width: 95%;
+    height: 310px;
+    /*border: 1px solid red;*/
+    position: relative;
+    display: flex;
+}
+main #Animation-case-01 .Animation-image-area{
+    height: 115%;
+    width: 40%;
+    /*  border:1px solid black;*/
+}
+main #Animation-case-01 .Animation-image-area .Animation-border{
+    width: 480px;
+    height: 320px;
+    background-color: #d9d2d2;
+}
+main #Animation-case-01 .Animation-image-area .Animation-imgSpace>img{
+    width: 491px;
+    height: 327px;
+}
+main #Animation-case-01 .Animation-image-area .Animation-imgSpace{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+/*==================================*/
+main #Animation-case-01 .Animation-content-area{
+    height: 100%;
+    width: 60%;
+    /*  border: 1px solid blue;*/
+    display: flex;
+    flex-direction: column;
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-1{
+    /*  border: 1px solid black;*/
+    font-family: 'Alfa Slab One', cursive;
+    height: 15%;
+    font-size: 1.5em;
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-1>p{
+    margin: 10px 0px 10px 0px;
+    padding-left: 155px;
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-2{
+    /* border: 1px solid black;*/
+    font-family: 'Red Hat Display', sans-serif;
+    height: 12%;
+    font-size: 1.2em;
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-2>p{
+    margin: 0px 0px 8px 0px;
+    padding-left: 100px;
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-3{
+    /*border:1px solid black;*/
+    font-family: 'Noto Sans Display', sans-serif;
+    color: #808080;
+    height: 120px;
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-3>p{
+    padding-left: 30px;
+    letter-spacing: 0.5px;
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-4{
+    /* border:1px solid black;*/
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-4 .github{
+    width: 30px;
+    height: 30px;
+    left: 200px;
+    position: relative;
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-4 .github:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-4 .web{
+    width: 28px;
+    height: 28px;
+    left: 210px;
+    position: relative;
+}
+main #Animation-case-01 .Animation-content-area .Animation-content-4 .web:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
 }
