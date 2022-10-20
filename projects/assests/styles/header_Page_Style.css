@@ -10,7 +10,7 @@ body>header{
 }
 /*"RR" logo in left side of header area*/
 /*header>img:first-child{*/
-header>img:nth-child(2){
+body>header>img:nth-child(2){
    /* position: relative;*/
     position: absolute;
     height: 64px;
@@ -22,7 +22,7 @@ header>img:nth-child(2){
    /* background-color: #011C49;*/
 }
 /*header>img:nth-child(2){*/
-header>img:nth-child(3){
+body>header>img:nth-child(3){
    /* display: none;*/
     visibility: hidden;
 }
@@ -46,7 +46,7 @@ body>header>nav>ul>li>a{
     color: #d2cdcd;
 }
 /*add effects and transitions when hover the links*/
-header>nav>ul>li:hover{
+body>header>nav>ul>li:hover{
     cursor: pointer;
     color: #FF9F43;
     font-size: 24px;
