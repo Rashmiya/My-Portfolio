@@ -11,12 +11,17 @@ body>section:nth-child(1){
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
-body>section:nth-child(1)>button{
+body>section:nth-child(1)>a>#btnBasics,body>section:nth-child(1)>a>#btnAnimation,body>section:nth-child(1)>a>#btnTransitions,body>section:nth-child(1)>a>#btnFrameworks{
    /* border: 1px solid red;*/
     width: 150px;
+    height: 52px;
 }
-body>section:nth-child(1)>#btnJavaScript{
+body>section:nth-child(1)>#btnAnimation{}
+body>section:nth-child(1)>#btnTransitions{}
+body>section:nth-child(1)>#btnFrameworks{}
+body>section:nth-child(1)>a>#btnJavaScript{
     width: 205px;
+    height: 52px;
 }
 
 /*========================================*/
