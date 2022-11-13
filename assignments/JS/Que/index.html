@@ -142,6 +142,16 @@
     /* alert("HAi");*/
   });
 
+  var timer;
+
+  $("#startButton").on('click',function(){
+    /*alert("Hello");*/
+    $("#man-image img").css('display','inline');
+    renderNames();
+    timer= setInterval(renderNames,1200);
+  });
+
+
 </script>
 </body>
 </html>
