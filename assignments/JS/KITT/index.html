@@ -80,11 +80,7 @@
 <h1>JS knight Rider</h1>
 <section class="mainBody">
     <div class="mainArea">
-        <!--<div></div>-->
-       <!-- <div>A</div>
-    <div>B</div>
-    <div>C</div>
-    <div>D</div>-->
+
     </div>
 </section>
 <section class="container-fluid" id="button-area">
@@ -94,8 +90,55 @@
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <!--import the bootstrap-->
 <script src="assets/js/jquery-3.6.1.min.js"></script>  <!--import the jQuery-->
 <script>
+    var knightRider = {
+        count:0,
+        temArray:[],
+        leftColorArray: ['white', 'white', 'white', 'white', 'white', 'white','#F3A5A5', '#EB6D6D', '#CF6060','#A52525','#8B0B0B','#6A0101'],
+        rightColorArray: ['white', 'white', 'white','white', 'white', 'white','#6A0101','#8B0B0B','#A52525','#CF6060', '#EB6D6D', '#F3A5A5'],
+        animateLeft: function () {
+            var lastColor = this.temArray.pop();
+            this.temArray.unshift(lastColor);
+        },
+        animateRight:function (){
+            var firstColor = this.temArray.shift();
+            this.temArray.push(firstColor);
+        },
+        animate:function (){
+            this.count++;
+            if(this.count<=this.leftColorArray.length){
+                this.temArray=this.leftColorArray;
+                this.animateLeft();
+            }else{
+                if (this.count>=(this.rightColorArray.length*2)){
+                    this.count=0;
+                }
+                this.temArray=this.rightColorArray;
+                this.animateRight();
 
+            }
+        }
+    }
 
+   /* renderDivs();*/
+
+    function renderDivs() {
+        $('.mainArea').empty();
+        for (let i = 0; i < (knightRider.temArray.length) / 2; i++) {
+            $('.mainArea').append(`<div style="background-color: ${knightRider.temArray[i]}"></div>`);
+        }
+        knightRider.animate();
+    }
+
+    var timer;
+    $('#startButton').click(function (){
+
+        clearInterval(timer);
+        timer= setInterval(renderDivs, 100);
+    });
+    $('#endButton').click(function (){
+        clearInterval(timer);
+
+    });
 </script>
 </body>
 </html>
