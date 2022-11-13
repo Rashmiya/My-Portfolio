@@ -109,6 +109,33 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>   <!--import the jQuery js plugin-->
 <script>
 
+  var Quedata={
+    persons:[
+      {name:'A'},
+      {name:'B'},
+      {name:'C'},
+      {name:'D'},
+      {name:'E'},
+      {name:'F'}
+    ],
+    nextName:function (){
+      let lastPerson = this.persons.pop();
+      this.persons.unshift(lastPerson);
+    }
+  }
+  renderNames();
+
+  function renderNames(){
+    $('#name-area').empty();
+    for (let i = 0; i < Quedata.persons.length; i++) {
+      $('#name-area').append(`<p>${Quedata.persons[i].name}</p>`);
+      /* console.log(`<p>${Quedata.persons[i].name}</p>`);*/
+    }
+    Quedata.nextName();
+  }
+
+  setInterval(renderNames,1200);
+
 </script>
 </body>
 </html>
