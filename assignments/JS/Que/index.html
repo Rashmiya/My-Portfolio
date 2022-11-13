@@ -151,6 +151,11 @@
     timer= setInterval(renderNames,1200);
   });
 
+  $("#endButton").on('click',function(){
+    /* alert("end");*/
+    $("#man-image img").css('display','none');
+    clearInterval(timer);
+  });
 
 </script>
 </body>
