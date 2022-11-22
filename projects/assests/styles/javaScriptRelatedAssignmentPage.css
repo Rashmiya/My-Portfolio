@@ -20,7 +20,7 @@ body>section:nth-child(1)>#btnJavaScript{
     width: 205px;
 }
 
-/*========================*/
+/*===========02=============*/
 body>section:nth-child(2)>#image-1{
     position: relative;
     background: url(../images/assignment/Que.png);
@@ -56,6 +56,47 @@ body>section:nth-child(2) .content-4 .web{
     top:160px;
 }
 body>section:nth-child(2) .content-4 .web:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
+/*=========03============*/
+
+body>section:nth-child(3)>#image-2{
+    position: absolute;
+    background: url(../images/assignment/KIIT.png);
+    background-position: center;
+    background-size: cover;
+    width: 475px;
+    height: 202px;
+    top: 208px;
+    left: 713px;
+    border: 5px solid black;
+}
+body>section:nth-child(3) .content-4{
+    border:1px solid black;
+    padding-top: 25px;
+}
+body>section:nth-child(3) .content-4 .github{
+    width: 30px;
+    height: 30px;
+    left: 905px;
+    position: relative;
+    top: 100px;
+}
+body>section:nth-child(3) .content-4 .github:hover{
+    cursor: pointer;
+    border:  3.75px solid #F04A1E;
+    border-radius: 100%;
+}
+body>section:nth-child(3) .content-4 .web{
+    width: 28px;
+    height: 28px;
+    left: 920px;
+    position: relative;
+    top: 100px;
+}
+body>section:nth-child(3) .content-4 .web:hover{
     cursor: pointer;
     border:  3.75px solid #F04A1E;
     border-radius: 100%;
