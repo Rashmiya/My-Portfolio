@@ -74,7 +74,7 @@ body>section:nth-child(3)>#image-2{
     border: 5px solid black;
 }
 body>section:nth-child(3) .content-4{
-    border:1px solid black;
+   /* border:1px solid black;*/
     padding-top: 25px;
 }
 body>section:nth-child(3) .content-4 .github{
