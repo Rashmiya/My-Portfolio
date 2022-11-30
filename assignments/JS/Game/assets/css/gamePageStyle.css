@@ -1,0 +1,25 @@
+.body{
+    margin:0;
+}
+/*dashboard*/
+#firstPage{
+    background-color: red;
+    width:100%;
+    height:100vh;
+}
+.modal-title{
+    font-size: 4.5em;
+    color: red;
+    filter: brightness(100%);
+}
+#sprite1{
+    width: 200px;
+}
+
+
+/*game page for level 1*/
+#gamePage{
+    background-color: #000;
+    width:100%;
+    height:100vh;
+}

@@ -2,19 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS 2D Shooter Game</title>
+    <title>JS 2D Runner Game</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> <!--import the bootstrap css-->
-    <link rel="stylesheet" href="assets/css/dashboardStyle.css">
-    <link rel="stylesheet" href="assets/css/level1GamePageStyle.css">
+    <link rel="stylesheet" href="assets/css/gamePageStyle.css">
 </head>
 <body class="body" onload="idleAnimationStart();">
 <!--first page to be prompt-->
-    <main class="container-fluid" id="firstPage">
-
-    </main>
+<!--    <&lt;!&ndash;main class="container-fluid" id="firstPage">&ndash;&gt;-->
+<!--&lt;!&ndash;  modal Area  &ndash;&gt;
+        <div class="modal fade" id="dashboardModel" tabindex="-1" role="dialog" aria-labelledby="dashboardModelLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        &lt;!&ndash;<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>&ndash;&gt;
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">START GAME</button>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+<!--    </main>-->
 <!--main game page for level 1-->
     <main class="container-fluid" id="gamePage">
+        <!--  modal Area  -->
+        <div class="modal fade" id="dashboardModel" tabindex="-1" role="dialog" aria-labelledby="dashboardModelLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">FLASH TRACK</h5>
+
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/sprite/Idle000.png" alt="A Character" class="sprite" id="sprite1">
+                    </div>
+                    <div class="modal-footer">
+                        <button id="startGame" type="button" class="btn btn-secondary" data-dismiss="modal">START GAME</button>
+                    </div>
+                </div>
+            </div>
+        </div>
       <!--  <img src="assets/images/sprite/Idle000.png" alt="A Character" class="sprite" id="sprite">-->
+
     </main>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <!--import the bootstrap js-->
