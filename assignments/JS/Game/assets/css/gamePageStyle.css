@@ -10,7 +10,7 @@
 .modal-title{
     font-size: 4.5em;
     color: red;
-    filter: brightness(100%);
+    /*filter: brightness(100%);*/
 }
 #sprite1{
     width: 200px;
@@ -22,4 +22,14 @@
     background-color: #000;
     width:100%;
     height:100vh;
+    background:url("../images/background/background8.jpg");
+    background-position: center;
+    background-size: cover;
+    /*filter: brightness(100%);*/
+}
+
+#sprite{
+    width: 140px;
+    margin-top: 169px;
+    margin-left: 50px;
 }
