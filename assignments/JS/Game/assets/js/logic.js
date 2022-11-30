@@ -22,6 +22,8 @@ runImage=-1;
 jumpAnimationNumber=0;
 jumpImage=0;
 var boxAnimationID = 0;
+var birdAnimationID=0;
+var walkingDragonID=0;
 
 /*when press ArrowRight key, character should run*/
 function keyEvent(event){
@@ -43,6 +45,9 @@ function keyEvent(event){
         if(birdAnimationID == 0){
             birdAnimationID = setInterval(birdAnimation,100);
         }
+        if(walkingDragonID==0){
+            walkingDragonID = setInterval(walkingDragonID,100);
+        }
     }
     if(event.key=="ArrowUp"){
         if (jumpAnimationNumber==0){
@@ -54,6 +59,13 @@ function keyEvent(event){
         if(boxAnimationID == 0){
             boxAnimationID = setInterval(boxAnimation,100);
         }
+        if(birdAnimationID==0){
+            birdAnimationID = setInterval(birdAnimation,100);
+        }
+
+        if(walkingDragonID==0){
+            walkingDragonID=setInterval(walkingDragonAnimation,100)
+        }
     }
     if(event.key=="ArrowDown"){
         if (slideAnimationNumber==0){
@@ -64,6 +76,13 @@ function keyEvent(event){
         }
         if(boxAnimationID == 0){
             boxAnimationID = setInterval(boxAnimation,100);
+        }
+        if(birdAnimationID==0){
+            birdAnimationID = setInterval(birdAnimation,100);
+        }
+
+        if(walkingDragonID==0){
+            walkingDragonID=setInterval(walkingDragonAnimation,100)
         }
     }
 }
@@ -90,6 +109,7 @@ moveBackgroundAnimationId =0;
 function moveBackgroundImage(){
     backgroundImagePositionX = backgroundImagePositionX-20;
     document.getElementById("gamePage").style.backgroundPositionX = backgroundImagePositionX+"px";
+    scoreBoard();
 }
 
 /*character jump state*/
@@ -98,11 +118,11 @@ spriteMarginTop = 430;
 function jumpAnimation(){
     jumpImage = jumpImage+1;
     if(jumpImage<=5){
-        spriteMarginTop = spriteMarginTop-30;   /*methna me height eka adu wedi krla jump level change krnna pluwn...*/
+        spriteMarginTop = spriteMarginTop-45;   /*methna me height eka adu wedi krla jump level change krnna pluwn...*/
         document.getElementById("sprite").style.marginTop = spriteMarginTop+"px";
     }
     if(jumpImage>=6){
-        spriteMarginTop = spriteMarginTop+30;
+        spriteMarginTop = spriteMarginTop+45;
         document.getElementById("sprite").style.marginTop = spriteMarginTop+"px";
     }
 
@@ -153,7 +173,7 @@ function startAnimationSlide(){
     slideAnimationNumber = setInterval(slideAnimation,100);
 }
 
-boxMarginLeft=300;
+boxMarginLeft=1400;
 birdMarginLeft=200;
 dragonMarginLeft = 550;
 
@@ -170,8 +190,10 @@ function createDragon(){
         enimy.style.marginLeft = boxMarginLeft+"px";
         enimy.id="enimy"+i;
         boxMarginLeft = boxMarginLeft+1200;                 /*boxes wala equal distance thiyagenimata*/
+
     }
 }
+
 /*create bird challenges*/
 function creteBirds(){
     for (let i = 0; i < 20; i++) {
@@ -185,7 +207,7 @@ function creteBirds(){
 }
 /*cretae walking dragon*/
 function createWalkingDragons(){
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 40; i++) {
         var walkingDragon = document.createElement("div");
         walkingDragon.className = "walkingDragon";
         $("#gamePage").append(walkingDragon);
@@ -196,27 +218,68 @@ function createWalkingDragons(){
 }
 
 function boxAnimation() {
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 40; i++) {
         var enimy = document.getElementById("enimy" + i);
         /* console.log("enimy");*/
         var currentMarginLeft = getComputedStyle(enimy).marginLeft;
-        var newMarginLeft = parseInt(currentMarginLeft) - 30;
+        var newMarginLeft = parseInt(currentMarginLeft) - 45;
         /*  console.log(newMarginLeft);*/
         enimy.style.marginLeft = newMarginLeft + "px";
 
+        if(newMarginLeft>=-100 & newMarginLeft <= 110){
+            if(spriteMarginTop > 430){
+                clearInterval(boxAnimationID);
+
+                clearInterval(runAnimationNumber);
+                runAnimationNumber=0;
+
+                clearInterval(jumpAnimationNumber);
+                jumpAnimationNumber=0;
+
+                clearInterval(moveBackgroundAnimationId);
+                moveBackgroundAnimationId=-1;
+
+                clearInterval(birdAnimationID);
+                birdAnimationID=0;
+
+                deadAnimationNumber = setInterval(deadAnimation,100);
+            }
+          }
+        }
     }
 
-    for (let i = 0; i < 20; i++) {
-        var birds = document.getElementById("birds"+i);
+function birdAnimation() {
+    for (let i = 0; i < 40; i++) {
+        var birds = document.getElementById("birds" + i);
         var currentBirdMarginLeft = getComputedStyle(birds).marginLeft;
-        var newBirdMarginLeft = parseInt(currentBirdMarginLeft)-30;
-        birds.style.marginLeft = newBirdMarginLeft+"px";
+        var newBirdMarginLeft = parseInt(currentBirdMarginLeft) - 45;
+        birds.style.marginLeft = newBirdMarginLeft + "px";
     }
+}
 
-    for (let i = 0; i < 20; i++) {
+function walkingDragonAnimation(){
+    for (let i = 0; i < 40; i++) {
         var walkingDragon = document.getElementById("walkingDragon"+i);
         var currentDragonMarginLeft = getComputedStyle(walkingDragon).marginLeft;
-        var newDragonMarginLeft = parseInt(currentDragonMarginLeft)-30;
+        var newDragonMarginLeft = parseInt(currentDragonMarginLeft)-45;
         walkingDragon.style.marginLeft = newDragonMarginLeft+"px";
     }
+}
+
+deadImage = -1;
+deadAnimationNumber=0;
+
+function deadAnimation(){
+    deadImage = deadImage+1;
+
+    if(deadImage==10){
+        deadImage = 0;
+    }
+    $("#sprite").attr("src","assets/images/sprite/Dead__00"+deadImage+".png");
+}
+
+var score = 0;
+function scoreBoard(){
+    score=score+1;
+    document.getElementById("score").innerHTML = score;
 }
