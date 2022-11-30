@@ -45,6 +45,14 @@ function keyEvent(event){
             moveBackgroundAnimationId = setInterval(moveBackgroundImage,100);
         }
     }
+    if(event.key=="ArrowDown"){
+        if (slideAnimationNumber==0){
+            startAnimationSlide();
+        }
+        if(moveBackgroundAnimationId == 0){
+            moveBackgroundAnimationId = setInterval(moveBackgroundImage,100);
+        }
+    }
 }
 
 
@@ -100,4 +108,38 @@ function startAnimationJump(){
     runImage=0;
     clearInterval(runAnimationNumber);  /*clear the run animation*/
     jumpAnimationNumber = setInterval(jumpAnimation,100);
+}
+
+/*slide Animation State*/
+slideAnimationNumber=0;
+slideImage=-1;
+
+function slideAnimation(){
+    slideImage = slideImage+1;
+   /* if(slideImage<=5){
+        spriteMarginTop = spriteMarginTop-30;   /!*methna me height eka adu wedi krla jump level change krnna pluwn...*!/
+        document.getElementById("sprite").style.marginTop = spriteMarginTop+"px";
+    }
+    if(jumpImage>=6){
+        spriteMarginTop = spriteMarginTop+30;
+        document.getElementById("sprite").style.marginTop = spriteMarginTop+"px";
+    }*/
+
+    if(slideImage==10){
+        slideImage=0;
+        clearInterval(slideAnimationNumber);  /*clear slide Animation*/
+        slideAnimationNumber=0;
+        runImage=0;
+        startAnimationRun();
+    }
+    $("#sprite").attr("src","assets/images/sprite/Slide__00"+slideImage+".png");
+}
+
+function startAnimationSlide(){
+    clearInterval(idleAnimationNumber);  /*clear the idle animation number*/
+    runImage=0;
+    clearInterval(runAnimationNumber);  /*clear run nimation*/
+    jumpImage=0;
+    clearInterval(jumpAnimationNumber);   /*clear jump Animation*/
+    slideAnimationNumber = setInterval(slideAnimation,100);
 }
