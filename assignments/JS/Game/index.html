@@ -7,30 +7,47 @@
     <link rel="stylesheet" href="assets/css/gamePageStyle.css">
 </head>
 <body class="body" onkeydown="keyEvent(event);">
+<!--initial state-->
+<main class="container-fluid" id="initialState">
+    <div id="initial-window">
+        <audio src="assets/audio/initial-Background-Music.mp3" id="initial-audio" autoplay loop></audio>
+        <p id="text"> Temple Runner</p>
+        <img src="assets/images/sprite/Idle000.png" alt="inital-character of boy" id="initial-character">
+        <button type="button" class="btn btn-danger" id="playButton">Let's Play</button>
+    </div>
+</main>
+
 <!--main game page for level 1-->
     <main class="container-fluid" id="gamePage">
-        <!--  modal Area  -->
-        <div class="modal fade" id="dashboardModel" tabindex="-1" role="dialog" aria-labelledby="dashboardModelLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">FLASH TRACK</h5>
-
-                    </div>
-                    <div class="modal-body">
-                        <img src="assets/images/sprite/Idle000.png" alt="A Character" class="sprite" id="sprite1">
-                    </div>
-                    <div class="modal-footer">
-                        <button id="startGame" type="button" class="btn btn-secondary" data-dismiss="modal">START GAME</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-       <!--character Image-->
+        <!--<audio src="assets/audio/initial-Background-Music.mp3" class="audio"></audio>-->
+        <!--character Image-->
         <img src="assets/images/sprite/Idle000.png" alt="A Character" class="sprite" id="sprite">
-
+       <!-- <div class="score" id="score">0</div>-->
     </main>
-    <div class="score" id="score">0</div>
+
+<!--when over the game-->
+    <main class="container-fluid" id="gameOverPage">
+        <p> Game Over</p>
+        <div class="score" id="gameOverScore">
+            <p>Your Score  : </p>
+            <label for="text">0</label>
+        </div>
+        <button type="button" class="btn btn-danger" id="endButton">END</button>
+        <button type="button" class="btn btn-danger" id="playAgainButton">PLAY AGAIN</button>
+    </main>
+
+<!--when Successfully Finished the game -->
+<main class="container-fluid" id="successPage">
+    <p>Congratulations.....</p>
+    <p>You won the Game</p>
+    <div class="score" id="gameSuccessScore">
+        <p>Your Score  : </p>
+        <label for="text">0</label>
+    </div>
+    <button type="button" class="btn btn-danger" id="successEndButton">END</button>
+    <button type="button" class="btn btn-danger" id="successPlayAgainButton">PLAY AGAIN</button>
+</main>
+
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <!--import the bootstrap js-->
     <script src="assets/js/jquery-3.6.1.min.js"></script>  <!--import the jQuery plugin-->

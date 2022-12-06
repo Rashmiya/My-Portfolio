@@ -2,11 +2,43 @@
     margin:0;
 }
 /*dashboard*/
-#firstPage{
-    background-color: red;
+#initialState{
+    background-color: black;
     width:100%;
     height:100vh;
+   /* filter:brightness(70%);*/
+}
+#initial-window{
+    /*border:1px solid red;*/
+    height:90vh;
 
+}
+#initial-window #text{
+  /*  border:1px solid yellow;*/
+    color:green;
+    font-family:fantasy;
+    font-size:10em;
+    font-style:italic;
+    position:absolute;
+    left:214px;
+    top:-13px;
+    filter:brightness(100%);
+}
+#initial-window img{
+/*    border: 1px solid green;*/
+    height: 424px;
+    position: relative;
+    left: 371px;
+    top: 95px;
+    filter:brightness(100%);
+}
+#playButton{
+    position:relative;
+    left:513px;
+    top:140px;
+    font-family:cursive;
+    font-size:3em;
+    filter:brightness(100%);
 }
 .modal-title{
     font-size: 4.5em;
